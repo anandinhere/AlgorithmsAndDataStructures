@@ -1,0 +1,27 @@
+. While Loop (If there is a jump in while loop - while condition should have atleast 2 checks).
+. Linkedlist - if changing tail in loop, move tail to next.
+. Do not move head if deleting next node. (examples -odd even segregate, remove dups sorted list) 
+. If using a node after the while loop , make sure it doesn't become null in the loop. (Ex - DeleteNNodesAfterMNodes)
+. Whle loop - checks for continuity. Recursion - Checks for stopping.
+. In recursion, don't edit the node which is going in next. Ex -ReverseLinkedList
+. Linkedlist AddToHead - (newNode.next = reverseList; reverseList = newNode;)
+
+
+
+
+
+
+
+Arrays - Can be used as a map. With index as key and array[index] as values. for example checking for missing numbers in a array of numbers 1 to 10.
+		union - find : detect cycle in graph. checking for parents
+
+
+
+. Graphs
+****Adjacency list vs Adjacency matrix. Which is faster when memory isn't an issue?****
+----- https://www.reddit.com/r/learnprogramming/comments/1rvu6g/adjacency_list_vs_adjacency_matrix_which_is/
+-----
+It depends on what you want to do with it.
+If you are going to be asking a lot of questions like "Which vertices are adjacent to vertex x?" then an adjacency list representation will be faster, because the data structure gives the answer directly. If you use an adjacency matrix, you'd have to scan all the way through a row of the matrix, even if the vertex you're interested in is adjacent to only a few other vertices.
+On the other hand, if you are going to be asking a lot of questions like "Is vertex x adjacent to vertex y?" then an adjacency matrix will be faster, because (again) the data structure gives you the answer directly. To answer this question with adjacency lists, you'd have to scan through the whole list of vertices adjacent to x to see if that list contains y.
+So in order to answer the question of which one is faster, you'll need to think about what kinds of information you want to get out of it.

@@ -1,0 +1,5 @@
+1. Heap 
+	For Node at index x
+	Parent --> (x-1)/2
+	Left Child --> (2x+1)
+	Right Child --> (2x+2)

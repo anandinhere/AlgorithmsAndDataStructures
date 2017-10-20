@@ -1,0 +1,155 @@
+Problem Statement
+
+You are given two circles, A and B, on a Cartesian plane, each defined by three descriptors:
+
+ 
+
+    X: the x-coordinate of the circle's center
+    Y: the y-coordinate of the circle's center
+    R: the radius of the circle
+
+ 
+
+Circles A and B will both be centered either on the X-axis (i.e.: YA = 0 and YB = 0), or on the Y-axis (i.e.: XA = 0 and XB = 0).
+
+ 
+
+A pair of circles (A and B) will have one of the following relationship types:
+
+ 
+
+    Touching: they touch each other at a single point.
+    Concentric: they have the same center point.
+    Intersecting: they intersect each other (touching at two points).
+    Disjoint-Outside: disjoint with one existing outside of the other.
+    Disjoint-Inside: disjoint with one contained inside the other (but not concentric).
+
+ 
+
+Complete the circles function which takes an array of strings, info, as its parameter. Each string element in info contains six space-separated integers denoting a test case (as shown in the Input Format). The function should return an array of strings where the ith element in the return array is the relationship for the circles defined in the ith element of info.
+
+ 
+
+Input Format
+
+The first line contains an integer, N (the number of test cases).
+
+The N subsequent lines of test cases each contain six space-separated integers describing the X, Y, and R values for circles A and B, respectively. For example:
+
+ 
+
+N
+XA0 YA0 RA0 XB0 YB0 RB0
+...
+XAN-1 YAN-1 RAN-1 XBN-1 YBN-1 RBN-1
+
+ 
+
+Note: Reading input from stdin and calling circles is handled for you by the locked code in the editor. Your task is to process the array of input strings in circles.
+
+ 
+
+Constraints
+
+    1 ≤ N ≤ 5000
+    0 ≤ X,Y,R ≤ 5000
+
+ 
+
+Output Format
+
+Your circles function should return an array of N strings where the ith element is the relationship for the circles in info[i]. Recall that the relationships defined in the Problem Statement are Touching, Disjoint-Inside, Disjoint-Outside, Concentric, and Intersecting.
+
+ 
+
+Note: Outputting the array returned by circles is handled for you by the locked code in the editor.
+
+ 
+
+Sample Input 0
+
+4
+12 0 21 14 0 23
+0 45 8 0 94 9
+35 0 13 10 0 38
+0 26 8 0 9 25
+
+ 
+
+Sample Output 0
+
+Touching
+Disjoint-Outside
+Touching
+Touching  
+
+ 
+
+Sample Input 1
+
+5
+0 5 9 0 9 7
+0 15 11 0 20 16
+26 0 10 39 0 23
+37 0 5 30 0 11
+41 0 0 28 0 13
+
+ 
+
+Sample Output 1
+
+Intersecting
+Touching
+Touching
+Intersecting
+Touching
+
+
+
+----------------
+
+
+import java.io.*;
+import java.util.*;
+import java.text.*;
+import java.math.*;
+import java.util.regex.*;
+
+public class Solution {
+    /*
+ * Complete the function below.
+ */
+
+    static String[] circles(String[] info) {
+
+
+    }
+
+    public static void main(String[] args) throws IOException{
+        Scanner in = new Scanner(System.in);
+        final String fileName = System.getenv("OUTPUT_PATH");
+        BufferedWriter bw = new BufferedWriter(new FileWriter(fileName));
+        String[] res;
+        
+        int _info_size = 0;
+        _info_size = Integer.parseInt(in.nextLine().trim());
+        String[] _info = new String[_info_size];
+        String _info_item;
+        for(int _info_i = 0; _info_i < _info_size; _info_i++) {
+            try {
+                _info_item = in.nextLine();
+            } catch (Exception e) {
+                _info_item = null;
+            }
+            _info[_info_i] = _info_item;
+        }
+        
+        res = circles(_info);
+        for(int res_i=0; res_i < res.length; res_i++) {
+            bw.write(String.valueOf(res[res_i]));
+            bw.newLine();
+        }
+        
+        bw.close();
+    }
+}
