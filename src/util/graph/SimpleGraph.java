@@ -10,7 +10,7 @@ import java.util.Set;
 public class SimpleGraph {
 
 	int adjMatrix[][] = new int[20][20];
-	HashMap<Integer, SimpleGraphNode> SimpleGraphNodeHashList = null;
+	HashMap<Integer, SGNode> SGNodeHashList = null;
 	HashMap<Integer, LinkedList<AdjacentNode>> adjacencyHashList = null;
 	boolean directedGraph = false;
 
@@ -18,25 +18,25 @@ public class SimpleGraph {
 
 	public SimpleGraph(boolean directedGraph) {
 		this.directedGraph = directedGraph;
-		SimpleGraphNodeHashList = new HashMap<Integer, SimpleGraphNode>();
+		SGNodeHashList = new HashMap<Integer, SGNode>();
 		adjacencyHashList = new HashMap<Integer, LinkedList<AdjacentNode>>();
 	}
 
 	public SimpleGraph() {
-		SimpleGraphNodeHashList = new HashMap<Integer, SimpleGraphNode>();
+		SGNodeHashList = new HashMap<Integer, SGNode>();
 		adjacencyHashList = new HashMap<Integer, LinkedList<AdjacentNode>>();
 	}
 
 	public Set<Integer> getSimpleGraphNodeKeys() {
-		return SimpleGraphNodeHashList.keySet();
+		return SGNodeHashList.keySet();
 	}
 
-	public SimpleGraphNode getSimpleGraphNode(Integer key) {
-		return SimpleGraphNodeHashList.get(key);
+	public SGNode getSimpleGraphNode(Integer key) {
+		return SGNodeHashList.get(key);
 	}
 
 	public int noOfSimpleGraphNode() {
-		return SimpleGraphNodeHashList.keySet().size();
+		return SGNodeHashList.keySet().size();
 	}
 
 	public LinkedList<AdjacentNode> getAdjacentSimpleGraphNodeList(int key) {
@@ -44,20 +44,20 @@ public class SimpleGraph {
 	}
 
 	public void createGraph() {
-		this.addNode(new SimpleGraphNode(1));
-		this.addNode(new SimpleGraphNode(2));
-		this.addNode(new SimpleGraphNode(3));
-		this.addNode(new SimpleGraphNode(4));
-		this.addNode(new SimpleGraphNode(5));
-		this.addNode(new SimpleGraphNode(6));
-		this.addNode(new SimpleGraphNode(7));
-		this.addNode(new SimpleGraphNode(8));
-		this.addNode(new SimpleGraphNode(9));
-		this.addNode(new SimpleGraphNode(10));
-		this.addNode(new SimpleGraphNode(11));
-		this.addNode(new SimpleGraphNode(12));
-		this.addNode(new SimpleGraphNode(13));
-		this.addNode(new SimpleGraphNode(14));
+		this.addNode(new SGNode(1));
+		this.addNode(new SGNode(2));
+		this.addNode(new SGNode(3));
+		this.addNode(new SGNode(4));
+		this.addNode(new SGNode(5));
+		this.addNode(new SGNode(6));
+		this.addNode(new SGNode(7));
+		this.addNode(new SGNode(8));
+		this.addNode(new SGNode(9));
+		this.addNode(new SGNode(10));
+		this.addNode(new SGNode(11));
+		this.addNode(new SGNode(12));
+		this.addNode(new SGNode(13));
+		this.addNode(new SGNode(14));
 
 		this.addEdge(1, 2, 1);
 		this.addEdge(1, 3, 1);
@@ -77,19 +77,19 @@ public class SimpleGraph {
 
 	}
 
-	public void addNode(SimpleGraphNode SimpleGraphNode) {
+	public void addNode(SGNode SimpleGraphNode) {
 
 		int key = SimpleGraphNode.getKey();
 
-		SimpleGraphNodeHashList.put(key, SimpleGraphNode);
+		SGNodeHashList.put(key, SimpleGraphNode);
 		adjacencyHashList.put(key, new LinkedList<AdjacentNode>());
 	}
 
 	public void addEdge(Integer from, Integer to, int weight) {
-		if (!SimpleGraphNodeHashList.containsKey(from))
-			addNode(new SimpleGraphNode(from));
-		if (!SimpleGraphNodeHashList.containsKey(to))
-			addNode(new SimpleGraphNode(to));
+		if (!SGNodeHashList.containsKey(from))
+			addNode(new SGNode(from));
+		if (!SGNodeHashList.containsKey(to))
+			addNode(new SGNode(to));
 
 		LinkedList<AdjacentNode> edgeListFrom = adjacencyHashList.get(from);
 		edgeListFrom.add(new AdjacentNode(to, weight));
@@ -104,9 +104,9 @@ public class SimpleGraph {
 		}
 	}
 
-	public boolean edgeExists(String from, String to) {
+	public boolean edgeExists(int from, int to) {
 
-		if (adjMatrix[((int) from.charAt(0)) - 97][((int) to.charAt(0)) - 97] == 1)
+		if (adjMatrix[from][to] == 1)
 			return true;
 		return false;
 
@@ -131,7 +131,7 @@ public class SimpleGraph {
 
 	public void printAdjacencyMatrix() {
 		System.out.println("***************Graph Adjacenct Matrix****************");
-		int noOfKeys = SimpleGraphNodeHashList.keySet().size();
+		int noOfKeys = SGNodeHashList.keySet().size();
 		System.out.print("  ");
 		for (int i = 0; i < noOfKeys; i++) {
 			System.out.print((char) (i + 97) + "  ");
@@ -175,7 +175,7 @@ public class SimpleGraph {
 			case "1":
 				System.out.println("Selected Option : Add SimpleGraphNode");
 				int key = Integer.parseInt(scan.next());
-				graph.addNode(new SimpleGraphNode(key));
+				graph.addNode(new SGNode(key));
 				graph.printAdjacencyList();
 				break;
 			case "2":
@@ -196,11 +196,11 @@ public class SimpleGraph {
 
 	public void createCycleGraph() {
 		// TODO Auto-generated method stub
-		this.addNode(new SimpleGraphNode(1));
-		this.addNode(new SimpleGraphNode(2));
-		this.addNode(new SimpleGraphNode(3));
-		this.addNode(new SimpleGraphNode(4));
-		this.addNode(new SimpleGraphNode(5));
+		this.addNode(new SGNode(1));
+		this.addNode(new SGNode(2));
+		this.addNode(new SGNode(3));
+		this.addNode(new SGNode(4));
+		this.addNode(new SGNode(5));
 
 		this.addEdge(1, 2, 1);
 		this.addEdge(3, 1, 1);
