@@ -22,6 +22,10 @@ Arrays - Can be used as a map. With index as key and array[index] as values. for
 ----- https://www.reddit.com/r/learnprogramming/comments/1rvu6g/adjacency_list_vs_adjacency_matrix_which_is/
 -----
 It depends on what you want to do with it.
-If you are going to be asking a lot of questions like "Which vertices are adjacent to vertex x?" then an adjacency list representation will be faster, because the data structure gives the answer directly. If you use an adjacency matrix, you'd have to scan all the way through a row of the matrix, even if the vertex you're interested in is adjacent to only a few other vertices.
-On the other hand, if you are going to be asking a lot of questions like "Is vertex x adjacent to vertex y?" then an adjacency matrix will be faster, because (again) the data structure gives you the answer directly. To answer this question with adjacency lists, you'd have to scan through the whole list of vertices adjacent to x to see if that list contains y.
+If you are going to be asking a lot of questions like "Which vertices are adjacent to vertex x?" then an adjacency list representation will be faster, 
+because the data structure gives the answer directly. If you use an adjacency matrix, you'd have to scan all the way through a row of the matrix, 
+even if the vertex you're interested in is adjacent to only a few other vertices.
+On the other hand, if you are going to be asking a lot of questions like "Is vertex x adjacent to vertex y?" then an adjacency matrix will be faster, 
+because (again) the data structure gives you the answer directly. To answer this question with adjacency lists, you'd have to scan through the whole 
+list of vertices adjacent to x to see if that list contains y.
 So in order to answer the question of which one is faster, you'll need to think about what kinds of information you want to get out of it.

@@ -82,7 +82,7 @@ class Graph {
 		edges[3] = new Edge(0, 1);
 		edges[0] = new Edge(1, 2);
 		edges[1] = new Edge(2, 3);
-		edges[2] = new Edge(3, 1);
+		edges[2] = new Edge(3, 0);
 	}
 
 }
