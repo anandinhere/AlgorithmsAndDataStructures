@@ -2,26 +2,26 @@ package util.tree;
 
 public class TreeNode {
 
-	TreeNode right;
-	TreeNode left;
-	int value;
-	boolean black = true;
+	public TreeNode right;
+	public TreeNode left;
+	public int key;
+	public boolean black = true;
 	
 	public TreeNode() {
 		// TODO Auto-generated constructor stub
 	}
 
 	public TreeNode(int val) {
-		this.value = val;
+		this.key = val;
 	}
 
 	public TreeNode search(TreeNode root, int key) {
 
-		if (root == null || root.value == key) {
+		if (root == null || root.key == key) {
 			return root;
 		}
 
-		if (root.value < key)
+		if (root.key < key)
 			return search(root.left, key);
 		return search(root.right, key);
 
@@ -33,7 +33,7 @@ public class TreeNode {
 			return new TreeNode(key);
 		}
 
-		if (root.value < key)
+		if (root.key < key)
 			root.left = insert(root.left, key);
 		root.right = insert(root.right, key);
 		return root;
@@ -46,7 +46,7 @@ public class TreeNode {
 		node.right = new TreeNode(3);
 		
 		node.left.left = new TreeNode(4);
-		node.left.left = new TreeNode(5);
+		node.left.right = new TreeNode(5);
 		
 		node.right.left = new TreeNode(6);
 		node.right.right = new TreeNode(7);
