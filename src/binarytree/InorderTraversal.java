@@ -19,7 +19,7 @@ public class InorderTraversal {
 		while (true) {
 			if (!s.empty() && temp == null) {
 				temp = s.pop();
-				System.err.println(temp.key);
+				System.out.println(temp.key);
 				temp = temp.right;
 				
 			}
