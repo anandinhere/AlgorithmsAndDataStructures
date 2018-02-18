@@ -6,7 +6,7 @@ public class TreeNode {
 	public TreeNode left;
 	public int key;
 	public boolean black = true;
-	
+
 	public TreeNode() {
 		// TODO Auto-generated constructor stub
 	}
@@ -27,6 +27,16 @@ public class TreeNode {
 
 	}
 
+	public void printInorder(TreeNode r) {
+
+		if (r == null) {
+			return;
+		}
+		printInorder(r.left);
+		System.out.println(r.key);
+		printInorder(r.right);
+	}
+
 	public TreeNode insert(TreeNode root, int key) {
 
 		if (root == null) {
@@ -45,12 +55,11 @@ public class TreeNode {
 		node.left = new TreeNode(2);
 		node.left.left = new TreeNode(4);
 		node.left.right = new TreeNode(5);
-		
-		//node.right = new TreeNode(3);
-		//node.right.left = new TreeNode(6);
-		//node.right.right = new TreeNode(7);
-		
-		
+
+		// node.right = new TreeNode(3);
+		// node.right.left = new TreeNode(6);
+		// node.right.right = new TreeNode(7);
+
 		return node;
 
 	}
