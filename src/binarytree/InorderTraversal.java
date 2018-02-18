@@ -16,7 +16,7 @@ public class InorderTraversal {
 			temp = temp.left;
 		}
 
-		while (true) {
+		while (!s.empty()) {
 			if (!s.empty() && temp == null) {
 				temp = s.pop();
 				System.err.println(temp.key);
@@ -29,9 +29,9 @@ public class InorderTraversal {
 				temp = temp.left;
 			}
 
-			if (s.empty()) {
-				break;
-			}
+			//if (s.empty()) {
+		//		break;
+		//	}
 		}
 	}
 }
