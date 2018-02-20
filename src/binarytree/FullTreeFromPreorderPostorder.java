@@ -10,14 +10,11 @@ public class FullTreeFromPreorderPostorder {
 		// int postorder[] = new int[] { 4, 5, 2, 6, 7, 3, 1 };
 		// int preorder[] = new int[] { 1, 2, 4, 5, 3, 6, 7 };
 		//
-		int preorder[] = { 1, 2, 4, 8, 9, 5, 3, 6, 7 };
-		int postorder[] = { 8, 9, 4, 5, 2, 6, 7, 3, 1 };
+		// int preorder[] = { 1, 2, 4, 8, 9, 5, 3, 6, 7 };
+		// int postorder[] = { 8, 9, 4, 5, 2, 6, 7, 3, 1 };
 
-		// int postorder[] = new int[] { 7, 6, 5, 4, 3, 2, 1 };
-		// int preorder[] = new int[] { 1, 2, 3, 4, 5, 6, 7 };
-
-		// int postorder[] = new int[] { 1, 2, 3, 4, 5, 6, 7 };
-		// int preorder[] = new int[] { 1, 2, 3, 4, 5, 6, 7 };
+		int preorder[] = { 1, 2, 4, 5, 3 };
+		int postorder[] = { 4, 5, 2, 3, 1 };
 
 		TreeNode r = makeTree(postorder, preorder, 0, postorder.length - 1);
 
@@ -53,13 +50,14 @@ public class FullTreeFromPreorderPostorder {
 	}
 
 	private static int search(int key, int[] postorder, int inStart, int inEnd) {
+		int i;
 
-		for (int i = inStart; i <= inEnd; i++) {
+		for (i = inStart; i <= inEnd; i++) {
 			if (postorder[i] == key) {
 				return i;
 			}
 		}
-		return 0;
+		return i;
 	}
 
 }
