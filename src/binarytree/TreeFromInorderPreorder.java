@@ -28,7 +28,9 @@ public class TreeFromInorderPreorder {
 			return null;
 		}
 
-		TreeNode root = new TreeNode(preorder[preIndex++]);
+		TreeNode root = new TreeNode(preorder[preIndex++]); //preorder tree build. so preorder++ preorder is the order of roots of trees
+		// starting from root to children roots
+		// if checks tell us if the node has a left or a right. 
 
 		int inSearch = search(root.key, inorder, inStart, inEnd);
 

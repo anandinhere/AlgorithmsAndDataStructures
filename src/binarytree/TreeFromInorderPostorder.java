@@ -2,7 +2,7 @@ package binarytree;
 
 import util.tree.TreeNode;
 
-public class TreeFromPostorderInorder {
+public class TreeFromInorderPostorder {
 
 	static int preIndex = 6;
 
