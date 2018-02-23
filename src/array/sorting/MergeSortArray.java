@@ -3,12 +3,13 @@ package array.sorting;
 public class MergeSortArray {
 
 	// , 5, 4, 1, 2, 3
-	static int[] array = { 9, 8, 7, 6 };
+	static int[] array = ArrayUtil.getRandArray(1, 10);
 
 	public static void main(String[] args) {
 
+		ArrayUtil.printArray(array);
 		mergeSort(0, array.length - 1);
-		
+
 		System.out.println(array.toString());
 
 	}
@@ -19,13 +20,13 @@ public class MergeSortArray {
 			return;
 		}
 
-		//if (i == j - 1)
-			//return;
+		// if (i == j - 1)
+		// return;
 
 		mergeSort(i, j / 2);
 		mergeSort((j / 2) + 1, j);
 
-		merge(i, (j / 2) + 1);
+		merge(i, j);
 
 	}
 

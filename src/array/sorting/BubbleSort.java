@@ -16,6 +16,8 @@ public class BubbleSort {
 	
 	/*
 	 * n^2 comparisons, n^2 swaps
+	 * Start from j(=0), bubble to end (i = length-1)
+	 * numbers will be sorted on the top (to the end)
 	 */
 	private static void bubbleSort(int[] arr) {
 

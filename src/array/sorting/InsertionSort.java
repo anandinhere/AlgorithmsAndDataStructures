@@ -2,28 +2,28 @@ package array.sorting;
 
 import java.util.Arrays;
 
-public class SelectionSort {
+public class InsertionSort {
 	public static void main(String[] args) {
 
 		int[] arr = ArrayUtil.getRandArray(0, 10);
 		System.out.println(Arrays.toString(arr));
-		selectionSort(arr);
+		insertionSort(arr);
 		ArrayUtil.printArray(arr);
 
 	}
 
 	/*
-	 * n^2 comparisons, n swaps
-	 * start from i , get min by comparing all to the right of it
-	 * swap with the smallest. numbers will be sorted from start to end
+	 * n^2 comparisons, best n swaps, worst n^2 swaps
+	 * all elements to the left of j will be sorted, but may be moved after insertion.
+	 * pick j+1 and find the right spot for it, insert it
 	 */
-	private static void selectionSort(int[] arr) {
+	private static void insertionSort(int[] arr) {
 
-		for (int i = 0; i < arr.length; i++) {
+		for (int i = 1; i < arr.length; i++) {
 
 			int min = i;
 
-			for (int j = i; j < arr.length; j++) {
+			for (int j = i; j >= 0; j--) {
 
 				if (arr[j] < arr[min]) {
 					min = j;
