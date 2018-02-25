@@ -12,27 +12,31 @@ public class InsertionSort {
 
 	}
 
+	// [7, 5, 9, 6, 2, 1, 0, 10, 3, 4, 8]
+
 	/*
-	 * n^2 comparisons, best n swaps, worst n^2 swaps
-	 * all elements to the left of j will be sorted, but may be moved after insertion.
-	 * pick j+1 and find the right spot for it, insert it
+	 * best case  - n comparisons, worst case - n comparisons, n^2 moves
+	 * of j will be sorted, but may be moved after insertion. pick j+1 and find
+	 * the right spot for it, insert it
 	 */
 	private static void insertionSort(int[] arr) {
 
 		for (int i = 1; i < arr.length; i++) {
 
-			int min = i;
-
-			for (int j = i; j >= 0; j--) {
-
-				if (arr[j] < arr[min]) {
-					min = j;
-				}
+			int min = i - 1;
+			while (min >= 0 && arr[i] < arr[min]) {
+				min = min - 1;
 			}
-			int temp = arr[i];
-			arr[i] = arr[min];
-			arr[min] = temp;
+			insert(arr[i], i, min + 1, arr); //min + 1 is the index where the while loop was executed successfully latest time.
 		}
+
+	}
+
+	private static void insert(int val, int curr, int min, int[] arr) {
+		for (int i = curr; i > min; i--) {
+			arr[i] = arr[i - 1];
+		}
+		arr[min] = val;
 
 	}
 }
