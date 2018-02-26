@@ -31,7 +31,7 @@ public class MergeSortArray {
 	}
 
 	private static void merge(int i, int j) {
-		while (i <= j && i < array.length && j < array.length) {
+		while (i <= j && i < array.length && j >= 0) {
 			if (array[i] > array[j]) {
 				int temp = array[j];
 				array[j] = array[i];

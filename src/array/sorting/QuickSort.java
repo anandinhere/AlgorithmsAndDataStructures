@@ -21,11 +21,61 @@ public class QuickSort {
 		}
 
 		int pivot = partitionArray(arr, start, end);
-		System.out.println("Pivot " + arr[pivot]);
-		ArrayUtil.printArray(arr);
 
 		quickSort(arr, start, pivot - 1);
 		quickSort(arr, pivot + 1, end);
+	}
+
+	private static int partitionArray(int[] arr, int start, int end) {
+
+		int startPtr = start;
+		int endPtr = end;
+
+		int pivot = getPivot(arr, start, end);
+		int pivotVal = arr[pivot];
+
+		System.out.println("Pivot " + arr[pivot]);
+
+		while (startPtr < endPtr) {
+			System.out.println(startPtr + " " + endPtr);
+			if (arr[startPtr] < pivotVal) {
+				startPtr++;
+			} else if (arr[endPtr] > pivotVal) {
+				endPtr--;
+			} else {
+				int temp = arr[startPtr];
+				arr[startPtr] = arr[endPtr];
+				arr[endPtr] = temp;
+
+			}
+
+		}
+		System.out.println(startPtr + " " + endPtr);
+		ArrayUtil.printArray(arr);
+		return startPtr;
+	}
+
+	private static int getPivot(int[] arr, int start, int end) {
+
+		return end;
+		// int mid = (start + end) / 2;
+		// TreeMap<Integer, Integer> hMap = new TreeMap<Integer, Integer>();
+		// hMap.put(arr[mid], mid);
+		// hMap.put(arr[start], start);
+		// hMap.put(arr[end], end);
+		//
+		// if (hMap.size() > 1) {
+		// hMap.pollFirstEntry();
+		// }
+		// return hMap.pollFirstEntry().getKey();
+
+		// if (arr[start] <= arr[mid] && arr[mid] <= arr[end])
+		// return mid;
+		// else if (arr[mid] <= arr[end] && arr[end] <= arr[start])
+		// return end;
+		// else
+		// return start;
+
 	}
 
 	private static void quickSorWrong(int[] arr, int start, int end) {
@@ -74,54 +124,5 @@ public class QuickSort {
 
 		}
 		System.out.println(startPtr + " " + endPtr);
-	}
-
-	private static int partitionArray(int[] arr, int start, int end) {
-
-		int startPtr = start;
-		int endPtr = end;
-
-		int pivot = getPivot(arr, start, end);
-		int pivotVal = arr[pivot];
-
-		while (startPtr < endPtr) {
-			System.out.println(startPtr + " " + endPtr);
-			if (arr[startPtr] < pivotVal) {
-				startPtr++;
-			} else if (arr[endPtr] > pivotVal) {
-				endPtr--;
-			} else {
-				int temp = arr[startPtr];
-				arr[startPtr] = arr[endPtr];
-				arr[endPtr] = temp;
-				
-			}
-
-		}
-		System.out.println(startPtr + " " + endPtr);
-		return startPtr;
-	}
-
-	private static int getPivot(int[] arr, int start, int end) {
-
-		return end;
-		// int mid = (start + end) / 2;
-		// TreeMap<Integer, Integer> hMap = new TreeMap<Integer, Integer>();
-		// hMap.put(arr[mid], mid);
-		// hMap.put(arr[start], start);
-		// hMap.put(arr[end], end);
-		//
-		// if (hMap.size() > 1) {
-		// hMap.pollFirstEntry();
-		// }
-		// return hMap.pollFirstEntry().getKey();
-
-		// if (arr[start] <= arr[mid] && arr[mid] <= arr[end])
-		// return mid;
-		// else if (arr[mid] <= arr[end] && arr[end] <= arr[start])
-		// return end;
-		// else
-		// return start;
-
 	}
 }
