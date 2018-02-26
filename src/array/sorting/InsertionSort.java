@@ -15,9 +15,9 @@ public class InsertionSort {
 	// [7, 5, 9, 6, 2, 1, 0, 10, 3, 4, 8]
 
 	/*
-	 * best case  - n comparisons, worst case - n comparisons, n^2 moves
-	 * of j will be sorted, but may be moved after insertion. pick j+1 and find
-	 * the right spot for it, insert it
+	 * best case - n comparisons, worst case - n comparisons and n^2 moves all
+	 * elements left of i will be sorted at any given time, but may be moved
+	 * after insertion.
 	 */
 	private static void insertionSort(int[] arr) {
 
@@ -27,7 +27,9 @@ public class InsertionSort {
 			while (min >= 0 && arr[i] < arr[min]) {
 				min = min - 1;
 			}
-			insert(arr[i], i, min + 1, arr); //min + 1 is the index where the while loop was executed successfully latest time.
+			insert(arr[i], i, min + 1, arr); // min + 1 is the index where the
+												// while loop was executed
+												// successfully latest time.
 		}
 
 	}
