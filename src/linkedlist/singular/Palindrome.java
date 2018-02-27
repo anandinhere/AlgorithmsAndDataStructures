@@ -5,7 +5,7 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 
 import util.linkedlist.LinkList;
-import util.linkedlist.LinkedListNode;
+import util.linkedlist.ListNode;
 
 public class Palindrome {
 
@@ -26,7 +26,7 @@ public class Palindrome {
 			try {
 
 				int value = Integer.parseInt(input.readLine());
-				LinkedListNode node = new LinkedListNode(value);
+				ListNode node = new ListNode(value);
 				linkedList.addNode(node);
 			} catch (NumberFormatException ex) {
 				System.out.println("Invalid Input");
@@ -46,8 +46,8 @@ public class Palindrome {
 
 	}
 
-	private static LinkedListNode checkPalindrome(LinkedListNode head,
-			LinkedListNode fast, LinkedListNode slow) {
+	private static ListNode checkPalindrome(ListNode head,
+			ListNode fast, ListNode slow) {
 
 		if (fast.getNext() == null || fast.getNext().getNext() == null) {
 
@@ -64,10 +64,10 @@ public class Palindrome {
 
 		int currentNode = head.getValue();
 		int previousNode = slow.getValue();
-		LinkedListNode slowPtr = slow.getNext();
-		LinkedListNode fastPtr = fast.getNext().getNext();
+		ListNode slowPtr = slow.getNext();
+		ListNode fastPtr = fast.getNext().getNext();
 
-		LinkedListNode newHead = checkPalindrome(head.getNext(), fastPtr,
+		ListNode newHead = checkPalindrome(head.getNext(), fastPtr,
 				slowPtr);
 		System.out.println(newHead.getValue() + "" + currentNode);
 
@@ -83,8 +83,8 @@ public class Palindrome {
 
 	}
 
-	private static LinkedListNode checkPalindrome(LinkedListNode slow,
-			LinkedListNode fast) {
+	private static ListNode checkPalindrome(ListNode slow,
+			ListNode fast) {
 
 		if (fast.getNext() == null || fast.getNext().getNext() == null) {
 
@@ -107,7 +107,7 @@ public class Palindrome {
 		slow = slow.getNext();
 		fast = fast.getNext().getNext();
 
-		LinkedListNode newHead = checkPalindrome(slow, fast);
+		ListNode newHead = checkPalindrome(slow, fast);
 
 		if (newHead != null && currentNode == newHead.getValue()) {
 			System.out.println("yes");

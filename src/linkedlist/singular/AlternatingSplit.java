@@ -1,18 +1,18 @@
 package linkedlist.singular;
 
 import util.linkedlist.LinkList;
-import util.linkedlist.LinkedListNode;
+import util.linkedlist.ListNode;
 
 public class AlternatingSplit {
 	public static void main(String[] args) {
-		LinkedListNode mainList = new LinkedListNode().getLinkedList(6);
+		ListNode mainList = new ListNode().getLinkedList(6);
 		mainList.printLinkedList();
 
 		splitAlternating(mainList);
 
 	}
 
-	private static void splitAlternating(LinkedListNode mainList) {
+	private static void splitAlternating(ListNode mainList) {
 
 		LinkList listA = new LinkList();
 		LinkList listB = new LinkList();

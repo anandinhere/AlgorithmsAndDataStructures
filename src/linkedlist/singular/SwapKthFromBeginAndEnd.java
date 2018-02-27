@@ -1,44 +1,44 @@
 package linkedlist.singular;
 
-import util.linkedlist.LinkedListNode;
+import util.linkedlist.ListNode;
 
 public class SwapKthFromBeginAndEnd {
 	public static void main(String[] args) {
-		LinkedListNode head = new LinkedListNode().getLinkedList(13);
+		ListNode head = new ListNode().getLinkedList(13);
 		head.printLinkedList();
 
 		swapKthFromBeginAndEnd(head, 3 - 1);
 		head.printLinkedList();
 	}
 
-	private static void swapKthFromBeginAndEnd(LinkedListNode head, int k) {
+	private static void swapKthFromBeginAndEnd(ListNode head, int k) {
 
-		LinkedListNode curr = head;
+		ListNode curr = head;
 
 		for (int i = 0; i < k - 1; i++) {
 			curr = curr.getNext();
 		}
 
-		LinkedListNode kprev = curr;
+		ListNode kprev = curr;
 
 		curr = head;
-		LinkedListNode kcopy = kprev.getNext().getNext(); //Important - as trying to get the previous nodes
+		ListNode kcopy = kprev.getNext().getNext(); //Important - as trying to get the previous nodes
 
 		while (kcopy.getNext() != null) {
 			kcopy = kcopy.getNext();
 			curr = curr.getNext();
 		}
 
-		LinkedListNode kFromEndPrev = curr;
+		ListNode kFromEndPrev = curr;
 
 		System.out.println(kprev.getValue());
 		System.out.println(kFromEndPrev.getValue());
 
-		LinkedListNode kth = kprev.getNext();
-		LinkedListNode kFromEnd = kFromEndPrev.getNext();
+		ListNode kth = kprev.getNext();
+		ListNode kFromEnd = kFromEndPrev.getNext();
 
-		LinkedListNode kthNext = kth.getNext();
-		LinkedListNode kFromEndNext = kFromEnd.getNext();
+		ListNode kthNext = kth.getNext();
+		ListNode kFromEndNext = kFromEnd.getNext();
 
 		kprev.setNext(kFromEnd);
 		kprev.getNext().setNext(kthNext);

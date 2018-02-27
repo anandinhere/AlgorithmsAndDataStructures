@@ -4,35 +4,35 @@ import java.util.Random;
 
 public class LinkList {
 
-	private LinkedListNode head;
-	private LinkedListNode tail;
+	private ListNode head;
+	private ListNode tail;
 
-	public LinkedListNode getHead() {
+	public ListNode getHead() {
 		return head;
 	}
 
-	public void setHead(LinkedListNode head) {
+	public void setHead(ListNode head) {
 		this.head = head;
 	}
 
-	public LinkedListNode getTail() {
+	public ListNode getTail() {
 		return tail;
 	}
 
-	public void setTail(LinkedListNode tail) {
+	public void setTail(ListNode tail) {
 		this.tail = tail;
 	}
 
-	public LinkedListNode getLinkedList(int size) {
-		this.head = new LinkedListNode(1);
+	public ListNode getLinkedList(int size) {
+		this.head = new ListNode(1);
 		this.tail = head;
 		head = createRandomLinkedList(size, 1, head);
 
 		return head;
 	}
 
-	private LinkedListNode createRandomLinkedList(int reqdSize, int listSize,
-			LinkedListNode headNode) {
+	private ListNode createRandomLinkedList(int reqdSize, int listSize,
+			ListNode headNode) {
 
 		if (listSize == reqdSize)
 			return headNode;
@@ -40,14 +40,14 @@ public class LinkList {
 
 		Random rand = new Random();
 
-		LinkedListNode newNode = new LinkedListNode(rand.nextInt(10));
+		ListNode newNode = new ListNode(rand.nextInt(10));
 		newNode.setNext(headNode);
 
 		return createRandomLinkedList(reqdSize, listSize, newNode);
 
 	}
 
-	public void addNode(LinkedListNode newNode) {
+	public void addNode(ListNode newNode) {
 
 		if (this.isEmpty()) {
 			head = newNode;
@@ -66,7 +66,7 @@ public class LinkList {
 
 	public void printLinkedList() {
 
-		LinkedListNode node = this.head;
+		ListNode node = this.head;
 		System.out.print("Linked List Elements In Order : ");
 		while (node != null) {
 			System.out.print(node.getValue() + " ");

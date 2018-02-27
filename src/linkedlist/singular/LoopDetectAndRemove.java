@@ -1,6 +1,6 @@
 package linkedlist.singular;
 
-import util.linkedlist.LinkedListNode;
+import util.linkedlist.ListNode;
 
 /*
  * This method is also dependent on Floyd’s Cycle detection algorithm.
@@ -14,15 +14,15 @@ import util.linkedlist.LinkedListNode;
 public class LoopDetectAndRemove {
 
 	public static void main(String[] args) {
-		LinkedListNode head = new LinkedListNode().getLinkedList(5);
+		ListNode head = new ListNode().getLinkedList(5);
 		head.printLinkedList();
 
-		LinkedListNode headcopy = head;
+		ListNode headcopy = head;
 
 		while (headcopy.getNext() != null)
 			headcopy = headcopy.getNext();
 
-		LinkedListNode tail = headcopy;
+		ListNode tail = headcopy;
 
 		tail.setNext(head.getNext().getNext().getNext());
 
@@ -32,11 +32,11 @@ public class LoopDetectAndRemove {
 
 	}
 
-	private static void removeLoop(LinkedListNode head) {
+	private static void removeLoop(ListNode head) {
 
-		LinkedListNode slow = head;
+		ListNode slow = head;
 
-		LinkedListNode fast = head.getNext();
+		ListNode fast = head.getNext();
 
 		while (slow != fast) {
 			slow = slow.getNext();

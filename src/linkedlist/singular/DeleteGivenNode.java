@@ -1,16 +1,16 @@
 package linkedlist.singular;
 
-import util.linkedlist.LinkedListNode;
+import util.linkedlist.ListNode;
 
 public class DeleteGivenNode {
 
 	public static void main(String[] args) {
 
-		LinkedListNode node = (new LinkedListNode()).getLinkedList(10);
+		ListNode node = (new ListNode()).getLinkedList(10);
 
 		node.printLinkedList();
 
-		LinkedListNode givenNode = NthNodeInLinkedList.getNthElement(node, 5);
+		ListNode givenNode = NthNodeInLinkedList.getNthElement(node, 5);
 		System.out.println("Node to delete " + givenNode.getValue());
 
 		deleteGivenNode(givenNode);
@@ -18,7 +18,7 @@ public class DeleteGivenNode {
 
 	}
 
-	private static void deleteGivenNode(LinkedListNode givenNode) {
+	private static void deleteGivenNode(ListNode givenNode) {
 
 		givenNode.setValue(givenNode.getNext().getValue());
 		givenNode.setNext(givenNode.getNext().getNext());

@@ -1,7 +1,7 @@
 package linkedlist.singular;
 
 import util.linkedlist.LinkList;
-import util.linkedlist.LinkedListNode;
+import util.linkedlist.ListNode;
 
 public class OddEvenSegregate {
 
@@ -9,17 +9,17 @@ public class OddEvenSegregate {
 
 		LinkList list = new LinkList();
 
-		list.addNode(new LinkedListNode(6));
-		list.addNode(new LinkedListNode(4));
+		list.addNode(new ListNode(6));
+		list.addNode(new ListNode(4));
 		// list.addNode(new LinkedListNode(1));
-		list.addNode(new LinkedListNode(2));
+		list.addNode(new ListNode(2));
 		// list.addNode(new LinkedListNode(1));
 
 		// 0 4 3 1 9 9 9 6 2 1 - not working
 
-		LinkedListNode head = list.getHead();
+		ListNode head = list.getHead();
 
-		head = new LinkedListNode().getLinkedList(10);
+		head = new ListNode().getLinkedList(10);
 
 		head.printLinkedList();
 
@@ -27,11 +27,11 @@ public class OddEvenSegregate {
 		head.printLinkedList();
 	}
 
-	private static LinkedListNode segregateOddEven(LinkedListNode head) {
+	private static ListNode segregateOddEven(ListNode head) {
 
-		LinkedListNode headCopy = head;
+		ListNode headCopy = head;
 
-		LinkedListNode tail = null;
+		ListNode tail = null;
 
 		while (headCopy.getNext() != null) {
 			headCopy = headCopy.getNext();
@@ -39,12 +39,12 @@ public class OddEvenSegregate {
 
 		tail = headCopy;
 
-		LinkedListNode tailCopy = tail;
+		ListNode tailCopy = tail;
 		headCopy = head;
 
 		while ((headCopy.getValue() & 1) == 0 && headCopy != tail) {
 
-			LinkedListNode temp = headCopy;
+			ListNode temp = headCopy;
 			headCopy = headCopy.getNext();
 			temp.setNext(null);
 
@@ -59,7 +59,7 @@ public class OddEvenSegregate {
 		while (headCopy != tail && headCopy.getNext() != tail) {
 			if (((headCopy.getNext().getValue() & 1) == 0)) {
 
-				LinkedListNode temp = headCopy.getNext();
+				ListNode temp = headCopy.getNext();
 				headCopy.setNext(headCopy.getNext().getNext());
 				temp.setNext(null);
 				tailCopy.setNext(temp);

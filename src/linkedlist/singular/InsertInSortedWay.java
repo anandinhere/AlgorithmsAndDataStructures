@@ -1,7 +1,7 @@
 package linkedlist.singular;
 
 import util.linkedlist.LinkList;
-import util.linkedlist.LinkedListNode;
+import util.linkedlist.ListNode;
 
 public class InsertInSortedWay {
 
@@ -9,10 +9,10 @@ public class InsertInSortedWay {
 
 		LinkList list = new LinkList();
 
-		list.addNode(new LinkedListNode(0));
-		list.addNode(new LinkedListNode(1));
-		list.addNode(new LinkedListNode(2));
-		list.addNode(new LinkedListNode(5));
+		list.addNode(new ListNode(0));
+		list.addNode(new ListNode(1));
+		list.addNode(new ListNode(2));
+		list.addNode(new ListNode(5));
 
 		list.printLinkedList();
 
@@ -22,14 +22,14 @@ public class InsertInSortedWay {
 
 	private static void addInSortedWay(LinkList list, int i) {
 
-		LinkedListNode head = list.getHead();
+		ListNode head = list.getHead();
 
 		while (head.getNext() != null) {
 
-			LinkedListNode next = head.getNext();
+			ListNode next = head.getNext();
 			if (i >= head.getValue() && i <= next.getValue()) {
 
-				LinkedListNode newNode = new LinkedListNode(i);
+				ListNode newNode = new ListNode(i);
 				newNode.setNext(next);
 				head.setNext(newNode);
 
@@ -38,7 +38,7 @@ public class InsertInSortedWay {
 			head = head.getNext();
 		}
 
-		head.setNext(new LinkedListNode(i));
+		head.setNext(new ListNode(i));
 
 	}
 }

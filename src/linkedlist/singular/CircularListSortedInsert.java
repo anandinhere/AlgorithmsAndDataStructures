@@ -1,28 +1,28 @@
 package linkedlist.singular;
 
 import util.linkedlist.LinkList;
-import util.linkedlist.LinkedListNode;
+import util.linkedlist.ListNode;
 
 public class CircularListSortedInsert {
 	public static void main(String[] args) {
 
 		LinkList list = new LinkList();
 
-		list.addNode(new LinkedListNode(0));
-		list.addNode(new LinkedListNode(1));
-		list.addNode(new LinkedListNode(2));
-		list.addNode(new LinkedListNode(5));
+		list.addNode(new ListNode(0));
+		list.addNode(new ListNode(1));
+		list.addNode(new ListNode(2));
+		list.addNode(new ListNode(5));
 
-		LinkedListNode head = list.getHead();
+		ListNode head = list.getHead();
 
 		head.printLinkedList();
-		LinkedListNode headCopy = head;
+		ListNode headCopy = head;
 
 		while (headCopy.getNext() != null) {
 			headCopy = headCopy.getNext();
 		}
 
-		LinkedListNode tail = headCopy;
+		ListNode tail = headCopy;
 
 		tail.setNext(head);
 
@@ -30,32 +30,32 @@ public class CircularListSortedInsert {
 
 	}
 
-	private static LinkedListNode circularInsert(LinkedListNode head,
-			LinkedListNode tail, int i) {
+	private static ListNode circularInsert(ListNode head,
+			ListNode tail, int i) {
 
 		if (head == null) {
-			return new LinkedListNode(i);
+			return new ListNode(i);
 		}
 
 		if (i < head.getValue()) {
 
-			LinkedListNode newHead = new LinkedListNode(i);
+			ListNode newHead = new ListNode(i);
 			newHead.setNext(head);
 			tail.setNext(newHead);
 			return newHead;
 
 		} else if (i > tail.getValue()) {
-			LinkedListNode newTail = new LinkedListNode(i);
+			ListNode newTail = new ListNode(i);
 			tail.setNext(newTail);
 			newTail.setNext(head);
 			return head;
 		} else {
-			LinkedListNode headCopy = head;
+			ListNode headCopy = head;
 			while (headCopy != tail) {
 
 				if (i < headCopy.getNext().getValue()) {
-					LinkedListNode temp = headCopy.getNext();
-					headCopy.setNext(new LinkedListNode(i));
+					ListNode temp = headCopy.getNext();
+					headCopy.setNext(new ListNode(i));
 					headCopy.getNext().setNext(temp);
 				}
 

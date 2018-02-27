@@ -2,36 +2,36 @@ package util.linkedlist;
 
 import java.util.Random;
 
-public class LinkedListNode {
+public class ListNode {
 
-	private LinkedListNode next;
-	private LinkedListNode previous;
+	public ListNode next;
+	public ListNode previous;
 
-	private LinkedListNode random;
+	private ListNode random;
 
-	public LinkedListNode getRandom() {
+	public ListNode getRandom() {
 		return random;
 	}
 
-	public void setRandom(LinkedListNode random) {
+	public void setRandom(ListNode random) {
 		this.random = random;
 	}
 
-	private int value;
+	public int value;
 
-	public LinkedListNode getNext() {
+	public ListNode getNext() {
 		return next;
 	}
 
-	public void setNext(LinkedListNode next) {
+	public void setNext(ListNode next) {
 		this.next = next;
 	}
 
-	public LinkedListNode getPrevious() {
+	public ListNode getPrevious() {
 		return previous;
 	}
 
-	public void setPrevious(LinkedListNode previous) {
+	public void setPrevious(ListNode previous) {
 		this.previous = previous;
 	}
 
@@ -43,25 +43,25 @@ public class LinkedListNode {
 		this.value = value;
 	}
 
-	public LinkedListNode() {
+	public ListNode() {
 
 	}
 
-	public LinkedListNode(int value) {
+	public ListNode(int value) {
 		this.value = value;
 	}
 
-	public LinkedListNode getLinkedList(int size) {
+	public ListNode getLinkedList(int size) {
 
 		if (size == 0) {
 			return null;
 		}
-		return createRandomLinkedList(size, 1, new LinkedListNode(1));
+		return createRandomLinkedList(size, 1, new ListNode(1));
 	}
 
 	public void printLinkedList() {
 
-		LinkedListNode node = this;
+		ListNode node = this;
 		System.out.print("Linked List Element In Order - ");
 		while (node != null) {
 			System.out.print(node.value + " ");
@@ -71,8 +71,8 @@ public class LinkedListNode {
 		System.out.println();
 	}
 
-	private LinkedListNode createRandomLinkedList(int reqdSize, int listSize,
-			LinkedListNode headNode) {
+	private ListNode createRandomLinkedList(int reqdSize, int listSize,
+			ListNode headNode) {
 
 		if (listSize == reqdSize)
 			return headNode;
@@ -80,7 +80,7 @@ public class LinkedListNode {
 
 		Random rand = new Random();
 
-		LinkedListNode newNode = new LinkedListNode(rand.nextInt(10));
+		ListNode newNode = new ListNode(rand.nextInt(10));
 		newNode.next = headNode;
 
 		return createRandomLinkedList(reqdSize, listSize, newNode);
@@ -89,7 +89,7 @@ public class LinkedListNode {
 
 	public int getSize() {
 		int size = 0;
-		LinkedListNode temp = this;
+		ListNode temp = this;
 		while (temp != null) {
 			size++;
 			temp = temp.getNext();
@@ -99,7 +99,7 @@ public class LinkedListNode {
 	}
 
 	public static void main(String[] args) {
-		LinkedListNode test = (new LinkedListNode()).getLinkedList(10);
+		ListNode test = (new ListNode()).getLinkedList(10);
 
 		test.printLinkedList();
 	}

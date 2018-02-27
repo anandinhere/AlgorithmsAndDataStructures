@@ -1,25 +1,25 @@
 package linkedlist.singular;
 
-import util.linkedlist.LinkedListNode;
+import util.linkedlist.ListNode;
 
 public class RotateLinkedList {
 	public static void main(String[] args) {
-		LinkedListNode head = new LinkedListNode().getLinkedList(10);
+		ListNode head = new ListNode().getLinkedList(10);
 		head.printLinkedList();
 		head = rotateList(head, 4);
 
 		head.printLinkedList();
 	}
 
-	private static LinkedListNode rotateList(LinkedListNode head, int k) {
+	private static ListNode rotateList(ListNode head, int k) {
 
-		LinkedListNode headCopy = head;
+		ListNode headCopy = head;
 
 		while (headCopy.getNext() != null) {
 			headCopy = headCopy.getNext();
 		}
 
-		LinkedListNode tail = headCopy;
+		ListNode tail = headCopy;
 
 		headCopy = head;
 
@@ -27,7 +27,7 @@ public class RotateLinkedList {
 			headCopy = headCopy.getNext();
 		}
 
-		LinkedListNode newHead = headCopy.getNext();
+		ListNode newHead = headCopy.getNext();
 		headCopy.setNext(null);
 
 		tail.setNext(head);

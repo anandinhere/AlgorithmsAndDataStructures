@@ -1,26 +1,26 @@
 package linkedlist.singular;
 
 import util.linkedlist.LinkList;
-import util.linkedlist.LinkedListNode;
+import util.linkedlist.ListNode;
 
 public class IdenticalLists {
 	public static void main(String[] args) {
 		LinkList listA = new LinkList();
 
-		listA.addNode(new LinkedListNode(2));
-		listA.addNode(new LinkedListNode(4));
-		listA.addNode(new LinkedListNode(6));
-		listA.addNode(new LinkedListNode(7));
-		listA.addNode(new LinkedListNode(8));
-		listA.addNode(new LinkedListNode(10));
+		listA.addNode(new ListNode(2));
+		listA.addNode(new ListNode(4));
+		listA.addNode(new ListNode(6));
+		listA.addNode(new ListNode(7));
+		listA.addNode(new ListNode(8));
+		listA.addNode(new ListNode(10));
 
 		LinkList listB = new LinkList();
 
-		listB.addNode(new LinkedListNode(2));
-		listB.addNode(new LinkedListNode(4));
-		listB.addNode(new LinkedListNode(6));
-		listB.addNode(new LinkedListNode(7));
-		listB.addNode(new LinkedListNode(8));
+		listB.addNode(new ListNode(2));
+		listB.addNode(new ListNode(4));
+		listB.addNode(new ListNode(6));
+		listB.addNode(new ListNode(7));
+		listB.addNode(new ListNode(8));
 
 		listA.printLinkedList();
 		listB.printLinkedList();
@@ -29,8 +29,8 @@ public class IdenticalLists {
 
 	}
 
-	private static boolean checkIfIdentical(LinkedListNode head1,
-			LinkedListNode head2) {
+	private static boolean checkIfIdentical(ListNode head1,
+			ListNode head2) {
 
 		while (head1 != null && head2 != null) {
 			if (head1.getValue() != head2.getValue())

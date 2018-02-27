@@ -4,7 +4,7 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 
-import util.linkedlist.LinkedListNode;
+import util.linkedlist.ListNode;
 
 /*
  * References:
@@ -19,7 +19,7 @@ import util.linkedlist.LinkedListNode;
 public class LoopDetect {
 
 	public static void main(String[] args) {
-		LinkedListNode node = (new LinkedListNode()).getLinkedList(10);
+		ListNode node = (new ListNode()).getLinkedList(10);
 		node.printLinkedList();
 
 		boolean hasLoop = checkForLoop(node);
@@ -29,8 +29,8 @@ public class LoopDetect {
 
 		BufferedReader input = new BufferedReader(new InputStreamReader(
 				System.in));
-		LinkedListNode nodeA = null;
-		LinkedListNode nodeB = null;
+		ListNode nodeA = null;
+		ListNode nodeB = null;
 
 		try {
 			System.out.println("Enter nodeA position");
@@ -57,10 +57,10 @@ public class LoopDetect {
 
 	}
 
-	private static boolean checkForLoop(LinkedListNode node) {
+	private static boolean checkForLoop(ListNode node) {
 		boolean hasloop = false;
-		LinkedListNode slow = node;
-		LinkedListNode fast = node;
+		ListNode slow = node;
+		ListNode fast = node;
 
 		while (fast.getNext() != null && fast.getNext().getNext() != null) {
 

@@ -1,18 +1,18 @@
 package linkedlist.singular;
 
-import util.linkedlist.LinkedListNode;
+import util.linkedlist.ListNode;
 
 public class PrintAlternateFwdAndReverse {
 
 	public static void main(String[] args) {
 
-		LinkedListNode list = new LinkedListNode().getLinkedList(10);
+		ListNode list = new ListNode().getLinkedList(10);
 		list.printLinkedList();
 		printAlternate(list);
 
 	}
 
-	private static void printAlternate(LinkedListNode node) {
+	private static void printAlternate(ListNode node) {
 
 		if (node == null)
 			return;

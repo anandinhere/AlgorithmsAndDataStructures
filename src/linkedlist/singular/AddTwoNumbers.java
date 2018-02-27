@@ -1,6 +1,6 @@
 package linkedlist.singular;
 
-import util.linkedlist.LinkedListNode;
+import util.linkedlist.ListNode;
 
 //quotient = 3 / 2;
 //remainder = 3 % 2;
@@ -9,8 +9,8 @@ import util.linkedlist.LinkedListNode;
 
 public class AddTwoNumbers {
 	public static void main(String[] args) {
-		LinkedListNode a = new LinkedListNode().getLinkedList(4);
-		LinkedListNode b = new LinkedListNode().getLinkedList(4);
+		ListNode a = new ListNode().getLinkedList(4);
+		ListNode b = new ListNode().getLinkedList(4);
 
 		a.printLinkedList();
 		b.printLinkedList();
@@ -18,7 +18,7 @@ public class AddTwoNumbers {
 		int finalCarry = addNumbers(a, b);
 
 		if (finalCarry > 0) {
-			LinkedListNode result = new LinkedListNode(finalCarry);
+			ListNode result = new ListNode(finalCarry);
 			result.setNext(a);
 			result.printLinkedList();
 		} else {
@@ -27,7 +27,7 @@ public class AddTwoNumbers {
 		}
 	}
 
-	private static int addNumbers(LinkedListNode a, LinkedListNode b) {
+	private static int addNumbers(ListNode a, ListNode b) {
 
 		if (a.getNext() == null) {
 			int aval = a.getValue();

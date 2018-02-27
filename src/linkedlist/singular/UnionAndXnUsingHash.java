@@ -4,26 +4,26 @@ import java.util.HashSet;
 import java.util.Hashtable;
 
 import util.linkedlist.LinkList;
-import util.linkedlist.LinkedListNode;
+import util.linkedlist.ListNode;
 
 public class UnionAndXnUsingHash {
 
 	public static void main(String[] args) {
 
-		LinkedListNode listA = new LinkedListNode().getLinkedList(5);
-		LinkedListNode listB = new LinkedListNode().getLinkedList(5);
+		ListNode listA = new ListNode().getLinkedList(5);
+		ListNode listB = new ListNode().getLinkedList(5);
 		listA.printLinkedList();
 		listB.printLinkedList();
 
-		LinkedListNode union = getUnion(listA, listB);
+		ListNode union = getUnion(listA, listB);
 		union.printLinkedList();
-		LinkedListNode xn = getXn(listA, listB);
+		ListNode xn = getXn(listA, listB);
 		xn.printLinkedList();
 
 	}
 
-	private static LinkedListNode getXn(LinkedListNode listA,
-			LinkedListNode listB) {
+	private static ListNode getXn(ListNode listA,
+			ListNode listB) {
 
 		HashSet<Integer> hash = new HashSet<>();
 		while (listA != null) {
@@ -34,7 +34,7 @@ public class UnionAndXnUsingHash {
 		LinkList xn = new LinkList();
 		while (listB != null) {
 			if (hash.contains(listB.getValue())) {
-				xn.addNode(new LinkedListNode(listB.getValue()));
+				xn.addNode(new ListNode(listB.getValue()));
 			}
 			listB = listB.getNext();
 		}
@@ -42,8 +42,8 @@ public class UnionAndXnUsingHash {
 		return xn.getHead();
 	}
 
-	private static LinkedListNode getUnion(LinkedListNode listA,
-			LinkedListNode listB) {
+	private static ListNode getUnion(ListNode listA,
+			ListNode listB) {
 
 		HashSet<Integer> hash = new HashSet<>();
 
@@ -52,7 +52,7 @@ public class UnionAndXnUsingHash {
 		while (listA != null && listB != null) {
 			if (!hash.contains(listA.getValue())) {
 
-				union.addNode(new LinkedListNode(listA.getValue()));
+				union.addNode(new ListNode(listA.getValue()));
 				hash.add(listA.getValue());
 				listA = listA.getNext();
 
@@ -61,7 +61,7 @@ public class UnionAndXnUsingHash {
 				listA = listA.getNext();
 			}
 			if (!hash.contains(listB.getValue())) {
-				union.addNode(new LinkedListNode(listB.getValue()));
+				union.addNode(new ListNode(listB.getValue()));
 				hash.add(listB.getValue());
 				listB = listB.getNext();
 			} else {
@@ -69,13 +69,13 @@ public class UnionAndXnUsingHash {
 			}
 		}
 
-		LinkedListNode notEmpty = listA != null ? listA
+		ListNode notEmpty = listA != null ? listA
 				: (listB != null ? listB : null);
 
 		while (notEmpty != null) {
 
 			if (!hash.contains(notEmpty.getValue())) {
-				union.addNode(new LinkedListNode(notEmpty.getValue()));
+				union.addNode(new ListNode(notEmpty.getValue()));
 				hash.add(notEmpty.getValue());
 				notEmpty = notEmpty.getNext();
 			} else {

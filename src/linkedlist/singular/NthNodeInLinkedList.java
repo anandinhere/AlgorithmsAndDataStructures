@@ -4,7 +4,7 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 
-import util.linkedlist.LinkedListNode;
+import util.linkedlist.ListNode;
 
 public class NthNodeInLinkedList {
 
@@ -17,18 +17,18 @@ public class NthNodeInLinkedList {
 
 		int size = Integer.parseInt(input.readLine());
 
-		LinkedListNode head = (new LinkedListNode()).getLinkedList(size);
+		ListNode head = (new ListNode()).getLinkedList(size);
 		head.printLinkedList();
 
 		System.out.println("Enter position to find");
 		int position = Integer.parseInt(input.readLine());
 
-		LinkedListNode node =  getNthElement(head, position);
+		ListNode node =  getNthElement(head, position);
 		System.out.println(node.getValue());
 
 	}
 
-	public static LinkedListNode getNthElement(LinkedListNode head, int n) {
+	public static ListNode getNthElement(ListNode head, int n) {
 		int position = 1;
 
 		while (head != null && position <= n) {

@@ -1,7 +1,7 @@
 package linkedlist.singular;
 
 import util.linkedlist.LinkList;
-import util.linkedlist.LinkedListNode;
+import util.linkedlist.ListNode;
 
 public class IntersectionOfSortedLinkedLists {
 
@@ -9,25 +9,25 @@ public class IntersectionOfSortedLinkedLists {
 
 		LinkList listA = new LinkList();
 
-		listA.addNode(new LinkedListNode(2));
-		listA.addNode(new LinkedListNode(4));
-		listA.addNode(new LinkedListNode(6));
-		listA.addNode(new LinkedListNode(7));
-		listA.addNode(new LinkedListNode(8));
-		listA.addNode(new LinkedListNode(10));
-		listA.addNode(new LinkedListNode(13));
-		listA.addNode(new LinkedListNode(14));
+		listA.addNode(new ListNode(2));
+		listA.addNode(new ListNode(4));
+		listA.addNode(new ListNode(6));
+		listA.addNode(new ListNode(7));
+		listA.addNode(new ListNode(8));
+		listA.addNode(new ListNode(10));
+		listA.addNode(new ListNode(13));
+		listA.addNode(new ListNode(14));
 
 		LinkList listB = new LinkList();
 
-		listB.addNode(new LinkedListNode(2));
-		listB.addNode(new LinkedListNode(3));
-		listB.addNode(new LinkedListNode(4));
-		listB.addNode(new LinkedListNode(6));
-		listB.addNode(new LinkedListNode(6));
-		listB.addNode(new LinkedListNode(11));
-		listB.addNode(new LinkedListNode(13));
-		listB.addNode(new LinkedListNode(14));
+		listB.addNode(new ListNode(2));
+		listB.addNode(new ListNode(3));
+		listB.addNode(new ListNode(4));
+		listB.addNode(new ListNode(6));
+		listB.addNode(new ListNode(6));
+		listB.addNode(new ListNode(11));
+		listB.addNode(new ListNode(13));
+		listB.addNode(new ListNode(14));
 		
 		listA.printLinkedList();
 		listB.printLinkedList();
@@ -39,14 +39,14 @@ public class IntersectionOfSortedLinkedLists {
 
 	}
 
-	private static LinkList getIntersectionList(LinkedListNode listA,
-			LinkedListNode listB) {
+	private static LinkList getIntersectionList(ListNode listA,
+			ListNode listB) {
 
 		LinkList common = new LinkList();
 
 		while (listA != null || listB != null) {
 			if (listA.getValue() == listB.getValue()) {
-				common.addNode(new LinkedListNode(listA.getValue()));
+				common.addNode(new ListNode(listA.getValue()));
 				listA = listA.getNext();
 				listB = listB.getNext();
 

@@ -1,18 +1,18 @@
 package linkedlist.singular;
 
-import util.linkedlist.LinkedListNode;
+import util.linkedlist.ListNode;
 
 public class SwapPairwiseOnlyLinks {
 	public static void main(String[] args) {
 
-		LinkedListNode head = new LinkedListNode().getLinkedList(10);
+		ListNode head = new ListNode().getLinkedList(10);
 		head.printLinkedList();
 
 		head = pairwiseSwapLinks(head);
 		head.printLinkedList();
 	}
 
-	private static LinkedListNode pairwiseSwapLinks(LinkedListNode head) {
+	private static ListNode pairwiseSwapLinks(ListNode head) {
 
 		if (head == null)
 			return null;
@@ -20,10 +20,10 @@ public class SwapPairwiseOnlyLinks {
 			return head;
 		}
 
-		LinkedListNode first = head;
-		LinkedListNode second = head.getNext();
+		ListNode first = head;
+		ListNode second = head.getNext();
 
-		LinkedListNode third = pairwiseSwapLinks(head.getNext().getNext());
+		ListNode third = pairwiseSwapLinks(head.getNext().getNext());
 
 		second.setNext(first);
 		first.setNext(third);

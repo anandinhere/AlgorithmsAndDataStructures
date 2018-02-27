@@ -1,25 +1,25 @@
 package linkedlist.singular;
 
-import util.linkedlist.LinkedListNode;
+import util.linkedlist.ListNode;
 
 public class ReverseAlternateAndAppendAtEnd {
 
 	public static void main(String[] args) {
-		LinkedListNode head = new LinkedListNode().getLinkedList(10);
+		ListNode head = new ListNode().getLinkedList(10);
 		head.printLinkedList();
 		reverseAlternateAndAppendAtEnd(head);
 
 	}
 
-	private static void reverseAlternateAndAppendAtEnd(LinkedListNode head) {
+	private static void reverseAlternateAndAppendAtEnd(ListNode head) {
 
-		LinkedListNode altNodes = null;
+		ListNode altNodes = null;
 
-		LinkedListNode headCopy = head;
+		ListNode headCopy = head;
 
 		while (headCopy != null && headCopy.getNext() != null) {
-			LinkedListNode secNode = headCopy.getNext();
-			LinkedListNode thirdNode = headCopy.getNext().getNext();
+			ListNode secNode = headCopy.getNext();
+			ListNode thirdNode = headCopy.getNext().getNext();
 
 			secNode.setNext(altNodes);
 			altNodes = secNode;
@@ -47,18 +47,18 @@ public class ReverseAlternateAndAppendAtEnd {
 
 	}
 
-	private static LinkedListNode reverse(LinkedListNode head) {
+	private static ListNode reverse(ListNode head) {
 		if (head == null)
 			return null;
 
 		if (head.getNext() == null)
 			return head;
 
-		LinkedListNode second = head.getNext();
+		ListNode second = head.getNext();
 
 		head.setNext(null);
 
-		LinkedListNode reverseHead = reverse(second);
+		ListNode reverseHead = reverse(second);
 
 		second.setNext(head);
 

@@ -1,7 +1,7 @@
 package linkedlist.singular;
 
 import util.linkedlist.LinkList;
-import util.linkedlist.LinkedListNode;
+import util.linkedlist.ListNode;
 
 public class SortList0s1s2s {
 
@@ -9,17 +9,17 @@ public class SortList0s1s2s {
 
 		LinkList list = new LinkList();
 
-		list.addNode(new LinkedListNode(0));
-		list.addNode(new LinkedListNode(0));
-		list.addNode(new LinkedListNode(2));
-		list.addNode(new LinkedListNode(1));
-		list.addNode(new LinkedListNode(2));
-		list.addNode(new LinkedListNode(0));
-		list.addNode(new LinkedListNode(1));
-		list.addNode(new LinkedListNode(2));
-		list.addNode(new LinkedListNode(2));
-		list.addNode(new LinkedListNode(0));
-		list.addNode(new LinkedListNode(1));
+		list.addNode(new ListNode(0));
+		list.addNode(new ListNode(0));
+		list.addNode(new ListNode(2));
+		list.addNode(new ListNode(1));
+		list.addNode(new ListNode(2));
+		list.addNode(new ListNode(0));
+		list.addNode(new ListNode(1));
+		list.addNode(new ListNode(2));
+		list.addNode(new ListNode(2));
+		list.addNode(new ListNode(0));
+		list.addNode(new ListNode(1));
 
 		list.getHead().printLinkedList();
 
@@ -28,10 +28,10 @@ public class SortList0s1s2s {
 		list.getHead().printLinkedList();
 	}
 
-	private static void sort0s1s2s(LinkedListNode head) {
+	private static void sort0s1s2s(ListNode head) {
 		int zeros = 0, ones = 0, twos = 0;
 
-		LinkedListNode headCopy = head;
+		ListNode headCopy = head;
 		while (headCopy != null) {
 			if (headCopy.getValue() == 0) {
 				zeros++;

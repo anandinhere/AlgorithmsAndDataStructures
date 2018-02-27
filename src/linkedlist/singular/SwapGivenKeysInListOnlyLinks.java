@@ -1,7 +1,7 @@
 package linkedlist.singular;
 
 import util.linkedlist.LinkList;
-import util.linkedlist.LinkedListNode;
+import util.linkedlist.ListNode;
 
 public class SwapGivenKeysInListOnlyLinks {
 
@@ -9,30 +9,30 @@ public class SwapGivenKeysInListOnlyLinks {
 
 		LinkList list = new LinkList();
 
-		list.addNode(new LinkedListNode(0));
-		list.addNode(new LinkedListNode(1));
-		list.addNode(new LinkedListNode(2));
-		list.addNode(new LinkedListNode(3));
-		list.addNode(new LinkedListNode(4));
-		list.addNode(new LinkedListNode(5));
-		list.addNode(new LinkedListNode(6));
+		list.addNode(new ListNode(0));
+		list.addNode(new ListNode(1));
+		list.addNode(new ListNode(2));
+		list.addNode(new ListNode(3));
+		list.addNode(new ListNode(4));
+		list.addNode(new ListNode(5));
+		list.addNode(new ListNode(6));
 
 		list.printLinkedList();
 
-		LinkedListNode head = swapKeysOnlyLinks(list.getHead(), 1, 5);
+		ListNode head = swapKeysOnlyLinks(list.getHead(), 1, 5);
 
 		head.printLinkedList();
 
 	}
 
-	private static LinkedListNode swapKeysOnlyLinks(LinkedListNode head, int i,
+	private static ListNode swapKeysOnlyLinks(ListNode head, int i,
 			int j) {
 
 		if (i == head.getValue() && j == head.getValue()) {
 			return head;
 		}
 
-		LinkedListNode headCopy = head;
+		ListNode headCopy = head;
 		if (i == head.getValue() || j == head.getValue()) {
 
 			if (i == headCopy.getValue()) {
@@ -41,12 +41,12 @@ public class SwapGivenKeysInListOnlyLinks {
 					headCopy = headCopy.getNext();
 				}
 
-				LinkedListNode jprev = headCopy;
-				LinkedListNode jnode = headCopy.getNext();
-				LinkedListNode jnext = headCopy.getNext().getNext();
+				ListNode jprev = headCopy;
+				ListNode jnode = headCopy.getNext();
+				ListNode jnext = headCopy.getNext().getNext();
 
-				LinkedListNode inext = head.getNext();
-				LinkedListNode inode = head;
+				ListNode inext = head.getNext();
+				ListNode inode = head;
 
 				jprev.setNext(inode);
 				jprev.getNext().setNext(jnext);
@@ -65,18 +65,18 @@ public class SwapGivenKeysInListOnlyLinks {
 				headCopy = headCopy.getNext();
 			}
 
-			LinkedListNode jprev = headCopy;
-			LinkedListNode jnode = headCopy.getNext();
-			LinkedListNode jnext = headCopy.getNext().getNext();
+			ListNode jprev = headCopy;
+			ListNode jnode = headCopy.getNext();
+			ListNode jnext = headCopy.getNext().getNext();
 
 			headCopy = head;
 
 			while (headCopy.getNext().getValue() != i) {
 				headCopy = headCopy.getNext();
 			}
-			LinkedListNode iprev = headCopy;
-			LinkedListNode inode = headCopy.getNext();
-			LinkedListNode inext = headCopy.getNext().getNext();
+			ListNode iprev = headCopy;
+			ListNode inode = headCopy.getNext();
+			ListNode inext = headCopy.getNext().getNext();
 
 			jprev.setNext(inode);
 			jprev.getNext().setNext(jnext);

@@ -1,30 +1,30 @@
 package linkedlist.singular;
 
-import util.linkedlist.LinkedListNode;
+import util.linkedlist.ListNode;
 
 public class ReverseLinkedList {
 
 	public static void main(String[] args) {
-		LinkedListNode node = new LinkedListNode().getLinkedList(10);
+		ListNode node = new ListNode().getLinkedList(10);
 		node.printLinkedList();
 
-		LinkedListNode reversed = reverseLinkedList(node);
+		ListNode reversed = reverseLinkedList(node);
 
 		System.out.println("hello");
 		reversed.printLinkedList();
 	}
 
-	private static LinkedListNode reverseLinkedList(LinkedListNode node) {
+	private static ListNode reverseLinkedList(ListNode node) {
 
 		if (node == null)
 			return null;
 		if (node.getNext() == null)
 			return node;
 
-		LinkedListNode secondNode = node.getNext();
+		ListNode secondNode = node.getNext();
 		node.setNext(null);
 
-		LinkedListNode head = reverseLinkedList(secondNode);
+		ListNode head = reverseLinkedList(secondNode);
 
 		secondNode.setNext(node);
 

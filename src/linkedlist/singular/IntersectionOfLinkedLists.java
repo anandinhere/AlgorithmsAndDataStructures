@@ -3,16 +3,16 @@ package linkedlist.singular;
 import java.util.LinkedList;
 
 import util.linkedlist.LinkList;
-import util.linkedlist.LinkedListNode;
+import util.linkedlist.ListNode;
 
 public class IntersectionOfLinkedLists {
 	public static void main(String[] args) {
 
-		LinkedListNode listHeadA = new LinkedListNode().getLinkedList(0);
+		ListNode listHeadA = new ListNode().getLinkedList(0);
 
-		LinkedListNode listHeadB = new LinkedListNode().getLinkedList(4);
+		ListNode listHeadB = new ListNode().getLinkedList(4);
 
-		LinkedListNode copyB = listHeadB;
+		ListNode copyB = listHeadB;
 
 		while (copyB.getNext() != null)
 			copyB = copyB.getNext();
@@ -25,7 +25,7 @@ public class IntersectionOfLinkedLists {
 		listHeadB.printLinkedList();
 
 		copyB = listHeadB;
-		LinkedListNode copyA = listHeadA;
+		ListNode copyA = listHeadA;
 
 		int sizeA = 0;
 		int sizeB = 0;

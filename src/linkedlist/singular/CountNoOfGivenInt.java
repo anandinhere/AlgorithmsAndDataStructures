@@ -1,12 +1,12 @@
 package linkedlist.singular;
 
-import util.linkedlist.LinkedListNode;
+import util.linkedlist.ListNode;
 
 public class CountNoOfGivenInt {
 
 	public static void main(String[] args) {
 
-		LinkedListNode node = (new LinkedListNode()).getLinkedList(40);
+		ListNode node = (new ListNode()).getLinkedList(40);
 
 		node.printLinkedList();
 
@@ -15,7 +15,7 @@ public class CountNoOfGivenInt {
 
 	}
 
-	private static int getNoOfInts(LinkedListNode node, int givenInt, int total) {
+	private static int getNoOfInts(ListNode node, int givenInt, int total) {
 
 		if (node.getValue() == givenInt) {
 			total++;

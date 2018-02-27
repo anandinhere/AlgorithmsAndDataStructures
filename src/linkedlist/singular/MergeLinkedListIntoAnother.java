@@ -1,22 +1,22 @@
 package linkedlist.singular;
 
-import util.linkedlist.LinkedListNode;
+import util.linkedlist.ListNode;
 
 public class MergeLinkedListIntoAnother {
 
 	public static void main(String[] args) {
 
-		LinkedListNode listA = new LinkedListNode().getLinkedList(10);
+		ListNode listA = new ListNode().getLinkedList(10);
 		listA.printLinkedList();
 
-		LinkedListNode listB = new LinkedListNode().getLinkedList(5);
+		ListNode listB = new ListNode().getLinkedList(5);
 		listB.printLinkedList();
 
 		mergeBintoA(listA, listB);
 		listA.printLinkedList();
 	}
 
-	private static void mergeBintoA(LinkedListNode listA, LinkedListNode listB) {
+	private static void mergeBintoA(ListNode listA, ListNode listB) {
 
 		if (listA == null || listB == null) {
 			return;
@@ -26,8 +26,8 @@ public class MergeLinkedListIntoAnother {
 			return;
 		}*/
 
-		LinkedListNode listA2ndNode = listA.getNext();
-		LinkedListNode listB2ndNode = listB.getNext();
+		ListNode listA2ndNode = listA.getNext();
+		ListNode listB2ndNode = listB.getNext();
 
 		listA.setNext(listB);
 

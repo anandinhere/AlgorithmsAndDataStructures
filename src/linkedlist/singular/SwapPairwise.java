@@ -1,6 +1,6 @@
 package linkedlist.singular;
 
-import util.linkedlist.LinkedListNode;
+import util.linkedlist.ListNode;
 
 
 //Key is to swap values instead of nodes
@@ -8,7 +8,7 @@ import util.linkedlist.LinkedListNode;
 public class SwapPairwise {
 
 	public static void main(String[] args) {
-		LinkedListNode head = new LinkedListNode().getLinkedList(9);
+		ListNode head = new ListNode().getLinkedList(9);
 
 		head.printLinkedList();
 
@@ -22,7 +22,7 @@ public class SwapPairwise {
 
 	}
 
-	private static void pairwiseswaprecursive(LinkedListNode head) {
+	private static void pairwiseswaprecursive(ListNode head) {
 
 		if (head == null || head.getNext() == null)
 			return;
@@ -35,7 +35,7 @@ public class SwapPairwise {
 
 	}
 
-	private static void pairwiseswaploop(LinkedListNode head) {
+	private static void pairwiseswaploop(ListNode head) {
 
 		while (head != null && head.getNext() != null) {
 
