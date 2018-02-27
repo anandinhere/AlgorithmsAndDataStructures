@@ -17,6 +17,8 @@ public class MergeSort {
 	/*
 	 * Intermediate arrays are combined to get final array. Unlike other sorting
 	 * algorithms mergesort returns a new array with sorted elements.
+	 * 
+	 * OR use a temporary array and copy elements from temp array to original array at the end of merge
 	 */
 
 	private static int[] mergeSort(int[] array, int i, int j) {
