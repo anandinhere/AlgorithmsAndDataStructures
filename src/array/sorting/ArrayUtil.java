@@ -15,7 +15,7 @@ public class ArrayUtil {
 		Random r = new Random();
 		while (list.size() < size) {
 
-			int next = r.nextInt(max + 1 - min) + min;
+			int next = r.nextInt(max - min + 1) + min;
 			if (!list.contains(next)) {
 				list.add(next);
 			}
