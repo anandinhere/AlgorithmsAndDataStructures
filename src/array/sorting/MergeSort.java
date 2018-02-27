@@ -5,7 +5,7 @@ import java.util.Arrays;
 public class MergeSort {
 
 	public static void main(String[] args) {
-		int[] array =  ArrayUtil.getRandArray(1, 6);
+		int[] array = ArrayUtil.getRandArray(1, 6);
 		ArrayUtil.printArray(array);
 
 		int[] res = mergeSort(array, 0, array.length - 1);
@@ -13,6 +13,11 @@ public class MergeSort {
 		System.out.println(Arrays.toString(res));
 
 	}
+	
+	/*
+	 * Intermediate arrays are combined to get final array. Unlike other sorting
+	 * algorithms mergesort returns a new array with sorted elements.
+	 */
 
 	private static int[] mergeSort(int[] array, int i, int j) {
 
