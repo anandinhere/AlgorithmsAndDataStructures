@@ -1,6 +1,5 @@
 package binarytree;
 
-import util.linkedlist.ListNode;
 import util.tree.TreeNode;
 
 public class TheGreatTreeListRecursionProblem {
@@ -9,49 +8,84 @@ public class TheGreatTreeListRecursionProblem {
 
 		TreeNode root = new TreeNode().getBasicTree();
 
-		ListNode head = makeList(root);
+		TreeNode head = makeList(root);
+
+		TreeNode temp = head;
+		while (true) {
+			printDoublyNode(temp);
+			temp = temp.right;
+			if (temp == head)
+				break;
+		}
+		System.out.println("**************");
 
 	}
+	
+	
 
-	private static ListNode makeList(TreeNode root) {
+	private static TreeNode makeList(TreeNode root) {
 		if (root == null)
 			return null;
 
-		ListNode head = null;
+		if (root.left == null && root.right == null) {
+			root.left = root;
+			root.right = root;
 
-		ListNode leftHead = makeList(root.left);
-		ListNode rightHead = makeList(root.right);
-
-		if (leftHead == null && rightHead == null) {
-			head = new ListNode();
-			head.value = root.key;
-			head.previous = head;
-			head.next = head;
-
-			return head;
+			return root;
 		}
 
-		head = new ListNode();
-		head.value = root.key;
+		TreeNode leftHead = makeList(root.left);
+		TreeNode rightHead = makeList(root.right);
+		
+		root.left = root;
+		root.right = root;
+		
+		leftHead = append(leftHead, root);
+		leftHead = append(leftHead, rightHead);
 
-		head = append(leftHead, head);
-		head = append(head, rightHead);
-
-		return head;
+		return leftHead;
 	}
 
-	private static ListNode append(ListNode leftHead, ListNode head) {
-
-		ListNode temp = leftHead;
-		while (temp.next != temp) {
-			temp = temp.next;
+	public static void printDoublyNode(TreeNode head) {
+		if (head == null) {
+			System.out.println("null");
+			return;
 		}
-		
-		head.next = temp.next;
-		temp.next=head;
-		head.previous = temp;
-		
 
-		return null;
+		if (head.left != null)
+			System.out.print("prev:" + head.left.key + "  ");
+		else
+			System.out.print("prev:" + "null" + "  ");
+
+		System.out.print("curr:" + head.key + "  ");
+
+		if (head.right != null)
+			System.out.print("right:" + head.right.key + "  ");
+		else
+			System.out.print("right:" + "null" + "  ");
+
+		System.out.println();
+
 	}
+
+
+	public static TreeNode append(TreeNode nodeA, TreeNode nodeB) {
+
+		if (nodeA == null)
+			return nodeB;
+		if (nodeB == null)
+			return nodeA;
+
+		TreeNode tailA = nodeA.left;
+		TreeNode tailB = nodeB.left;
+
+		tailA.right = nodeB;
+		nodeB.left = tailA;
+
+		tailB.right = nodeA;
+		nodeA.left = tailB;
+
+		return nodeA;
+	}
+
 }

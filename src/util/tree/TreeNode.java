@@ -49,16 +49,39 @@ public class TreeNode {
 		return root;
 
 	}
+	
+
+	public static TreeNode append(TreeNode nodeA, TreeNode nodeB) {
+
+		if (nodeA == null)
+			return nodeB;
+		if (nodeB == null)
+			return nodeA;
+
+		TreeNode tailA = nodeA.left;
+		TreeNode tailB = nodeB.left;
+
+		tailA.right = nodeB;
+		nodeB.left = tailA;
+
+		tailB.right = nodeA;
+		nodeA.left = tailB;
+
+		return nodeA;
+	}
 
 	public TreeNode getBasicTree() {
 		TreeNode node = new TreeNode(1);
 		node.left = new TreeNode(2);
-		node.left.left = new TreeNode(4);
+		node.right = new TreeNode(3);
+		
+		
+		/*node.left.left = new TreeNode(4);
 		node.left.right = new TreeNode(5);
 
-		node.right = new TreeNode(3);
+		
 		node.right.left = new TreeNode(6);
-		node.right.right = new TreeNode(7);
+		node.right.right = new TreeNode(7);*/
 
 		return node;
 
