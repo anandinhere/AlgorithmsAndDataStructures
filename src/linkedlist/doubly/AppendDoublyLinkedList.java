@@ -16,24 +16,24 @@ public class AppendDoublyLinkedList {
 		ListNode temp = null;
 
 		ListNode head = append(node1, node2);
-		temp = head;
-		while (temp != null) {
-			printDoublyNode(temp);
-			temp = temp.next;
-		}
-		System.out.println("**************");
+		printDoublyList(head);
 
 		head = append(head, node3);
-		temp = head;
-		while (temp != null) {
-			printDoublyNode(temp);
-			temp = temp.next;
-		}
-		System.out.println("**************");
+		printDoublyList(head);
 
 	}
 
-	private static void printDoublyNode(ListNode head) {
+	public static void printDoublyList(ListNode head) {
+		ListNode temp;
+		temp = head;
+		while (temp != null) {
+			printDoublyNode(temp);
+			temp = temp.next;
+		}
+		System.out.println("**************");
+	}
+
+	public static void printDoublyNode(ListNode head) {
 		if (head == null) {
 			System.out.println("null");
 			return;
@@ -55,7 +55,7 @@ public class AppendDoublyLinkedList {
 
 	}
 
-	private static ListNode append(ListNode nodeA, ListNode nodeB) {
+	public static ListNode append(ListNode nodeA, ListNode nodeB) {
 
 		if (nodeA == null)
 			return nodeB;

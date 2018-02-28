@@ -7,6 +7,9 @@ public class ListNode {
 	public ListNode next;
 	public ListNode previous;
 
+	public ListNode left;
+	public ListNode right;
+
 	private ListNode random;
 
 	public ListNode getRandom() {
