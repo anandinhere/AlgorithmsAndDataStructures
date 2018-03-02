@@ -37,9 +37,9 @@ public class SortedDLLtoBalancedBST {
 			return head;
 
 		ListNode mid = getMid(head, tail);
-		mid.left = convertDLLtoBST(head, mid.previous);
+		mid.previous = convertDLLtoBST(head, mid.previous);
 
-		mid.right = convertDLLtoBST(mid.next, tail);
+		mid.next = convertDLLtoBST(mid.next, tail);
 
 		return mid;
 	}

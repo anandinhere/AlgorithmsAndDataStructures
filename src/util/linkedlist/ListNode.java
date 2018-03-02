@@ -7,8 +7,9 @@ public class ListNode {
 	public ListNode next;
 	public ListNode previous;
 
-	public ListNode left;
-	public ListNode right;
+	public ListNode head;
+	public ListNode tail;
+	public int size = 0;
 
 	private ListNode random;
 
@@ -52,6 +53,48 @@ public class ListNode {
 
 	public ListNode(int value) {
 		this.value = value;
+	}
+
+	public void addDoublyNode(int value) {
+		if (size == 0) {
+			head = new ListNode(value);
+			tail = head;
+			size++;
+			return;
+		}
+		ListNode n = new ListNode(value);
+
+		tail.next = n;
+		n.previous = tail;
+		tail = n;
+		size++;
+	}
+
+	public void removeDoublyNode(ListNode node) {
+		if (head == tail) {
+			head = null;
+			size--;
+			return;
+		}
+
+		if (node == tail) {
+			tail = tail.previous;
+			tail.next = null;
+			size--;
+			return;
+		}
+
+		if (node == head) {
+			head = head.next;
+			head.previous = null;
+			size--;
+			return;
+		}
+
+		node.previous.next = node.next;
+		node.next.previous = node.previous;
+		size--;
+
 	}
 
 	public ListNode getLinkedList(int size) {
@@ -149,7 +192,7 @@ public class ListNode {
 	public static void printDoublyList(ListNode head) {
 
 		if (head == null) {
-			System.out.println("null");
+			System.out.println("END OF LIST");
 			return;
 		}
 
@@ -170,4 +213,5 @@ public class ListNode {
 		printDoublyList(head.next);
 
 	}
+
 }
