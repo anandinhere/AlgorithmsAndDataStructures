@@ -55,18 +55,31 @@ public class ListNode {
 		this.value = value;
 	}
 
-	public void addDoublyNode(int value) {
+	public void addDoublyNodeToTail(ListNode node) {
 		if (size == 0) {
-			head = new ListNode(value);
+			head = node;
 			tail = head;
 			size++;
 			return;
 		}
-		ListNode n = new ListNode(value);
 
-		tail.next = n;
-		n.previous = tail;
-		tail = n;
+		tail.next = node;
+		node.previous = tail;
+		tail = node;
+		size++;
+	}
+
+	public void addDoublyNodeToHead(ListNode node) {
+		if (size == 0) {
+			head = node;
+			tail = head;
+			size++;
+			return;
+		}
+
+		head.previous = node;
+		node.next = head;
+		head = node;
 		size++;
 	}
 
@@ -95,6 +108,16 @@ public class ListNode {
 		node.next.previous = node.previous;
 		size--;
 
+	}
+
+	public ListNode findDoublyNode(int value) {
+		ListNode temp = head;
+		while (temp != null) {
+			if (temp.value == value)
+				return temp;
+			temp = temp.next;
+		}
+		return null;
 	}
 
 	public ListNode getLinkedList(int size) {

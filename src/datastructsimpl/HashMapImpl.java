@@ -1,6 +1,6 @@
 package datastructsimpl;
 
-public class HashMap {
+public class HashMapImpl {
 
 	
 }
