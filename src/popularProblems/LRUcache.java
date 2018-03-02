@@ -1,6 +1,7 @@
 package popularProblems;
 
-import java.util.HashMap;
+import java.util.*;
+import java.util.Map.Entry;
 
 import util.linkedlist.ListNode;
 
@@ -20,11 +21,24 @@ public class LRUcache {
 
 		ListNode.printDoublyList(list.head);
 
-		list.removeDoublyNode(list.tail);
+		System.out.println(findInCache(6, lruCache).value);
+		System.out.println(findInCache(5, lruCache).value);
+		System.out.println(findInCache(3, lruCache).value);
+		System.out.println(findInCache(2, lruCache).value);
 
+		printLRUKeys();
+
+		System.out.println(findInCache(1, lruCache).value);
+		printLRUKeys();
 		ListNode.printDoublyList(list.head);
+	}
 
-		findInCache(1, lruCache);
+	private static void printLRUKeys() {
+		System.out.println("Cache");
+		for (Entry<Integer, ListNode> e : lruCache.entrySet()) {
+			System.out.println(e.getKey());
+		}
+		System.out.println("Cache");
 	}
 
 	private static ListNode findInCache(int i, HashMap<Integer, ListNode> lruCache) {
@@ -47,6 +61,7 @@ public class LRUcache {
 		ListNode node = list.findDoublyNode(i);
 		list.removeDoublyNode(node);
 		list.addDoublyNodeToHead(node);
+		lruCache.put(i, node);
 		return node;
 	}
 
