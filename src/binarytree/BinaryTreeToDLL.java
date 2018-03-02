@@ -59,14 +59,14 @@ public class BinaryTreeToDLL {
 		}
 
 		if (head.left != null)
-			System.out.print("prev:" + head.left.key + "  ");
+			System.out.print("prev:" + head.left.value + "  ");
 		else
 			System.out.print("prev:" + "null" + "  ");
 
-		System.out.print("curr:" + head.key + "  ");
+		System.out.print("curr:" + head.value + "  ");
 
 		if (head.right != null)
-			System.out.print("right:" + head.right.key + "  ");
+			System.out.print("right:" + head.right.value + "  ");
 		else
 			System.out.print("right:" + "null" + "  ");
 

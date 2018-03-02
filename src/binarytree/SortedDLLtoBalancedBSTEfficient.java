@@ -1,6 +1,5 @@
 package binarytree;
 
-import linkedlist.doubly.AppendDoublyLinkedList;
 import util.tree.TreeNode;
 
 public class SortedDLLtoBalancedBSTEfficient {
@@ -12,11 +11,13 @@ public class SortedDLLtoBalancedBSTEfficient {
 		TreeNode node5 = new TreeNode(5);
 		TreeNode node6 = new TreeNode(6);
 
-		node1.right = node2;
-		node2.right = node3;
-		node3.right = node4;
-		node4.right = node5;
-		node5.right = node6;
+		TreeNode.appendTreeList(node1, node2);
+		TreeNode.appendTreeList(node1, node3);
+		TreeNode.appendTreeList(node1, node4);
+		TreeNode.appendTreeList(node1, node5);
+		TreeNode.appendTreeList(node1, node6);
+
+		TreeNode.printDoublyList(node1);
 
 		SortedDLLtoBalancedBSTEfficient.head = node1;
 

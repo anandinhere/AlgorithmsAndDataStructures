@@ -28,7 +28,7 @@ public class TreeFromInorderPostorder {
 
 		TreeNode root = new TreeNode(postorder[preIndex--]);
 
-		int inSearch = search(root.key, inorder, inStart, inEnd);
+		int inSearch = search(root.value, inorder, inStart, inEnd);
 
 		if (inSearch != inEnd) {
 			root.right = makeTree(inorder, postorder, inSearch + 1, inEnd);

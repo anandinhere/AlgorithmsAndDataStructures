@@ -74,8 +74,7 @@ public class ListNode {
 		System.out.println();
 	}
 
-	private ListNode createRandomLinkedList(int reqdSize, int listSize,
-			ListNode headNode) {
+	private ListNode createRandomLinkedList(int reqdSize, int listSize, ListNode headNode) {
 
 		if (listSize == reqdSize)
 			return headNode;
@@ -105,5 +104,70 @@ public class ListNode {
 		ListNode test = (new ListNode()).getLinkedList(10);
 
 		test.printLinkedList();
+	}
+
+	public static ListNode appendCircularLists(ListNode nodeA, ListNode nodeB) {
+
+		if (nodeA == null)
+			return nodeB;
+		if (nodeB == null)
+			return nodeA;
+
+		ListNode tailA = nodeA.previous;
+		ListNode tailB = nodeB.previous;
+
+		tailA.next = nodeB;
+		nodeB.previous = tailA;
+
+		tailB.next = nodeA;
+		nodeA.previous = tailB;
+
+		return nodeA;
+	}
+
+	public static ListNode appendDoublyLists(ListNode nodeA, ListNode nodeB) {
+
+		if (nodeA == null)
+			return nodeB;
+		if (nodeB == null)
+			return nodeA;
+
+		ListNode nodeACopy = nodeA;
+		ListNode tailA = null;
+
+		while (nodeA.next != null) {
+			nodeA = nodeA.next;
+		}
+		tailA = nodeA;
+
+		tailA.next = nodeB;
+		nodeB.previous = tailA;
+
+		return nodeACopy;
+	}
+
+	public static void printDoublyList(ListNode head) {
+
+		if (head == null) {
+			System.out.println("null");
+			return;
+		}
+
+		if (head.previous != null)
+			System.out.print("prev:" + head.previous.value + "  ");
+		else
+			System.out.print("prev:" + "null" + "  ");
+
+		System.out.print("curr:" + head.value + "  ");
+
+		if (head.next != null)
+			System.out.print("next:" + head.next.value + "  ");
+		else
+			System.out.print("next:" + "null" + "  ");
+
+		System.out.println();
+
+		printDoublyList(head.next);
+
 	}
 }

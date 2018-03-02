@@ -7,21 +7,14 @@ public class TheGreatTreeListRecursionProblem {
 	public static void main(String[] args) {
 
 		TreeNode root = new TreeNode().getBasicTree();
+		root.printInorder(root);
+		System.out.println();
 
 		TreeNode head = makeList(root);
 
-		TreeNode temp = head;
-		while (true) {
-			printDoublyNode(temp);
-			temp = temp.right;
-			if (temp == head)
-				break;
-		}
-		System.out.println("**************");
+		TreeNode.printCircularList(head, head.left);
 
 	}
-	
-	
 
 	private static TreeNode makeList(TreeNode root) {
 		if (root == null)
@@ -36,38 +29,15 @@ public class TheGreatTreeListRecursionProblem {
 
 		TreeNode leftHead = makeList(root.left);
 		TreeNode rightHead = makeList(root.right);
-		
+
 		root.left = root;
 		root.right = root;
-		
+
 		leftHead = append(leftHead, root);
 		leftHead = append(leftHead, rightHead);
 
 		return leftHead;
 	}
-
-	public static void printDoublyNode(TreeNode head) {
-		if (head == null) {
-			System.out.println("null");
-			return;
-		}
-
-		if (head.left != null)
-			System.out.print("prev:" + head.left.key + "  ");
-		else
-			System.out.print("prev:" + "null" + "  ");
-
-		System.out.print("curr:" + head.key + "  ");
-
-		if (head.right != null)
-			System.out.print("right:" + head.right.key + "  ");
-		else
-			System.out.print("right:" + "null" + "  ");
-
-		System.out.println();
-
-	}
-
 
 	public static TreeNode append(TreeNode nodeA, TreeNode nodeB) {
 
