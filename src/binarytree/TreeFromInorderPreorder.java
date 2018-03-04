@@ -32,7 +32,7 @@ public class TreeFromInorderPreorder {
 		// starting from root to children roots
 		// if checks tell us if the node has a left or a right. 
 
-		int inSearch = search(root.key, inorder, inStart, inEnd);
+		int inSearch = search(root.value, inorder, inStart, inEnd);
 
 		if (inSearch != inStart) {
 			root.left = makeTree(inorder, preorder, inStart, inSearch - 1);

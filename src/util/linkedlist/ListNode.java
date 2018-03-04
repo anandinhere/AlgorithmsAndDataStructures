@@ -7,8 +7,9 @@ public class ListNode {
 	public ListNode next;
 	public ListNode previous;
 
-	public ListNode left;
-	public ListNode right;
+	public ListNode head;
+	public ListNode tail;
+	public int size = 0;
 
 	private ListNode random;
 
@@ -54,6 +55,71 @@ public class ListNode {
 		this.value = value;
 	}
 
+	public void addDoublyNodeToTail(ListNode node) {
+		if (size == 0) {
+			head = node;
+			tail = head;
+			size++;
+			return;
+		}
+
+		tail.next = node;
+		node.previous = tail;
+		tail = node;
+		size++;
+	}
+
+	public void addDoublyNodeToHead(ListNode node) {
+		if (size == 0) {
+			head = node;
+			tail = head;
+			size++;
+			return;
+		}
+
+		head.previous = node;
+		node.next = head;
+		head = node;
+		size++;
+	}
+
+	public void removeDoublyNode(ListNode node) {
+		if (head == tail) {
+			head = null;
+			size--;
+			return;
+		}
+
+		if (node == tail) {
+			tail = tail.previous;
+			tail.next = null;
+			size--;
+			return;
+		}
+
+		if (node == head) {
+			head = head.next;
+			head.previous = null;
+			size--;
+			return;
+		}
+
+		node.previous.next = node.next;
+		node.next.previous = node.previous;
+		size--;
+
+	}
+
+	public ListNode findDoublyNode(int value) {
+		ListNode temp = head;
+		while (temp != null) {
+			if (temp.value == value)
+				return temp;
+			temp = temp.next;
+		}
+		return null;
+	}
+
 	public ListNode getLinkedList(int size) {
 
 		if (size == 0) {
@@ -74,8 +140,7 @@ public class ListNode {
 		System.out.println();
 	}
 
-	private ListNode createRandomLinkedList(int reqdSize, int listSize,
-			ListNode headNode) {
+	private ListNode createRandomLinkedList(int reqdSize, int listSize, ListNode headNode) {
 
 		if (listSize == reqdSize)
 			return headNode;
@@ -106,4 +171,70 @@ public class ListNode {
 
 		test.printLinkedList();
 	}
+
+	public static ListNode appendCircularLists(ListNode nodeA, ListNode nodeB) {
+
+		if (nodeA == null)
+			return nodeB;
+		if (nodeB == null)
+			return nodeA;
+
+		ListNode tailA = nodeA.previous;
+		ListNode tailB = nodeB.previous;
+
+		tailA.next = nodeB;
+		nodeB.previous = tailA;
+
+		tailB.next = nodeA;
+		nodeA.previous = tailB;
+
+		return nodeA;
+	}
+
+	public static ListNode appendDoublyLists(ListNode nodeA, ListNode nodeB) {
+
+		if (nodeA == null)
+			return nodeB;
+		if (nodeB == null)
+			return nodeA;
+
+		ListNode nodeACopy = nodeA;
+		ListNode tailA = null;
+
+		while (nodeA.next != null) {
+			nodeA = nodeA.next;
+		}
+		tailA = nodeA;
+
+		tailA.next = nodeB;
+		nodeB.previous = tailA;
+
+		return nodeACopy;
+	}
+
+	public static void printDoublyList(ListNode head) {
+
+		if (head == null) {
+			System.out.println("END OF LIST");
+			return;
+		}
+
+		if (head.previous != null)
+			System.out.print("prev:" + head.previous.value + "  ");
+		else
+			System.out.print("prev:" + "null" + "  ");
+
+		System.out.print("curr:" + head.value + "  ");
+
+		if (head.next != null)
+			System.out.print("next:" + head.next.value + "  ");
+		else
+			System.out.print("next:" + "null" + "  ");
+
+		System.out.println();
+
+		printDoublyList(head.next);
+
+	}
+
 }

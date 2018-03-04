@@ -35,7 +35,7 @@ public class TreeFromInorderLevelOrder {
 			return;
 		}
 
-		int inSearch = search(root.key, inorder, inStart, inEnd);
+		int inSearch = search(root.value, inorder, inStart, inEnd);
 
 		if (inSearch != inStart) {
 			int leftKey = getNode(inorder, levelorder, inStart, inSearch - 1, m);
