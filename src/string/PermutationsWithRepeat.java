@@ -2,8 +2,8 @@ package string;
 
 class PermutationsWithRepeat {
 
-	static char[] input = { 'a', 'b', 'b' };
-	static char[] output = { 'a', 'b', 'b' };
+	static char[] input = { 'a', 'b', 'c' };
+	static char[] output = { 'a', 'b', 'c' };
 
 	public static void main(String[] args) {
 		// code
