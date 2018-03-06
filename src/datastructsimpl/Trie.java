@@ -1,5 +1,16 @@
 package datastructsimpl;
 
+/*
+ m: average word length
+ 
+ w : number of words in the trie. 
+ 
+ Then the boundary O(w*m) is much more useful, 
+ since it simply represents the max amount of characters in the trie, 
+ which is obviously also it's space boundary.
+ 
+ Using Trie, we can search the key in O(m) time.
+ */
 public class Trie {
 
 	static TrieNode root;
@@ -61,7 +72,7 @@ public class Trie {
 
 				if (child.leaf == true) {
 					System.out.print(s + c);
-					System.out.println(" - " + child.count);
+					System.out.println(" # " + child.count);
 				}
 				printKeys(child, s + c);
 			}
