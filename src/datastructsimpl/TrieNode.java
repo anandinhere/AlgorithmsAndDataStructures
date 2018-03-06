@@ -8,6 +8,6 @@ public class TrieNode {
 
 	boolean leaf = false;
 	int count = 0;
-	TrieNode[] list = new TrieNode[256];
+	TrieNode[] children = new TrieNode[256];
 
 }

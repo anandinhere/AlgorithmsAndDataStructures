@@ -109,7 +109,7 @@ public class TreeNode {
 	public static void printDoublyList(TreeNode head) {
 
 		if (head == null) {
-			System.out.println("END OF LIST");
+			System.out.println("END OF LIST \n \n ");
 			return;
 		}
 
