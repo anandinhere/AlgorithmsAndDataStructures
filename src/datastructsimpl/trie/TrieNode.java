@@ -1,4 +1,4 @@
-package datastructsimpl;
+package datastructsimpl.trie;
 
 public class TrieNode {
 

@@ -1,4 +1,4 @@
-package datastructsimpl;
+package compressedTrie;
 
 public class SuffixTreeNode {
 
