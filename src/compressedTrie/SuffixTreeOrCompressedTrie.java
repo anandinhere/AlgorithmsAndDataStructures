@@ -117,15 +117,17 @@ public class SuffixTreeOrCompressedTrie {
 
 	public static void main(String[] args) {
 
-		String str = "a an ana anan anand anand nand and nd d";
+		String str = "a an ana anan anand  an a anan";
 
 		for (String s : str.split(" ")) {
 			SuffixTreeOrCompressedTrie.insert(s);
 
-			SuffixTreeOrCompressedTrie.printKeys(
-					SuffixTreeOrCompressedTrie.root, "");
-			System.out.println("***");
+			
 		}
+		
+		SuffixTreeOrCompressedTrie.printKeys(
+				SuffixTreeOrCompressedTrie.root, "");
+		System.out.println("***");
 
 	}
 }
