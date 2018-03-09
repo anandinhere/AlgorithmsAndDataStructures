@@ -31,45 +31,30 @@ public class SuffixTreeOrCompressedTrie {
 			return;
 		}
 
-		int index = 0;
-		if (root.children[key.charAt(index)] == null) {
-			root.children[key.charAt(index)] = new SuffixTreeNode();
-			root = root.children[key.charAt(index)];
-			root.key = key;
-			root.leaf = true;
-			root.count++;
-		} else {
-			root = root.children[key.charAt(index)];
-			String rootKey = root.key;
-			Integer i = getDiffChar(rootKey, key);
-
-			if (i == null) {
-				root.key = root.key.charAt(0) + "";
-				insert(key.charAt(1), key.substring(1), root);
-				insert(key.charAt(1), rootKey.substring(1), root);
-			} else {
-				root.key = key.substring(1, i);
-				insert(key.charAt(i), key.substring(i), root);
-				insert(key.charAt(i), key.substring(i), root);
-			}
-		}
+		insert(key, root);
 	}
 
 	private static Integer getDiffChar(String rootKey, String key) {
-		int rootIndex = 1;
-		int keyIndex = 1;
-
-		while (rootIndex < rootKey.length() && keyIndex < key.length()) {
-			if (rootKey.charAt(rootIndex) == key.charAt(keyIndex)) {
-				return rootIndex;
+		int index = 1;
+		while (index < rootKey.length() && index < key.length()) {
+			if (rootKey.charAt(index) != key.charAt(index)) {
+				return index;
 			}
-			rootIndex++;
-			keyIndex++;
+			index++;
 		}
+
+		if (index > 1) {
+			return index;
+		}
+
 		return null;
 	}
 
-	private static void insert(int index, String key, SuffixTreeNode root) {
+	private static void insert(String key, SuffixTreeNode root) {
+
+		if (key == null || key.length() == 0) {
+			return;
+		}
 
 		if (root.children[key.charAt(0)] == null) {
 			root.children[key.charAt(0)] = new SuffixTreeNode();
@@ -79,17 +64,35 @@ public class SuffixTreeOrCompressedTrie {
 			root.count++;
 		} else {
 			root = root.children[key.charAt(0)];
+			if (key.equals(root.key)) {
+				root.leaf = true;
+				root.count++;
+				return;
+			}
 			String rootKey = root.key;
 			Integer i = getDiffChar(rootKey, key);
-
+			root.leaf = false;
+			root.count--;
+			int rootLen = root.key.length();
 			if (i == null) {
 				root.key = root.key.charAt(0) + "";
-				insert(key.charAt(1), key.substring(1), root);
-				insert(key.charAt(1), rootKey.substring(1), root);
+				if (root.key.charAt(0) == key.charAt(0)
+						&& (1 == root.key.length() || 1 == key.length())) {
+					root.leaf = true;
+					root.count++;
+				}
+				insert(key.substring(1), root);
+				insert(rootKey.substring(1), root);
 			} else {
-				root.key = key.substring(1, i);
-				insert(key.charAt(i), key.substring(i), root);
-				insert(key.charAt(i), key.substring(i), root);
+
+				root.key = key.substring(0, i);
+				if (root.key.equals(key.substring(0, i))
+						&& (i == rootLen || i == key.length())) {
+					root.leaf = true;
+					root.count++;
+				}
+				insert(key.substring(i), root);
+				insert(rootKey.substring(i), root);
 			}
 		}
 
@@ -100,14 +103,28 @@ public class SuffixTreeOrCompressedTrie {
 		for (int i = 0; i < root.children.length; i++) {
 			if (root.children[i] != null) {
 				SuffixTreeNode child = root.children[i];
-				char c = (char) i;
+				String key = child.key;
 
 				if (child.leaf == true) {
-					System.out.print(s + c);
+					System.out.print(s + key);
 					System.out.println(" # " + child.count);
 				}
-				printKeys(child, s + c);
+				printKeys(child, s + key);
 			}
+		}
+
+	}
+
+	public static void main(String[] args) {
+
+		String str = "a an ana anan anand anand nand and nd d";
+
+		for (String s : str.split(" ")) {
+			SuffixTreeOrCompressedTrie.insert(s);
+
+			SuffixTreeOrCompressedTrie.printKeys(
+					SuffixTreeOrCompressedTrie.root, "");
+			System.out.println("***");
 		}
 
 	}

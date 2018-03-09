@@ -4,7 +4,7 @@ package compressedTrie;
 public class SuffixTreeTest {
 	public static void main(String[] args) {
 
-		String str = "anand apple";
+		String str = "anand ananp";
 
 		for (String s : str.split(" ")) {
 			SuffixTreeOrCompressedTrie.insert(s);
