@@ -31,6 +31,7 @@ public class LRUcache {
 		System.out.println(findInCache(1, lruCache).value);
 		printLRUKeys();
 		ListNode.printDoublyList(list.head);
+		
 	}
 
 	private static void printLRUKeys() {
