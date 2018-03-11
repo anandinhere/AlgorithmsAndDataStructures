@@ -1,5 +1,7 @@
 package string;
 
+import java.util.Arrays;
+
 class PermutationsWithRepeat {
 
 	static char[] input = { 'a', 'b', 'c' };
@@ -14,7 +16,25 @@ class PermutationsWithRepeat {
 
 	}
 
-	private static void printPermute(int index) {
+	private static void printPermute(int start) {
+
+		if (start == input.length) {
+			System.out.println(Arrays.toString(output));
+			return;
+		}
+
+		for (int i = 0; i < input.length; i++) {
+
+			output[start] = input[i];
+			printPermute(start + 1);
+			output[start] = input[start]; // this has no affect in this case
+											// unlike in normal permutation
+
+		}
+
+	}
+
+	private static void printPermuteGeeks(int index) {
 
 		if (index == input.length) {
 			System.out.println(output);

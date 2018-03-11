@@ -1,43 +1,61 @@
 package string;
 
 public class Permutations {
-
-	static char[] inputArr = { 'a', 'b', 'c' };
+	public static int permCount = 0;
 
 	public static void main(String[] args) {
 
-		printPermutations(0, inputArr.length);
+		char[] inputArr = { 'a', 'b', 'c' };
+		printPermutations(inputArr, 0);
 
 	}
 
-	private static void printPermutations(int start, int length) {
-
-		if (start == length - 1) {
-			print();
+	private static void printPermutationsGeeks(char[] inputArr, int start) {
+		permCount++;
+		System.out.println(permCount);
+		if (start == inputArr.length - 1) {
+			for (int j = 0; j < inputArr.length; j++) {
+				System.out.print(inputArr[j]);
+			}
+			System.out.println();
 		} else {
 
-			for (int i = start; i < length; i++) {
-				swap(start, i);
-				printPermutations(start + 1, length);
-				swap(start, i);
+			for (int i = start; i < inputArr.length; i++) {
+				swap(inputArr, start, i);
+				printPermutationsGeeks(inputArr, start + 1);
+				swap(inputArr, start, i);
 
 			}
 		}
 
 	}
 
-	private static void print() {
-		for (char c : inputArr) {
-			System.out.print(c);
-		}
-		System.out.println();
+	private static void printPermutations(char[] inputArr, int index) {
+		permCount++;
+		// System.out.println(permCount);
 
+		for (int i = index; i < inputArr.length; i++) {
+			if (index == inputArr.length - 1) {
+				for (int j = 0; j < inputArr.length; j++) {
+					System.out.print(inputArr[j]);
+				}
+				System.out.println();
+				// return;
+			}
+
+			swap(inputArr, index, i);
+			printPermutations(inputArr, index + 1);
+			swap(inputArr, index, i);
+
+		}
 	}
 
-	private static void swap(int i, int start) {
-		char temp = inputArr[start];
-		inputArr[start] = inputArr[i];
+	private static void swap(char[] inputArr, int index, int i) {
+
+		char temp = inputArr[index];
+		inputArr[index] = inputArr[i];
 		inputArr[i] = temp;
 
 	}
+
 }

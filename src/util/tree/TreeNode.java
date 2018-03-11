@@ -7,6 +7,7 @@ public class TreeNode {
 
 	public TreeNode right;
 	public TreeNode left;
+	public int printPosition;
 	public int value;
 	public boolean black = true;
 
@@ -105,36 +106,51 @@ public class TreeNode {
 		Queue<TreeNode> q2 = new LinkedList<TreeNode>();
 		q1.add(this);
 
-		int noOfTabs = 2 << height;
+		this.printPosition = 2 << height;
 
 		while (!q1.isEmpty() || !q2.isEmpty()) {
-
-			noOfTabs = noOfTabs / 2;
-			for (int i = 0; i < noOfTabs; i++)
-				System.out.print("\t");
+			System.out.println();
 			while (!q1.isEmpty()) {
 				TreeNode node = q1.poll();
-				System.out.print(node.value + "\t");
 
-				if (node.left != null)
+				for (int i = 0; i < node.printPosition; i++) {
+					System.out.print(" ");
+				}
+				System.out.print(node.value);
+				System.out.println();
+
+				if (node.left != null) {
+					node.left.printPosition = node.printPosition / 2;
 					q2.add(node.left);
+				}
 
-				if (node.right != null)
+				if (node.right != null) {
+					node.right.printPosition = node.printPosition
+							+ node.printPosition / 2;
 					q2.add(node.right);
+				}
+
 			}
 			System.out.println();
 
-			noOfTabs = noOfTabs / 2;
-			for (int i = 0; i < noOfTabs; i++)
-				System.out.print("\t");
 			while (!q2.isEmpty()) {
 				TreeNode node = q2.poll();
-				System.out.print(node.value + "\t");
-				if (node.left != null)
+				for (int i = 0; i < node.printPosition; i++) {
+					System.out.print(" ");
+				}
+				System.out.print(node.value);
+				System.out.println();
+				if (node.left != null) {
+					node.left.printPosition = node.printPosition / 2;
 					q1.add(node.left);
+				}
 
-				if (node.right != null)
+				if (node.right != null) {
+					node.right.printPosition = node.printPosition
+							+ node.printPosition / 2;
 					q1.add(node.right);
+				}
+
 			}
 			System.out.println();
 

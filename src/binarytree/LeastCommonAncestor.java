@@ -6,12 +6,12 @@ public class LeastCommonAncestor {
 	public static void main(String[] args) {
 		TreeNode root = new TreeNode().getBST();
 
-		root.printLevelOrder();
+		//root.printLevelOrder();
 
 		System.out.println(root.getHeight(root));
 
-		//TreeNode lca = getLCA(root, 6, 10);
-		//System.out.println("\n" + lca.value);
+		TreeNode lca = getLCA(root, 7, 6);
+		System.out.println("\n" + lca.value);
 
 	}
 
