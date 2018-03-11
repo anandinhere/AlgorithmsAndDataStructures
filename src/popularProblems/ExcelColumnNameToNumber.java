@@ -5,7 +5,7 @@ public class ExcelColumnNameToNumber {
 
 	public static void main(String[] args) {
 
-		columnNameToNumber("AAZZ");
+		columnNameToNumber("ZZZ");
 	}
 
 	private static void columnNameToNumber(String string) {
