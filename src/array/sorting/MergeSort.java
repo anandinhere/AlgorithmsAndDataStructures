@@ -5,7 +5,7 @@ import java.util.Arrays;
 public class MergeSort {
 
 	public static void main(String[] args) {
-		int[] array = ArrayUtil.getRandArray(0, 1);
+		int[] array = ArrayUtil.getRandArray(0, 4);
 		ArrayUtil.printArray(array);
 
 		int[] res = mergeSort(array, 0, array.length - 1);
