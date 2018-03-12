@@ -10,13 +10,13 @@ import array.sorting.MergeSortString;
 
 public class AnagramsTogether {
 	public static void main(String[] args) {
-		String[] inputStrings = { "cat", "dog", "tac", "god", "act" };
+		String[] inputStrings = { "cat", "dog", "tac", "god", "act", "ogd" };
 
 		anagramsTogetherSet1(inputStrings);
 
 	}
 
-	private static void anagramsTogetherSet1(String[] inputStrings) {
+	public static void anagramsTogetherSet1(String[] inputStrings) {
 		String[] temp = new String[inputStrings.length];
 
 		HashMap<String, LinkedList<Integer>> map = new HashMap<String, LinkedList<Integer>>();
@@ -50,5 +50,31 @@ public class AnagramsTogether {
 			}
 		}
 
+	}
+
+	public static void anagramsTogetherSet2(String[] inputStrings) { //Incomplete
+		HashMap<Integer, LinkedList<Integer>> map = new HashMap<Integer, LinkedList<Integer>>();
+
+		for (int i = 0; i < inputStrings.length; i++) {
+
+			int hash = getHash(inputStrings[i]);
+			if (map.containsKey(hash)) {
+
+			} else {
+				LinkedList<Integer> l = new LinkedList<Integer>();
+				l.add(i);
+				map.put(hash, l);
+			}
+
+		}
+
+	}
+
+	private static int getHash(String string) {
+		int hash = 0;
+		for (int i = 0; i < string.length(); i++) {
+			hash = hash + (int) (string.charAt(i));
+		}
+		return hash;
 	}
 }
