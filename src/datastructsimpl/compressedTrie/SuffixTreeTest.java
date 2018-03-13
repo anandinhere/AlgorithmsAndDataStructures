@@ -1,4 +1,4 @@
-package compressedTrie;
+package datastructsimpl.compressedTrie;
 
 
 public class SuffixTreeTest {

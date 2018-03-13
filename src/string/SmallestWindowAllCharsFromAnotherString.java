@@ -3,6 +3,8 @@ package string;
 public class SmallestWindowAllCharsFromAnotherString {
 
 	static final int no_of_chars = 256;
+	
+	//Another One - https://www.geeksforgeeks.org/smallest-window-contains-characters-string/
 
 	// Function to find smallest window containing
 	// all characters of 'pat'
@@ -20,7 +22,7 @@ public class SmallestWindowAllCharsFromAnotherString {
 		int hash_pat[] = new int[no_of_chars];
 		int hash_str[] = new int[no_of_chars];
 
-		// store occurrence ofs characters of pattern
+		// store occurrence of characters of pattern
 		for (int i = 0; i < len2; i++)
 			hash_pat[pat.charAt(i)]++;
 
