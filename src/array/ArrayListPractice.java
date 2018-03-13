@@ -1,9 +1,9 @@
-package arraylist;
+package array;
 
 import java.util.ArrayList;
 import java.util.Scanner;
 
-public class Program1 {
+public class ArrayListPractice {
 
 	public static void main(String[] args) {
 
