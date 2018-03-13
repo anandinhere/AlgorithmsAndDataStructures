@@ -1,4 +1,4 @@
-package misc;
+package popularProblems;
 
 import java.util.Comparator;
 import java.util.PriorityQueue;
@@ -6,7 +6,7 @@ import java.util.PriorityQueue;
 import util.graph.Graph;
 import util.graph.Vertex;
 
-public class Test {
+public class ComparatorTest {
 	public static void main(String[] args) {
 
 		test1();
@@ -22,7 +22,7 @@ public class Test {
 		v3.setTempWeight(3);
 
 		PriorityQueue<Vertex> pq = new PriorityQueue<Vertex>(3,
-				new Test().new VertexComp());
+				new ComparatorTest().new VertexComp());
 
 		pq.add(v1);
 		pq.add(v2);

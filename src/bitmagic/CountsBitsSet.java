@@ -1,4 +1,4 @@
-package misc.bit;
+package bitmagic;
 
 public class CountsBitsSet {
 	public static void main(String[] args) {

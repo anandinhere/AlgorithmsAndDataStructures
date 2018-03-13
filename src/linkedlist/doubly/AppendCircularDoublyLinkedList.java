@@ -1,7 +1,6 @@
 package linkedlist.doubly;
 
 import util.linkedlist.CircularListNode;
-import util.linkedlist.CircularListNode;
 
 public class AppendCircularDoublyLinkedList {
 

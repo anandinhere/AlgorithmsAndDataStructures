@@ -1,4 +1,4 @@
-package misc;
+package popularProblems;
 
 public class Factorial {
 
