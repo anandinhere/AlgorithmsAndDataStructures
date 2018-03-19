@@ -6,13 +6,10 @@ public class CheckPalindrome {
 
 		String inputStr = "ab";
 
-		System.out.println(checkPalindrome(inputStr));
+		System.out.println(checkPalindrome(inputStr, 0, inputStr.length() - 1));
 	}
 
-	public static boolean checkPalindrome(String inputStr) {
-
-		int start = 0;
-		int end = inputStr.length() - 1;
+	public static boolean checkPalindrome(String inputStr, int start, int end) {
 
 		while (start < end) {
 			if (inputStr.charAt(start) != inputStr.charAt(end)) {
