@@ -14,7 +14,8 @@ public class KMPAlgorithm {
 	}
 
 	/*
-	 * Time Complexity - O(m+n) - length of text m - length of pattern
+	 * Time Complexity - O(m+n) 
+	 * n length of text m - length of pattern
 	 */
 	private static void searchPattern(String txt, String pat) {
 
@@ -30,7 +31,7 @@ public class KMPAlgorithm {
 			}
 
 			if (j == lps.length) {
-				System.out.println("pattern match at " + (i - j));
+				System.out.println("pattern match at index " + (i - j));
 				j = lps[j - 1];
 			} else if (i < txt.length() && pat.charAt(j) != txt.charAt(i)) {
 				if (j > 0) {
