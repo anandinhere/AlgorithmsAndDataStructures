@@ -15,6 +15,8 @@ public class AnagramsTogether {
 		anagramsTogetherSet1(inputStrings);
 
 	}
+	
+	//Complexity - O(NMLogM) n - no of string. m max length of string
 
 	public static void anagramsTogetherSet1(String[] inputStrings) {
 		String[] temp = new String[inputStrings.length];
