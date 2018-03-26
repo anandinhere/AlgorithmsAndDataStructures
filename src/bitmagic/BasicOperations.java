@@ -47,6 +47,8 @@ public class BasicOperations {
 		
 		//- http://bits.stephan-brumme.com/inverse.html here shift is 23. shift by 24 seems to be right.
 
+		System.out.println(~(~20+1)+1);
+		
 		
 	}
 }
