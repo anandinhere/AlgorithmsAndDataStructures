@@ -1,12 +1,12 @@
 package bitmagic;
 
-public class NextBiggerNumberWithSameNoOfSetBits {
+public class NextHigherNumberWithSameNoOfSetBits {
 	public static void main(String[] args) {
 
 		int x = Integer.parseInt("111", 2);
 
 		print(x);
-		// Step 1
+
 
 		int mask = x & ~(x - 1);
 
