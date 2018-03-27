@@ -9,8 +9,8 @@ public class TwoNonRepeatingNumber {
 		int x = Integer.parseInt("01000", 2);
 		int y = Integer.parseInt("10000", 2);
 
-		int[] arr = //{ 2, 3, 7, 9, 11, 2, 3, 11 };
-		 { a, a, b, b, x,y };
+		int[] arr = {52, 36,  52, 36,7, 9 };
+		 //{ a, a, b, b, x,y };
 
 		int sol1 = 0;
 		int sol2 = 0;
