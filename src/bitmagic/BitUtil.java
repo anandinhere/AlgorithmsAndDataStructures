@@ -77,7 +77,7 @@ public class BitUtil {
 
 		}
 
-		return null;
+		return lookUp;
 
 	}
 }
