@@ -6,7 +6,6 @@ import java.util.Scanner;
 public class QueueUsingArray {
 	int[] queue = null;
 	int currSize = 0;
-	boolean reverse = false;
 	int start = 0;
 	int end = 0;
 
@@ -107,6 +106,7 @@ public class QueueUsingArray {
 				break;
 			}
 		}
+		in.close();
 
 		System.out.println("out of menu - stopped");
 
