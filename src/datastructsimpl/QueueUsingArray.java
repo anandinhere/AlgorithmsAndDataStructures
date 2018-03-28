@@ -46,9 +46,9 @@ public class QueueUsingArray {
 		if (currSize == 1) {
 		} else if (start <= end) {
 			start++;
-			if (start == queue.length) {
-				start = 0;
-			}
+//			if (start == queue.length) {
+//				start = 0;
+//			}
 		} else if (start > end) {
 			start++;
 			if (start == queue.length) {
