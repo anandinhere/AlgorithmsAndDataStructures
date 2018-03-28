@@ -66,26 +66,40 @@ public class QueueUsingArray {
 	public String toString() {
 		String output = "Start " + start + " \nend " + end + "\ncurrSize "
 				+ currSize + "\narray " + Arrays.toString(queue) + "\n-----";
+
+		int count = 0;
+		int endCopy = end;
+		System.out.print("Queue elements from end to start ");
+		while (count < currSize) {
+			System.out.print(queue[endCopy] + " ");
+			endCopy--;
+			if (endCopy == -1) {
+				endCopy = queue.length - 1;
+			}
+			count++;
+		}
+		System.out.println("\n");
+
 		return output;
 	}
 
 	public static void main(String[] args) {
 		QueueUsingArray q = new QueueUsingArray(3);
-		
-		System.out.println("Menu \n0 - add \n1 - remove \n2 - stop");
+
+		System.out.println("Menu \n1 - add \n2 - remove \n3 - stop");
 
 		Scanner in = new Scanner(System.in);
 
 		int next = 0;
-		while (next != 2) {
+		while (next != 3) {
 
 			next = in.nextInt();
 
 			switch (next) {
-			case 0:
+			case 1:
 				q.add(in.nextInt());
 				break;
-			case 1:
+			case 2:
 				q.remove();
 				break;
 
@@ -93,7 +107,7 @@ public class QueueUsingArray {
 				break;
 			}
 		}
-		
+
 		System.out.println("out of menu - stopped");
 
 	}
