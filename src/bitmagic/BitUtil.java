@@ -9,6 +9,10 @@ public class BitUtil {
 		System.out.println("-----------------");
 	}
 
+	public static int getBitSize() {
+		return Integer.parseInt(System.getProperty("sun.arch.data.model"));
+	}
+
 	public static void main(String[] args) {
 		bitCountLookup();
 	}
@@ -37,12 +41,13 @@ public class BitUtil {
 				lookUp[i][j] = base[j] + origBase[baseIndex];
 
 				print((i * 4) + j);
-				System.out.println("Function Bit Count "+CountsBitsSet.countBits((i * 4) + j));
-				
+				System.out.println("Function Bit Count "
+						+ CountsBitsSet.countBits((i * 4) + j));
+
 				System.out.print("Lookup Value : ");
 				System.out.print(lookUp[i][j] + " \n \n \n");
-				
-				if(lookUp[i][j]!=CountsBitsSet.countBits((i * 4) + j)){
+
+				if (lookUp[i][j] != CountsBitsSet.countBits((i * 4) + j)) {
 					System.out.println("Not Equal -- Breaking");
 				}
 			}

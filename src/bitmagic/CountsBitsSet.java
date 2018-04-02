@@ -4,6 +4,9 @@ public class CountsBitsSet {
 	public static void main(String[] args) {
 
 		int x = Integer.parseInt("110011111000101010", 2);
+		BitUtil.print(x);
+		
+		System.out.println(countBits(x));
 		// count bits of each 2-bit chunk
 
 		x = x - ((x >> 1) & 0x55555555);
@@ -21,6 +24,8 @@ public class CountsBitsSet {
 		System.out.println((x * 0x01010101) >> 24);
 
 	}
+
+
 
 	public static int countBits(int x) {
 		int count = 0;
