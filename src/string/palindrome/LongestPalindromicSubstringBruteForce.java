@@ -7,7 +7,7 @@ public class LongestPalindromicSubstringBruteForce {
 		getLongestPalindrome(str);
 
 	}
-
+	//	Time complexity: O ( n^3 )
 	private static void getLongestPalindrome(String str) {
 
 		int maxLength = 0;

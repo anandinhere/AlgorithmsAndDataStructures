@@ -19,6 +19,13 @@ public class TreeNode {
 		this.value = val;
 	}
 
+	public boolean isLeaf() {
+		if (this.left == null && this.right == null)
+			return true;
+
+		return false;
+	}
+
 	public TreeNode search(TreeNode root, int key) {
 
 		if (root == null || root.value == key) {
