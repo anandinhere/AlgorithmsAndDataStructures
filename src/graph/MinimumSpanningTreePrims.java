@@ -12,6 +12,7 @@ import util.graph.Vertex;
 
 public class MinimumSpanningTreePrims {
 
+	//Idea is to keep adding shortest available edge. currV is the vertex in nPQ at the end of that edge.
 	public static void main(String[] args) {
 
 		Graph g = new Graph();
@@ -34,7 +35,7 @@ public class MinimumSpanningTreePrims {
 				new MinimumSpanningTreePrims().new VertexComp());
 
 		Vertex currV = g.getVertex("a");
-		MSTSet.add("a");
+		//MSTSet.add("a");
 		System.out.println("a");
 		LinkedList<Node> adjNodes = g.getAdjacentVertexList("a");
 		currV.setVisited(true);
@@ -62,7 +63,7 @@ public class MinimumSpanningTreePrims {
 			currV.setVisited(true);
 			String currK = currV.getKey();
 			System.out.println(currK);
-			MSTSet.add(currK);
+			//MSTSet.add(currK);
 			// if (!g.getVertex(v).isVisited()) {
 			adjNodes = g.getAdjacentVertexList(currK);
 			for (Node n : adjNodes) {

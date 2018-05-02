@@ -19,6 +19,23 @@ public class ShortestPathDijkstrasAlgorithm {
 	//Note that  the above code uses Binary Heap for Priority Queue implementation. Time complexity can be reduced to 
 	//O(E + VLogV) using Fibonacci Heap. The reason is, Fibonacci Heap takes O(1) time for decrease-key operation 
 	//while Binary Heap takes O(Logn) time.
+	
+	//O(E + VLogV) - extract a Vertex in priority Queue is logV operation. decreaseKey is on edges so (E*1+V*LogV)
+	/*
+	 The complexity of Dijkstra's shortest path algorithm is:
+
+	     O(|E| |decrease-key(Q)| + |V| |extract-min(Q)|)
+	     
+	     Below are amortized time complexities of Fibonacci Heap.
+
+1) Find Min:      Θ(1)     [Same as both Binary and Binomial]
+2) Delete Min:    O(Log n) [Θ(Log n) in both Binary and Binomial]
+3) Insert:        Θ(1)     [Θ(Log n) in Binary and Θ(1) in Binomial]
+4) Decrease-Key:  Θ(1)     [Θ(Log n) in both Binary and Binomial]
+5) Merge:         Θ(1)     [Θ(m Log n) or Θ(m+n) in Binary and
+                            Θ(Log n) in Binomial]
+	 */
+
 
 	public static void main(String[] args) {
 
@@ -27,7 +44,7 @@ public class ShortestPathDijkstrasAlgorithm {
 		g.addEdge("a", "b", 7);
 		g.addEdge("a", "c", 5);
 		g.addEdge("b", "c", 9);
-		g.addEdge("b", "e", 10);
+		g.addEdge("b", "e", 10);	
 		g.addEdge("f", "c", 13);
 		g.addEdge("f", "e", 2);
 		g.addEdge("d", "c", 11);
@@ -37,12 +54,10 @@ public class ShortestPathDijkstrasAlgorithm {
 
 		Set<String> vertices = g.getVertexKeys();
 
-		Set<String> MSTSet = new HashSet<String>();
 		PriorityQueue<Vertex> nPQ = new PriorityQueue<Vertex>(10,
 				new ShortestPathDijkstrasAlgorithm().new VertexComp());
 
 		Vertex currV = g.getVertex("a");
-		MSTSet.add("a");
 		System.out.println("a");
 		LinkedList<Node> adjNodes = g.getAdjacentVertexList("a");
 		currV.setVisited(true);
@@ -73,7 +88,6 @@ public class ShortestPathDijkstrasAlgorithm {
 			if (currK == "f")
 				break;
 			System.out.println(currK);
-			MSTSet.add(currK);
 			// if (!g.getVertex(v).isVisited()) {
 			adjNodes = g.getAdjacentVertexList(currK);
 			for (Node n : adjNodes) {
@@ -87,6 +101,7 @@ public class ShortestPathDijkstrasAlgorithm {
 				if (nPQ.contains(adjV)) {
 					if (adjV.getTempWeight() > (edgeWeight + currV
 							.getTempWeight())) {
+						//decreaseKey Operation
 						nPQ.remove(adjV);
 						adjV.setTempWeight(edgeWeight + currV.getTempWeight());
 						adjV.setParentKey(currV.getKey());

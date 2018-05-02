@@ -2,6 +2,12 @@ package graph;
 
 import java.util.Arrays;
 
+/*
+ *         Note that the implementation of union() and find() is naive and takes O(n) time in worst case. 
+ *         These methods can be improved to O(Logn) using Union by Rank or Height. We will soon be discussing 
+ *         Union by Rank in a separate post
+ */
+
 import graph.MinimumSpanningTreeKruskals.Graph.Edge;
 
 public class MinimumSpanningTreeKruskals {

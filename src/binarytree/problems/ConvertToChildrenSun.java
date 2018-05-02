@@ -13,6 +13,9 @@ public class ConvertToChildrenSun {
 		root.printLevelOrder();
 	}
 
+	
+	//Convert in postorder fashion. If root is bigger than children' sum, increment children. else increment just the root.
+	// O(n^2)
 	private static void convert(TreeNode root) {
 
 		if (root == null)

@@ -3,13 +3,17 @@ package util.tree;
 import java.util.LinkedList;
 import java.util.Queue;
 
-public class TreeNode {
+public class TreeNode implements Comparable<TreeNode> {
 
 	public TreeNode right;
 	public TreeNode left;
 	public int printPosition;
 	public int value;
 	public boolean black = true;
+
+	static class Height {
+		int h;
+	}
 
 	public TreeNode() {
 		// TODO Auto-generated constructor stub
@@ -120,11 +124,11 @@ public class TreeNode {
 			while (!q1.isEmpty()) {
 				TreeNode node = q1.poll();
 
-				for (int i = 0; i < node.printPosition; i++) {
-					System.out.print(" ");
-				}
+				// for (int i = 0; i < node.printPosition; i++) {
+				// System.out.print(" ");
+				// }
 				System.out.print(node.value);
-				System.out.println();
+				// System.out.println();
 
 				if (node.left != null) {
 					node.left.printPosition = node.printPosition / 2;
@@ -142,11 +146,11 @@ public class TreeNode {
 
 			while (!q2.isEmpty()) {
 				TreeNode node = q2.poll();
-				for (int i = 0; i < node.printPosition; i++) {
-					System.out.print(" ");
-				}
+				// for (int i = 0; i < node.printPosition; i++) {
+				// System.out.print(" ");
+				// }
 				System.out.print(node.value);
-				System.out.println();
+				// System.out.println();
 				if (node.left != null) {
 					node.left.printPosition = node.printPosition / 2;
 					q1.add(node.left);
@@ -258,6 +262,15 @@ public class TreeNode {
 
 		if (head != tail)
 			printCircularList(head.right, tail);
+
+	}
+
+	@Override
+	public int compareTo(TreeNode that) {
+		if (this.value < that.value)
+			return -1;
+		else
+			return 1;
 
 	}
 

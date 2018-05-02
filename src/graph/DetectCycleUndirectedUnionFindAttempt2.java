@@ -1,5 +1,23 @@
 package graph;
 
+
+/*
+ * /**
+ * 
+ * @author Anand.Siloju
+ * 
+ *         Reference: https://en.wikipedia.org/wiki/Disjoint-set_data_structure
+ *         (weighted-union heuristic) http://www.geeksforgeeks.org/union-find/
+ *         
+ *         Note that the implementation of union() and find() is naive and takes O(n) time in worst case. 
+ *         These methods can be improved to O(Logn) using Union by Rank or Height. We will soon be discussing 
+ *         Union by Rank in a separate post
+ * 
+ *
+ * 1. Find parent of x and y (find and find)
+ * 2. Set parent of y to x (union (find find parent-update)
+ * 3. If both parents same, print loop exists.
+ */
 public class DetectCycleUndirectedUnionFindAttempt2 {
 
 	public static void main(String[] args) {
@@ -11,11 +29,12 @@ public class DetectCycleUndirectedUnionFindAttempt2 {
 			int y = find(parent, e.to);
 
 			if (x == y) {
+				
 				System.out.println("true");
 				return;
 			}
-			print(parent);
 			union(parent, x, y);
+			print(parent);
 		}
 	}
 
@@ -59,7 +78,7 @@ class Graph1 {
 	public Graph1() {
 		edges = new Edge[4];
 		edges[0] = new Edge(0, 1);
-		edges[1] = new Edge(1, 2);
+		edges[1] = new Edge(2, 1);
 		edges[2] = new Edge(2, 3);
 		edges[3] = new Edge(3, 1);
 	}

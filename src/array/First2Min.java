@@ -46,7 +46,7 @@ class First2Min
  /* Driver program to test above functions */
  public static void main (String[] args)
  {
-     int arr[] = {1,2,3};
+     int arr[] = {5,4,3,2,1};
      print2Smallest(arr);
  }
 }

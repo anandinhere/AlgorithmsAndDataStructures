@@ -6,6 +6,10 @@ package graph;
  * 
  *         Reference: https://en.wikipedia.org/wiki/Disjoint-set_data_structure
  *         (weighted-union heuristic) http://www.geeksforgeeks.org/union-find/
+ *         
+ *         Note that the implementation of union() and find() is naive and takes O(n) time in worst case. 
+ *         These methods can be improved to O(Logn) using Union by Rank or Height. We will soon be discussing 
+ *         Union by Rank in a separate post
  * 
  */
 public class DetectCycleUndirectedUnionFind {
@@ -36,12 +40,23 @@ public class DetectCycleUndirectedUnionFind {
 		System.out.println();
 	}
 
+	
+	/**
+	 * 
+	 * @param parent
+	 * @param x
+	 * @param y
+	 * 
+	 * //If these are 2 new vertices, then their parents are themselves.
+	 * If one of them already has a parent, give the parent to orphan
+	 * if both have a parent, bigger of the 2 parents will win.
+	 */
 	private static void union(int[] parent, int x, int y) {
 		if (parent[x] == -1 && parent[y] == -1) {
 			parent[x] = x;
 			parent[y] = x;
 		} else if (parent[x] == -1) {
-			parent[x] = parent[x];
+			parent[x] = parent[y];
 		} else if (parent[y] == -1) {
 			parent[y] = parent[x];
 		} else if (parent[x] > y) {
