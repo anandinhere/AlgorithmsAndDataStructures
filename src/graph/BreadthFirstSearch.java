@@ -20,6 +20,8 @@ import util.graph.Vertex;
  *         Traversal is not possible if any nodes are unreachable from starting
  *         node. To achieve complete traversal call breadthFirstSearch() for
  *         each unvisited key.
+ *         
+ *         http://www.techiedelight.com/lee-algorithm-shortest-path-in-a-maze/
  * 
  */
 

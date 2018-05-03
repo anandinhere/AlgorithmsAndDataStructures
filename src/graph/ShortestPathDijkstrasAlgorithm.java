@@ -72,16 +72,21 @@ public class ShortestPathDijkstrasAlgorithm {
 			nPQ.add(adjV);
 		}
 
-		currV = nPQ.poll();
+		
 
 		ShortestPathDijkstrasAlgorithm.Edge[] edges = new ShortestPathDijkstrasAlgorithm.Edge[vertices
 				.size() - 1];
-		edges[0] = new ShortestPathDijkstrasAlgorithm().new Edge(
-				currV.getKey(), currV.getParentKey(), currV.getTempWeight());
+		
 
-		int i = 1;
+		int i = 0;
 
 		while (!nPQ.isEmpty()) {
+			
+			currV = nPQ.poll();
+			edges[i] = new ShortestPathDijkstrasAlgorithm().new Edge(
+					currV.getKey(), currV.getParentKey(), currV.getTempWeight());
+			
+			
 			currV.setVisited(true);
 			String currK = currV.getKey();
 
@@ -117,11 +122,11 @@ public class ShortestPathDijkstrasAlgorithm {
 
 			}
 
-			currV = nPQ.poll();
+			/*currV = nPQ.poll();
 
 			edges[i] = new ShortestPathDijkstrasAlgorithm().new Edge(
 					currV.getKey(), currV.getParentKey(), currV.getTempWeight());
-
+*/
 			i++;
 
 		}
