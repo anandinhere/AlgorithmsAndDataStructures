@@ -6,6 +6,24 @@ import java.util.Arrays;
  *         Note that the implementation of union() and find() is naive and takes O(n) time in worst case. 
  *         These methods can be improved to O(Logn) using Union by Rank or Height. We will soon be discussing 
  *         Union by Rank in a separate post
+ *         
+ *         /*
+ * /**
+ * 
+ * @author Anand.Siloju
+ * 
+ *         Reference: https://en.wikipedia.org/wiki/Disjoint-set_data_structure
+ *         (weighted-union heuristic) http://www.geeksforgeeks.org/union-find/
+ *         
+ *         Note that the implementation of union() and find() is naive and takes O(n) time in worst case. 
+ *         These methods can be improved to O(Logn) using Union by Rank or Height. We will soon be discussing 
+ *         Union by Rank in a separate post
+ * 
+ *
+ * 1. Find parent of x and y (find and find)
+ * 2. Set parent of y to x (union (find find parent-update)
+ * 3. If both parents same, print loop exists.
+ * How is it different from cycleFinding algorithm? Answer is "compress"step.
  */
 
 import graph.MinimumSpanningTreeKruskals.Graph.Edge;
@@ -29,11 +47,11 @@ public class MinimumSpanningTreeKruskals {
 			int srcp = find(e.from);
 			int srcf = find(e.to);
 
-			if (srcp != srcf) {
+			if (srcp != srcf) { //If adding this 'e' makes it a cycle, skip it
 				result[resultCount] = e;
 				resultCount++;
 
-				if (resultCount == parents.length - 1) {
+				if (resultCount == parents.length - 1) { //if enough edges added, print the edges and end the program.
 					System.out.println("\nMST");
 					printEdges(result);
 					return;
@@ -42,7 +60,8 @@ public class MinimumSpanningTreeKruskals {
 
 			union(e.from, e.to);
 
-			compress(e.from);
+			compress(e.from); //this compress doesn't improve anything. should not even be here I think.
+			//dont remember why i put it here. because find against does a full search in array upwards
 			compress(e.to);
 		}
 	}
@@ -55,7 +74,7 @@ public class MinimumSpanningTreeKruskals {
 
 	}
 
-	private static void compress(int x) {
+	private static void compress(int x) { //compress parents
 		if (parents[x] == -1)
 			return;
 		parents[x] = find(x);
