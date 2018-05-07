@@ -6,7 +6,7 @@ import java.util.Random;
 
 public class ArrayUtil {
 
-	static int[] getRandArray(int min, int max) {
+	public static int[] getRandArray(int min, int max) {
 
 		int size = max - min + 1;
 		int[] arr = new int[size];
@@ -14,7 +14,8 @@ public class ArrayUtil {
 
 		Random r = new Random();
 		while (list.size() < size) {
-
+			//Returns a random number.
+			//between 0 (inclusive) and n (exclusive).
 			int next = r.nextInt(max - min + 1) + min;
 			if (!list.contains(next)) {
 				list.add(next);
