@@ -14,6 +14,7 @@ public class ReservoirSamplingKfromN {
 		int[] arr = ArrayUtil.getRandArray(0, 10);
 		System.out.println(Arrays.toString(arr));
 		getRandomKArray(arr, k);
+		
 	}
 
 	private static void getRandomKArray(int[] arr, int k) {
