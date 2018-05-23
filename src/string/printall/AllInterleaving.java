@@ -1,4 +1,4 @@
-package string;
+package string.printall;
 
 public class AllInterleaving {
 

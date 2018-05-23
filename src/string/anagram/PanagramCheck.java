@@ -1,4 +1,4 @@
-package string;
+package string.anagram;
 
 public class PanagramCheck {
 	public static void main(String[] args) {
