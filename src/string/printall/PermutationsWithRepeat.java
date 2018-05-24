@@ -12,7 +12,7 @@ class PermutationsWithRepeat {
 		String str = "ABC";
 		// char[] input = str.toCharArray();
 		// char[] output = input.clone();
-		printPermute(0);
+		printPermuteGeeks(0);
 
 	}
 
@@ -43,7 +43,7 @@ class PermutationsWithRepeat {
 
 		for (int i = 0; i < input.length; i++) {
 			output[index] = input[i];
-			printPermute(index + 1);
+			printPermuteGeeks(index + 1);
 		}
 
 	}

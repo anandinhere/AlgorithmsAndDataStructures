@@ -35,6 +35,7 @@ public class Permutations {
 		// System.out.println(permCount);
 
 		for (int i = index; i < inputArr.length; i++) {
+			
 			if (index == inputArr.length - 1) {
 				for (int j = 0; j < inputArr.length; j++) {
 					System.out.print(inputArr[j]);
