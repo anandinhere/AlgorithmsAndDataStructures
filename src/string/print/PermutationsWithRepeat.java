@@ -1,4 +1,4 @@
-package string.printall;
+package string.print;
 
 import java.util.Arrays;
 

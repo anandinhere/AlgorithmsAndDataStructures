@@ -1,4 +1,4 @@
-package string.printall;
+package string.print;
 
 public class AllInterleaving {
 
@@ -10,6 +10,12 @@ public class AllInterleaving {
 		printInterleavings(str1, str2, str1.length(), str2.length(), 0);
 	}
 
+	
+	/*
+	 * So given process P1 with N instructions and process P2 with M instructions 
+	 * you get N+M over N, i.e. (N+M)! / N!M!
+	 * https://stackoverflow.com/questions/19316808/how-many-ways-can-the-statements-of-2-processes-be-interleaved
+	 */
 	private static void printInterleavings(String str1, String str2, int m,
 			int n, int i) {
 

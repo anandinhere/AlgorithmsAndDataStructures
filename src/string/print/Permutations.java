@@ -1,4 +1,4 @@
-package string.printall;
+package string.print;
 
 public class Permutations {
 	public static int permCount = 0;
