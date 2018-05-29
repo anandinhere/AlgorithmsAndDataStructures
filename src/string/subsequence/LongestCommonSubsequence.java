@@ -2,28 +2,30 @@ package string.subsequence;
 
 public class LongestCommonSubsequence {
 
-	static int recurseCount = 0;
+	static int recurseCountDP = 0;
+	static int recurseCountNoDP = 0;
 
 	public static void main(String[] args) {
 
 		String str1 = "abcd";
-		String str2 = "efghijkl";
+		String str2 = "efghijklakjabaaabc";
 		int l = getLengthOfLCS(str1, str2, str1.length(), str2.length());
 		System.out.println(l);
 
-		int[][] lcsDP = new int[str1.length() + 1][str2.length() + 1];
-		
+		int[][] lcsDP = new int[str1.length() + 1][str2.length() + 1]; //Initialize DP matrix, size 1 more than actual
+
 		initDPMatrix(str1, str2, lcsDP);
 
 		int lenDP = getLengthOfLCSUsingDP(str1, str2, str1.length(), str2.length(), lcsDP);
 		System.out.println(lenDP);
 
-		System.out.println("recurseCount " + recurseCount);
-		
+		System.out.println("recurseCountDP " + recurseCountDP);
+		System.out.println("recurseCountNoDP " + recurseCountNoDP);
+
 	}
 
 	private static void initDPMatrix(String str1, String str2, int[][] lcsDP) {
-		//Initializing DP matrix to -1
+		// Initializing DP matrix to -1
 		for (int i = 0; i <= str1.length(); i++) {
 			for (int j = 0; j <= str2.length(); j++) {
 				if (i == 0 || j == 0) {
@@ -36,7 +38,7 @@ public class LongestCommonSubsequence {
 
 	// No DP
 	private static int getLengthOfLCS(String str1, String str2, int m, int n) {
-
+		recurseCountNoDP++;
 		if (m == 0 || n == 0) {
 			return 0;
 		}
@@ -50,11 +52,12 @@ public class LongestCommonSubsequence {
 
 	private static int getLengthOfLCSUsingDP(String str1, String str2, int m, int n, int[][] lcsDP) {
 
-		recurseCount++;
+		recurseCountDP++;
 		if (m == 0 || n == 0) {
 			return 0;
 		}
 
+		//if already memoized, use it
 		if (lcsDP[m][n] != -1) {
 			return lcsDP[m][n];
 		}
