@@ -6,20 +6,20 @@ public class CountSubseqOfFormAiBjCk {
 
 	public static void main(String[] args) {
 
-		String str =   "abbc";
-		
+		String str = "abbc";
+
 		str = "abcabc";
 
 		int[] abcCount = new int[str.length() + 1];
 		int[] abCount = new int[str.length() + 1];
 		int[] aCount = new int[str.length() + 1];
 
-		// int count = getABCcountNoDP(str, abcCount, abCount, aCount, str.length());
-		// System.out.println(count);
+		int count = getABCcountNoDP(str, abcCount, abCount, aCount, str.length());
+		System.out.println(count);
 
 		initDPArrays(abcCount, abCount, aCount);
 
-		int count = getABCcountDP(str, abcCount, abCount, aCount, str.length());
+		count = getABCcountDP(str, abcCount, abCount, aCount, str.length());
 		System.out.println(count);
 
 		count = getABCcountSimple(str);
@@ -27,32 +27,42 @@ public class CountSubseqOfFormAiBjCk {
 
 	}
 
-	/*
-	 * private static int getABCcountNoDP(String str, int[] abcCount, int[] abCount,
-	 * int[] aCount, int i) {
-	 * 
-	 * if (i == 0) { return 0; }
-	 * 
-	 * if (str.charAt(i - 1) == 'c') { return 2 * getABCcountNoDP(str, abcCount,
-	 * abCount, aCount, i - 1) + getABcount(str, abcCount, abCount, aCount, i - 1);
-	 * 
-	 * } else return getABCcountNoDP(str, abcCount, abCount, aCount, i - 1); }
-	 * 
-	 * private static int getABcount(String str, int[] abcCount, int[] abCount,
-	 * int[] aCount, int i) { if (i == 0) { return 0; } if (str.charAt(i - 1) ==
-	 * 'b') { return 2 * getABcount(str, abcCount, abCount, aCount, i - 1) +
-	 * getAcount(str, abcCount, abCount, aCount, i - 1); } else return
-	 * getABcount(str, abcCount, abCount, aCount, i - 1);
-	 * 
-	 * }
-	 * 
-	 * private static int getAcount(String str, int[] abcCount, int[] abCount, int[]
-	 * aCount, int i) { if (i == 0) { return 0; } if (str.charAt(i - 1) == 'a') {
-	 * return 2 * getAcount(str, abcCount, abCount, aCount, i - 1) + 1; } else
-	 * return getAcount(str, abcCount, abCount, aCount, i - 1);
-	 * 
-	 * }
-	 */
+	private static int getABCcountNoDP(String str, int[] abcCount, int[] abCount, int[] aCount, int i) {
+
+		if (i == 0) {
+			return 0;
+		}
+
+		if (str.charAt(i - 1) == 'c') {
+			return 2 * getABCcountNoDP(str, abcCount, abCount, aCount, i - 1)
+					+ getABcount(str, abcCount, abCount, aCount, i - 1);
+
+		} else
+			return getABCcountNoDP(str, abcCount, abCount, aCount, i - 1);
+	}
+
+	private static int getABcount(String str, int[] abcCount, int[] abCount, int[] aCount, int i) {
+		if (i == 0) {
+			return 0;
+		}
+		if (str.charAt(i - 1) == 'b') {
+			return 2 * getABcount(str, abcCount, abCount, aCount, i - 1)
+					+ getAcount(str, abcCount, abCount, aCount, i - 1);
+		} else
+			return getABcount(str, abcCount, abCount, aCount, i - 1);
+
+	}
+
+	private static int getAcount(String str, int[] abcCount, int[] abCount, int[] aCount, int i) {
+		if (i == 0) {
+			return 0;
+		}
+		if (str.charAt(i - 1) == 'a') {
+			return 2 * getAcount(str, abcCount, abCount, aCount, i - 1) + 1;
+		} else
+			return getAcount(str, abcCount, abCount, aCount, i - 1);
+
+	}
 
 	private static int getABCcountSimple(String str) {
 		int aCount = 0;
