@@ -11,35 +11,37 @@ public class CountNoOfSubseqDivByN {
 
 	public static void main(String[] args) {
 		remainderTestAddCharToRight();
-		int n = 4;
+		int n = 6;
 
-		String str = "1234";
+		String str = "66842866";
 
 		int count;
-//		count = getCountNoDP(str, str.length(), 0, n, "", 0);
-//
-//		// count reduced by 1 so as to not consider empty subsequence
-//		System.out.println("Recursion Solution " + new Integer(count - 1));
-//
-//		countDP = new int[str.length() + 1][n][str.length()];
+		// count = getCountNoDP(str, str.length(), 0, n, "", 0);
+		//
+		// // count reduced by 1 so as to not consider empty subsequence
+		// System.out.println("Recursion Solution " + new Integer(count - 1));
+		//
+		// countDP = new int[str.length() + 1][n][str.length()];
 
-//
-//		initDPMatrix(countDP);
-//		initDPMatrixEff(countDPEff);
-//
-//		count = getCountDPTopDown(str, str.length(), 0, n, "", 0);
-//
-//		// count reduced by 1 so as to not consider empty subsequence
-//		System.out.println("DP Solution " + new Integer(count - 1));
-//		// System.out.println(countDP[str.length()][0][0]);
+		//
+		// initDPMatrix(countDP);
+		// initDPMatrixEff(countDPEff);
+		//
+		// count = getCountDPTopDown(str, str.length(), 0, n, "", 0);
+		//
+		// // count reduced by 1 so as to not consider empty subsequence
+		// System.out.println("DP Solution " + new Integer(count - 1));
+		// // System.out.println(countDP[str.length()][0][0]);
 
-		countDPEff = new int[str.length()][n + 1];
-		initDPMatrixEff(countDPEff);
-
-		count = getCountDPEffTopDown(str, 0, 0, n, "");
-
-		// count reduced by 1 so as to not consider empty subsequence
-		System.out.println("DP TopDown EffSolution " + new Integer(count - 1));
+		 countDPEff = new int[str.length()][n + 1];
+		 initDPMatrixEff(countDPEff);
+		
+		 count = getCountDPEffTopDown(str, 0, 0, n, "");
+		 // count reduced by 1 so as to not consider empty subsequence
+		 System.out.println("DP TopDown EffSolution " + new Integer(count - 1));
+		
+		countDPEff = new int[str.length() + 1][n + 1];
+		getCountDPBottomUp(str, n);
 
 	}
 
@@ -114,7 +116,7 @@ public class CountNoOfSubseqDivByN {
 		return count;
 	}
 
-	//O(n^3)
+	// O(n^3)
 	private static int getCountDPTopDown(String str, int i, int r, int n, String s, int digCount) {
 
 		System.out.println("r-" + r + " s-" + s + " i-" + i);
@@ -148,13 +150,11 @@ public class CountNoOfSubseqDivByN {
 		return countDP[i][r][digCount];
 	}
 
-	//O(n^2)
+	// O(n^2)
 	private static int getCountDPEffTopDown(String str, int i, int r, int n, String s) {
-		//System.out.println("s "+s);
-		
-		
-		
-		System.out.println("r-" + r + " s-" + s + " i-" + i);
+		// System.out.println("s "+s);
+
+		// System.out.println("r-" + r + " s-" + s + " i-" + i);
 		if (i == str.length()) {
 			if (r == 0) {
 				System.out.println(s);
@@ -165,6 +165,7 @@ public class CountNoOfSubseqDivByN {
 		if (countDPEff[i][r] != -1) {
 			return countDPEff[i][r];
 		}
+
 		int newChar = (str.charAt(i) - '0');
 
 		// basically computing r and newR
@@ -177,34 +178,58 @@ public class CountNoOfSubseqDivByN {
 		newRem = (int) (((r * 10) + (newChar % n)) % n);
 
 		// count + 1 because , one more char is included for computing new remainder
-		
+
 		countDPEff[i][r] += getCountDPEffTopDown(str, i + 1, newRem, n, s + newChar);
 
 		return countDPEff[i][r];
 	}
 
-	private static int getCountDPBottomUp(String str, int r, int n, String s) {
+	// Remember - In bottom up all possible matrix indixes are filled.
+	// So fill all possible indices with given i and j
+	private static void getCountDPBottomUp(String str, int n) {
 
 		// Filling value for first digit in str
-		countDPEff[0][(str.charAt(0) - '0') % n]++;
+		// countDPEff[0][(str.charAt(0) - '0') % n]++;
 
-		for (int i = 1; i < countDP.length; i++) {
+		for (int i = 0; i < countDPEff.length; i++) {
+			for (int j = 0; j < countDPEff[0].length; j++) {
 
-			// start a new subsequence with index i
-			countDPEff[i][(str.charAt(i) - '0') % n]++;
-			for (int j = 0; j < countDP[0].length; j++) {
-				// exclude i'th character from all the
-				// current subsequences of string [0...i-1]
-				countDPEff[i][j] += countDPEff[i - 1][j];
-
-				// include i'th character in all the current
-				// subsequences of string [0...i-1]
-				countDPEff[i][(j * 10 + (str.charAt(i) - '0')) % n] += countDPEff[i - 1][j];
+				countDPEff[i][j] = 0;
 
 			}
 		}
 
-		return countDPEff[str.length()][0];
+//		for (int i = 1; i < countDPEff.length; i++) {
+//			countDPEff[i][0] = 1;
+//		}
+		
+		countDPEff[str.length()][0] = 1;
+
+		for (int i = str.length() - 1; i >= 0; i--) {
+
+			for (int r = 0; r < countDPEff[0].length; r++) {
+
+				int newChar = (str.charAt(i) - '0');
+
+				// basically computing r and newR
+				// count is sum of subseq including and not including this char
+				countDPEff[i][r] = countDPEff[i + 1][r];
+
+				// newRem to be computed only if the newChar is considered for subsequence.
+				int newRem = 0;
+
+				newRem = (int) (((r * 10) + (newChar % n)) % n);
+
+				// count + 1 because , one more char is included for computing new remainder
+
+				countDPEff[i][r] += countDPEff[i + 1][newRem];
+
+			}
+		}
+		
+		int solution = countDPEff[0][0]-1;
+
+		System.out.println("getCountDPBottomUp " + solution);
 	}
 
 	private static void remainderTestAddCharToRight() {
@@ -212,10 +237,10 @@ public class CountNoOfSubseqDivByN {
 		// 1974
 		int n = 4;
 		int x = 0;
-		int newChar = 5;
 
-		int r = x % n;
-		r = 0;
+		int r = 1;
+		int newChar = 2;
+		// r = 0;
 		int newR = ((r * 10) + (newChar % n)) % n;
 
 		System.out.println("r - " + r);
