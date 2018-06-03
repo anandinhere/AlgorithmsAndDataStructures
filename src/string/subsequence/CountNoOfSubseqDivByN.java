@@ -13,7 +13,7 @@ public class CountNoOfSubseqDivByN {
 		remainderTestAddCharToRight();
 		int n = 6;
 
-		String str = "66842866";
+		String str = "676";
 
 		int count;
 		// count = getCountNoDP(str, str.length(), 0, n, "", 0);
