@@ -18,13 +18,37 @@ public class CountDistinctSubseq {
 		int count = 0;
 
 		for (int i = 0; i <= str.length(); i++) {
-			count = getCount(4);
+			count = getCountRecursion(4);
 			System.out.println(count);
 		}
 
 	}
 
-	private static int getCount(int i) {
+	//This is not working becuase same lastIndexArr is being modified in recursive calls.
+	// As it messes up already computed values for example in "gggg"
+	// when doing third g, 2nd g value may get messed up and it propagates to 3rd g .
+	// so better to save intermediate values. And since lastIndexMatrix is modified once per char,
+	// we are safe.
+	private static int getCountRecursion(int i) {
+
+//		if (i == 0) {
+//			dpMatrix[i] = 1;
+//			return 1;
+//		}
+
+		int count = 2 * getCountRecursion(i - 1);
+		// Because we are starting with one index ahead
+		int lastIndex = lastIndexArr[str.charAt(i - 1)];
+		if (lastIndex != -1)
+			count = count - getCountRecursion(lastIndex);
+
+		// Because we are starting with one index ahead
+		lastIndexArr[str.charAt(i - 1)] = i - 1;
+		dpMatrix[i] = count;
+		return count;
+	}
+
+	private static int getCountDPTopDown(int i) {
 		if (dpMatrix[i] != -1) {
 			return dpMatrix[i];
 		}
@@ -34,13 +58,15 @@ public class CountDistinctSubseq {
 			return 1;
 		}
 
-		int count = 2 * getCount(i - 1);
+		int count = 2 * getCountDPTopDown(i - 1);
 		// Because we are starting with one index ahead
 		int lastIndex = lastIndexArr[str.charAt(i - 1)];
-		if (lastIndex != -1)
-			count = count - getCount(lastIndex);
+		if (lastIndex != -1) {
+			count = count - getCountDPTopDown(lastIndex);
+		}
 
 		// Because we are starting with one index ahead
+
 		lastIndexArr[str.charAt(i - 1)] = i - 1;
 		dpMatrix[i] = count;
 		return count;
