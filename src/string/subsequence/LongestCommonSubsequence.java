@@ -1,5 +1,7 @@
 package string.subsequence;
 
+import matrix.MatrixUtil;
+
 public class LongestCommonSubsequence {
 
 	static int recurseCountDP = 0;
@@ -8,13 +10,13 @@ public class LongestCommonSubsequence {
 	public static void main(String[] args) {
 
 		String str1 = "abcd";
-		String str2 = "efghijklakjabaaabc";
+		String str2 = "abcdljlkj";
 		int l = getLengthOfLCS(str1, str2, str1.length(), str2.length());
 		System.out.println(l);
 
 		int[][] lcsDP = new int[str1.length() + 1][str2.length() + 1]; //Initialize DP matrix, size 1 more than actual
 
-		initDPMatrix(str1, str2, lcsDP);
+		MatrixUtil.init2DMatrixTopDown(lcsDP);
 
 		int lenDP = getLengthOfLCSUsingDP(str1, str2, str1.length(), str2.length(), lcsDP);
 		System.out.println(lenDP);
@@ -24,17 +26,6 @@ public class LongestCommonSubsequence {
 
 	}
 
-	private static void initDPMatrix(String str1, String str2, int[][] lcsDP) {
-		// Initializing DP matrix to -1
-		for (int i = 0; i <= str1.length(); i++) {
-			for (int j = 0; j <= str2.length(); j++) {
-				if (i == 0 || j == 0) {
-					lcsDP[i][j] = 0;
-				}
-				lcsDP[i][j] = -1;
-			}
-		}
-	}
 
 	// No DP
 	private static int getLengthOfLCS(String str1, String str2, int m, int n) {

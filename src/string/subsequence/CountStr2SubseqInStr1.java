@@ -3,8 +3,9 @@ package string.subsequence;
 import matrix.MatrixUtil;
 
 public class CountStr2SubseqInStr1 {
-	static String strM = "GeeksForGeeks";
-	static String strN = "Gks";
+	static String strM = "anand";
+	static String strN = "an";
+	//DP Matrix Dimension always 1 greater than inputs
 	static int[][] matrixDP = new int[strM.length() + 1][strN.length() + 1];
 
 	public static void main(String[] args) {
@@ -13,8 +14,12 @@ public class CountStr2SubseqInStr1 {
 		System.out.println("Recursion :" + count);
 
 		MatrixUtil.init2DMatrixTopDown(matrixDP);
-		count = getCountDP(strM.length(), strN.length());
+		count = getCountDPTopDown(strM.length(), strN.length());
 		System.out.println("DP TopDown :" + count);
+
+		MatrixUtil.init2DMatrixBottomUp(matrixDP);
+		count = getCountDPBottomUp();
+		System.out.println("DP BottomUp :" + count);
 
 	}
 
@@ -33,7 +38,7 @@ public class CountStr2SubseqInStr1 {
 		return count;
 	}
 
-	private static int getCountDP(int m, int n) {
+	private static int getCountDPTopDown(int m, int n) {
 
 		if (n == 0)
 			return 1;
@@ -50,5 +55,24 @@ public class CountStr2SubseqInStr1 {
 		} else
 			count = getCountRecursion(m - 1, n);
 		return count;
+	}
+
+	private static int getCountDPBottomUp() {
+
+		// Set default case
+		for (int i = 0; i < strM.length(); i++) {
+			matrixDP[i][0] = 1;
+		}
+
+		for (int i = 1; i <= strM.length(); i++) {
+			for (int j = 1; j <= strN.length(); j++) {
+				if (strM.charAt(i - 1) == strN.charAt(j - 1)) {
+					matrixDP[i][j] = matrixDP[i - 1][j - 1] + matrixDP[i - 1][j];
+				} else
+					matrixDP[i][j] = matrixDP[i - 1][j];
+			}
+		}
+
+		return matrixDP[strM.length()][strN.length()];
 	}
 }
