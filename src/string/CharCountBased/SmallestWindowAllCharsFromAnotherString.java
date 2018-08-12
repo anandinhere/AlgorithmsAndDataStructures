@@ -1,4 +1,4 @@
-package string;
+package string.CharCountBased;
 
 public class SmallestWindowAllCharsFromAnotherString {
 
