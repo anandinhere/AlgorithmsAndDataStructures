@@ -99,10 +99,10 @@ public class SmallestWindowAllCharsFromAnotherString {
 
 			char c = str.charAt(i);
 			strMap[c]++;
-			
+
 			// '<' -- for incrementing.
 			if (patMap[c] > 0 && strMap[c] <= patMap[c]) {
-				
+
 				count++;
 			}
 
@@ -115,7 +115,7 @@ public class SmallestWindowAllCharsFromAnotherString {
 						// count--;
 					}
 					start++;
-					//since incrementing start, change start char
+					// since incrementing start, change start char
 					chatAtStart = str.charAt(start);
 				}
 
@@ -130,6 +130,9 @@ public class SmallestWindowAllCharsFromAnotherString {
 
 		}
 
+		if (startIndex == -1) {
+			return null;
+		}
 		System.out.println(minLength);
 
 		return str.substring(startIndex, startIndex + minLength);
