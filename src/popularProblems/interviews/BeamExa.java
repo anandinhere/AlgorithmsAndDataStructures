@@ -9,9 +9,10 @@ import array.sorting.ArrayUtil;
 public class BeamExa {
 	public static void main(String[] args) {
 
-		String str = "123 1234 klshfklhsfoewur 123 lk  456 aljd 123 kjk 456 lkj lkslksfljsdf ";
+		String str = "123 1234 klshfklhsfoewur 123 4567 aljd 123 kk 4567 lkj lkslksfljsdf ";
 
 		String pat = "123 456";
+		String[] patArr = pat.split(" ");
 
 		Trie t = new Trie();
 
@@ -36,8 +37,64 @@ public class BeamExa {
 
 		t.print(t.root);
 
-		List l = t.search(t.root, "123", 3, 0);
-		System.out.println(l.toString());
+		List<Integer> l1 = t.search(t.root, patArr[0], 3, 0);
+		List<Integer> l2 = t.search(t.root, patArr[1], 3, 0);
+
+		getSmallestWindow(l1, l2, patArr[0], patArr[1]);
+
+	}
+
+	// O(m+n)
+	private static void getSmallestWindow(List<Integer> l1, List<Integer> l2, String pat1, String pat2) {
+
+		if (l1.size() == 0 || l2.size() == 0) {
+			System.out.println("No window found!");
+			return;
+		}
+
+		int[] l1Arr = new int[l1.size()];
+		int[] l2Arr = new int[l2.size()];
+
+		int i = 0;
+		for (Integer item : l1) {
+			l1Arr[i] = item;
+			i++;
+		}
+		i = 0;
+		for (Integer item : l2) {
+			l2Arr[i] = item;
+			i++;
+		}
+
+		i = 0;
+		int j = 0;
+
+		int start = -1;
+		int end = -1;
+		int minLen = Integer.MAX_VALUE;
+		int currLen = Integer.MAX_VALUE;
+
+		while (i < l1Arr.length && j < l2Arr.length) {
+
+			if (l1Arr[i] < l2Arr[j]) {
+				currLen = l2Arr[j] - l1Arr[i];
+
+				if (currLen < minLen) {
+					minLen = currLen;
+					start = i;
+					end = j;
+				}
+
+			} else {
+				j++;
+				continue;
+			}
+			i++;
+
+		}
+
+		System.out.println("Start " + l1Arr[start] + "\nEnd " + (l2Arr[end] + pat2.length()) + "\nMin Length "
+				+ (minLen + pat2.length()));
 
 	}
 
