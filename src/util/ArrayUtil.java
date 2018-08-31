@@ -14,8 +14,8 @@ public class ArrayUtil {
 
 		Random r = new Random();
 		while (list.size() < size) {
-			//Returns a random number.
-			//between 0 (inclusive) and n (exclusive).
+			// Returns a random number.
+			// between 0 (inclusive) and n (exclusive).
 			int next = r.nextInt(max - min + 1) + min;
 			if (!list.contains(next)) {
 				list.add(next);
@@ -32,7 +32,7 @@ public class ArrayUtil {
 		return arr;
 	}
 
-	static void printArray(int[] arr) {
+	public static void printArray(int[] arr) {
 		System.out.println(Arrays.toString(arr));
 		// for (int e : arr) {
 		// System.out.println(e);
