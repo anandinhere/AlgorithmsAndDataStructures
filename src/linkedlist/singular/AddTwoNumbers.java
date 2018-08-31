@@ -10,10 +10,12 @@ import util.linkedlist.ListNode;
 public class AddTwoNumbers {
 	public static void main(String[] args) {
 		ListNode a = new ListNode().getLinkedList(4);
-		ListNode b = new ListNode().getLinkedList(4);
+		ListNode b = new ListNode().getLinkedList(3);
 
 		a.printLinkedList();
 		b.printLinkedList();
+		
+		
 
 		int finalCarry = addNumbers(a, b);
 

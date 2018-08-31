@@ -2,7 +2,7 @@ package array.streams;
 
 import java.util.Arrays;
 
-import array.sorting.ArrayUtil;
+import util.ArrayUtil;
 
 public class AvgOfStreamOfNumbers {
 	public static void main(String[] args) {

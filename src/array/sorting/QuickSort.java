@@ -2,6 +2,8 @@ package array.sorting;
 
 import java.util.Arrays;
 
+import util.ArrayUtil;
+
 public class QuickSort {
 	public static void main(String[] args) {
 
@@ -43,7 +45,7 @@ public class QuickSort {
 			} else if (arr[endPtr] > pivotVal) {
 				endPtr--;
 			} else {
-				int temp = arr[startPtr];
+				int temp = arr[startPtr]; //ptrs dont change when swapping
 				arr[startPtr] = arr[endPtr];
 				arr[endPtr] = temp;
 
@@ -52,7 +54,7 @@ public class QuickSort {
 		}
 		System.out.println(startPtr + " " + endPtr);
 		ArrayUtil.printArray(arr);
-		return startPtr;
+		return startPtr; //return final position of pivot 
 	}
 
 	private static int getPivot(int[] arr, int start, int end) {

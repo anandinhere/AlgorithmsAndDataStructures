@@ -2,6 +2,8 @@ package array.sorting;
 
 import java.util.Arrays;
 
+import util.ArrayUtil;
+
 public class SelectionSort {
 	public static void main(String[] args) {
 

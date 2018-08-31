@@ -2,6 +2,8 @@ package array.sorting;
 
 import java.util.Arrays;
 
+import util.ArrayUtil;
+
 public class BubbleSort {
 
 	public static void main(String[] args) {
@@ -19,6 +21,8 @@ public class BubbleSort {
 	 * Start from j(=0), bubble to end (i = length-1)
 	 * numbers will be sorted on the top (to the end)
 	 * 1st for loop start is where the final array starts filling 
+	 * 
+	 * compare every num with num in next index. swap if greater than next.
 	 */
 	private static void bubbleSort(int[] arr) {
 

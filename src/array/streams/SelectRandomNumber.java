@@ -3,7 +3,7 @@ package array.streams;
 import java.util.Arrays;
 import java.util.Random;
 
-import array.sorting.ArrayUtil;
+import util.ArrayUtil;
 
 //Similar to Reservoir saml=ling, only difference here is K = 1
 public class SelectRandomNumber {

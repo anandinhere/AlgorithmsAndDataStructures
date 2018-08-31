@@ -75,12 +75,12 @@ public class ShortestPathDijkstrasAlgorithm {
 		
 
 		ShortestPathDijkstrasAlgorithm.Edge[] edges = new ShortestPathDijkstrasAlgorithm.Edge[vertices
-				.size() - 1];
+				.size() - 1]; //creating edges array to traverse path
 		
 
 		int i = 0;
 
-		while (!nPQ.isEmpty()) {
+		while (!nPQ.isEmpty()) { //until all nodes traversed
 			
 			currV = nPQ.poll();
 			edges[i] = new ShortestPathDijkstrasAlgorithm().new Edge(
@@ -95,7 +95,7 @@ public class ShortestPathDijkstrasAlgorithm {
 			System.out.println(currK);
 			// if (!g.getVertex(v).isVisited()) {
 			adjNodes = g.getAdjacentVertexList(currK);
-			for (Node n : adjNodes) {
+			for (Node n : adjNodes) { //all adjacent nodes - in other words - edges
 
 				int edgeWeight = n.getWeight();
 				String edgeTo = n.getKey();

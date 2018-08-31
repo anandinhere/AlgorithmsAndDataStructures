@@ -3,7 +3,7 @@ package array.streams;
 import java.util.Arrays;
 import java.util.Random;
 
-import array.sorting.ArrayUtil;
+import util.ArrayUtil;
 
 public class ShuffleArrayFisherYatesAlgorithm {
 	public static void main(String[] args) {

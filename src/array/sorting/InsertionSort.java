@@ -2,6 +2,8 @@ package array.sorting;
 
 import java.util.Arrays;
 
+import util.ArrayUtil;
+
 public class InsertionSort {
 	public static void main(String[] args) {
 
@@ -15,8 +17,8 @@ public class InsertionSort {
 	// [7, 5, 9, 6, 2, 1, 0, 10, 3, 4, 8]
 
 	/*
-	 * best case - n comparisons, worst case - n comparisons and n^2 moves all
-	 * elements left of i will be sorted at any given time, but may be moved
+	 * best case - n comparisons, worst case - n comparisons and n^2 moves 
+	 * all elements left of i will be sorted at any given time, but may be moved
 	 * after insertion.
 	 */
 	private static void insertionSort(int[] arr) {
@@ -24,7 +26,7 @@ public class InsertionSort {
 		for (int i = 1; i < arr.length; i++) {
 
 			int min = i - 1;
-			while (min >= 0 && arr[i] < arr[min]) {
+			while (min >= 0 && arr[i] < arr[min]) { //finding the position to insert
 				min = min - 1;
 			}
 			insert(arr[i], i, min + 1, arr); // min + 1 is the index where the

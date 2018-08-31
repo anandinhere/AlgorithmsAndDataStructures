@@ -4,7 +4,7 @@ import java.util.Arrays;
 import java.util.Collections;
 import java.util.PriorityQueue;
 
-import array.sorting.ArrayUtil;
+import util.ArrayUtil;
 
 public class MedianInStreamOfIntegers {
 

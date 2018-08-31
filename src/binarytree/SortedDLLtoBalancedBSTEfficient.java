@@ -10,14 +10,26 @@ public class SortedDLLtoBalancedBSTEfficient {
 		TreeNode node4 = new TreeNode(4);
 		TreeNode node5 = new TreeNode(5);
 		TreeNode node6 = new TreeNode(6);
+		
 
 		TreeNode.appendTreeList(node1, node2);
 		TreeNode.appendTreeList(node1, node3);
 		TreeNode.appendTreeList(node1, node4);
 		TreeNode.appendTreeList(node1, node5);
 		TreeNode.appendTreeList(node1, node6);
+		
+//		TreeNode node7 = new TreeNode(7);
+//		TreeNode.appendTreeList(node1, node7);
+		
+//		TreeNode node8 = new TreeNode(8);
+//		TreeNode.appendTreeList(node1, node8);
+		
+//		TreeNode node9 = new TreeNode(9);
+//		TreeNode.appendTreeList(node1, node9);
 
 		TreeNode.printDoublyList(node1);
+		
+		//node1.printInorder(node1); Wont work, as node's right child's left is pointing back to node.
 
 		SortedDLLtoBalancedBSTEfficient.head = node1;
 
@@ -35,7 +47,7 @@ public class SortedDLLtoBalancedBSTEfficient {
 		TreeNode left = convertDLLtoBST(n / 2);
 		TreeNode root = head;
 		root.left = left;
-		head = head.right;
+		head = root.right;
 		root.right = convertDLLtoBST(n - (n / 2) - 1);
 
 		return root;
