@@ -22,9 +22,21 @@ public class SegmentTree {
 		System.out.println(totalSum);
 
 	}
+	
+	/**
+	 * 
+	 * @param tree - Segment Tree
+	 * @param arr - Input Array
+	 * @param treeStart - SegmentTree Start
+	 * @param treeEnd - Apparently nort required
+	 * @param arrStart - Start index of input array
+	 * @param arrEnd - end index of input array
+	 * @return
+	 */
 
 	private static int segmentTree(int[] tree, int[] arr, int treeStart, int treeEnd, int arrStart, int arrEnd) {
 
+		//This implies leaf node is reached
 		if (arrStart == arrEnd) {
 			tree[treeStart] = arr[arrStart];
 			return tree[treeStart];
