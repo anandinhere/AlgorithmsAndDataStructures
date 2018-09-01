@@ -20,11 +20,38 @@ public class SegmentTree {
 
 		System.out.println(totalSum);
 
-		int rangeStart = 10;
-		int rangeEnd = 10;
+		int rangeStart = 2;
+		int rangeEnd = 8;
 
 		int sum = findSumWithInRange(tree, arr, 0, rangeStart, rangeEnd, 0, arr.length - 1);
 		System.out.println("Range Sum - " + sum);
+
+		int sumAfterUpdate = updateIndex(tree, arr, 0, 0, arr.length - 1, 3, 40);
+		ArrayUtil.printArray(tree);
+
+	}
+
+	private static int updateIndex(int[] tree, int[] arr, int treeIndex, int arrStart, int arrEnd, int targetIndex,
+			int value) {
+
+		// range is same as array limits
+		if (arrStart == arrEnd && targetIndex == arrEnd) {
+			return tree[treeIndex] = value;
+		}
+
+		int mid = (arrStart + arrEnd) / 2;
+
+		// make sure of inequality test is correct
+		if (targetIndex <= mid) {
+			updateIndex(tree, arr, treeIndex * 2 + 1, arrStart, mid, targetIndex, value);
+			tree[treeIndex] = tree[treeIndex * 2 + 1] + tree[treeIndex * 2 + 2];
+			return tree[treeIndex];
+
+			// make sure of inequality test is correct
+		} else
+			updateIndex(tree, arr, treeIndex * 2 + 2, mid + 1, arrEnd, targetIndex, value);
+		tree[treeIndex] = tree[treeIndex * 2 + 1] + tree[treeIndex * 2 + 2];
+		return tree[treeIndex];
 
 	}
 
@@ -56,12 +83,12 @@ public class SegmentTree {
 		}
 
 		int mid = (arrStart + arrEnd) / 2;
-		
+
 		// make sure of inequality test is correct
 		if (rangeStart <= mid && mid < rangeEnd) {
 			return findSumWithInRange(tree, arr, treeIndex * 2 + 1, rangeStart, mid, arrStart, mid)
 					+ findSumWithInRange(tree, arr, treeIndex * 2 + 2, mid + 1, rangeEnd, mid + 1, arrEnd);
-		
+
 			// make sure of inequality test is correct
 		} else if (rangeStart <= mid && mid >= rangeEnd) {
 			return findSumWithInRange(tree, arr, treeIndex * 2 + 1, rangeStart, rangeEnd, arrStart, mid);
