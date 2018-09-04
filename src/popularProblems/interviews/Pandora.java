@@ -1,4 +1,4 @@
-package test;
+package popularProblems.interviews;
 
 public class Pandora {
 

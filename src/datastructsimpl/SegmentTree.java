@@ -106,7 +106,7 @@ public class SegmentTree {
 	 * @param treeStart
 	 *            - SegmentTree Start
 	 * @param treeEnd
-	 *            - Apparently nort required
+	 *            - Apparently not required
 	 * @param arrStart
 	 *            - Start index of input array
 	 * @param arrEnd
@@ -122,8 +122,10 @@ public class SegmentTree {
 			return tree[treeStart];
 		}
 
+		//Finding mid of array here. Not Tree. VERY IMPORTANT
 		int mid = (arrStart + arrEnd) / 2;
 
+		
 		tree[treeStart] = segmentTree(tree, arr, 2 * treeStart + 1, treeEnd, arrStart, mid)
 				+ segmentTree(tree, arr, 2 * treeStart + 2, treeEnd, mid + 1, arrEnd);
 

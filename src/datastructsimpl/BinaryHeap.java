@@ -48,6 +48,9 @@ class BinaryHeap{
       
   }
   
+  /*https://stackoverflow.com/questions/1787252/is-there-a-on-algorithm-to-build-a-max-heap
+   * 
+   */
   private void trickleDown(int index){ // swap with child with higher key
       
   }
