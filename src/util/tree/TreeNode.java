@@ -56,6 +56,39 @@ public class TreeNode implements Comparable<TreeNode> {
 		}
 	}
 
+	public void printPreOrder(TreeNode r) {
+
+		if (r == null) {
+			return;
+
+		}
+		System.out.print(r.value + " ");
+		
+		printPreOrder(r.left);
+
+		printPreOrder(r.right);
+		if (r == this) {
+			System.out.println();
+		}
+	}
+	
+	public void printPostOrder(TreeNode r) {
+
+		if (r == null) {
+			return;
+
+		}
+		
+		
+		printPostOrder(r.left);
+
+		printPostOrder(r.right);
+		System.out.print(r.value + " ");
+		if (r == this) {
+			System.out.println();
+		}
+	}
+
 	public TreeNode insert(TreeNode root, int key) {
 
 		if (root == null) {
@@ -136,8 +169,7 @@ public class TreeNode implements Comparable<TreeNode> {
 				}
 
 				if (node.right != null) {
-					node.right.printPosition = node.printPosition
-							+ node.printPosition / 2;
+					node.right.printPosition = node.printPosition + node.printPosition / 2;
 					q2.add(node.right);
 				}
 
@@ -157,8 +189,7 @@ public class TreeNode implements Comparable<TreeNode> {
 				}
 
 				if (node.right != null) {
-					node.right.printPosition = node.printPosition
-							+ node.printPosition / 2;
+					node.right.printPosition = node.printPosition + node.printPosition / 2;
 					q1.add(node.right);
 				}
 
