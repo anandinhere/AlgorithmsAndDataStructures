@@ -1,10 +1,13 @@
 package string.subsequence;
 
 import matrix.MatrixUtil;
+import java.util.*;
+
+import java.util.LinkedList;
 
 public class CountDistinctSubseq {
 
-	static String str = "gggg";
+	static String str = "aaaaa";
 	static int[] lastIndexArr = new int[256];
 	// Golden Rule - DP Matrix size always 1 greater than input
 	static int[] dpMatrix = new int[str.length() + 1];
@@ -17,35 +20,43 @@ public class CountDistinctSubseq {
 		// lastIndex[str.charAt(0)] = 0;
 		int count = 0;
 
-		for (int i = 0; i <= str.length(); i++) {
-			count = getCountRecursion(4);
+		//for (int i = 0; i <= str.length(); i++) {
+			count = getCountRecursion(0);
 			System.out.println(count);
-		}
+		//}
 
 	}
 
-	//This is not working becuase same lastIndexArr is being modified in recursive calls.
-	// As it messes up already computed values for example in "gggg"
-	// when doing third g, 2nd g value may get messed up and it propagates to 3rd g .
-	// so better to save intermediate values. And since lastIndexMatrix is modified once per char,
-	// we are safe.
+
 	private static int getCountRecursion(int i) {
 
-//		if (i == 0) {
-//			dpMatrix[i] = 1;
-//			return 1;
-//		}
+		if (i == str.length()) {
+			return 1;
+		}
 
-		int count = 2 * getCountRecursion(i - 1);
-		// Because we are starting with one index ahead
-		int lastIndex = lastIndexArr[str.charAt(i - 1)];
-		if (lastIndex != -1)
-			count = count - getCountRecursion(lastIndex);
+		int count = 2 * getCountRecursion(i + 1);
+		int lastIndex = findCharIndex(str.charAt(i),i+1);
+		if (lastIndex!=-1){
 
-		// Because we are starting with one index ahead
-		lastIndexArr[str.charAt(i - 1)] = i - 1;
-		dpMatrix[i] = count;
+                count = count - (getCountRecursion(lastIndex+1) );
+                //removing all subseq starting after next occurence. that is nothing
+                // but count( index of char after next occurence)
+
+        }
+
 		return count;
+	}
+
+	private static int findCharIndex(char in,int start) {
+
+
+		while(start<str.length()){
+			if(str.charAt(start)==in){
+                return start;
+			}
+			start ++;
+		}
+		return -1;
 	}
 
 	private static int getCountDPTopDown(int i) {

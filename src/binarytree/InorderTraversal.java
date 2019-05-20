@@ -11,7 +11,7 @@ public class InorderTraversal {
 		Stack<TreeNode> s = new Stack<TreeNode>();
 		TreeNode temp = root;
 
-		while (temp != null) {
+		while (temp != null) { //Go all the way to left most bottom node and keep adding to stack.
 			s.add(temp);
 			temp = temp.left;
 		}

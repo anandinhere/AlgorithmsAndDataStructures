@@ -10,7 +10,7 @@ public class CountStr2SubseqInStr1 {
 
 	public static void main(String[] args) {
 
-		int count = getCountRecursion(strM.length(), strN.length());
+		int count = getCountRecursion(0, 0);
 		System.out.println("Recursion :" + count);
 
 		MatrixUtil.init2DMatrixTopDown(matrixDP);
@@ -25,16 +25,16 @@ public class CountStr2SubseqInStr1 {
 
 	private static int getCountRecursion(int m, int n) {
 
-		if (n == 0)
+		if (n == strN.length())
 			return 1;
-		if (m == 0 && n != 0)
+		if (m == strM.length() && n != strN.length())
 			return 0;
 
 		int count = 0;
-		if (strM.charAt(m - 1) == strN.charAt(n - 1)) {
-			count = getCountRecursion(m - 1, n - 1) + getCountRecursion(m - 1, n);
+		if (strM.charAt(m ) == strN.charAt(n )) {
+			count = getCountRecursion(m + 1 , n + 1 ) + getCountRecursion(m + 1, n);
 		} else
-			count = getCountRecursion(m - 1, n);
+			count = getCountRecursion(m + 1 , n );
 		return count;
 	}
 

@@ -42,7 +42,7 @@ public class BottomView {
 //				h.put(t.dist, t.value);
 //			}
 			
-			//keep overwrite upper level values
+			//keep overwriting upper level values
 			h.put(t.dist, t.value);
 
 			if (t.node.left != null) {

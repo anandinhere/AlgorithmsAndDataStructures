@@ -44,7 +44,7 @@ public class QuickSort {
 				startPtr++;
 			} else if (arr[endPtr] > pivotVal) {
 				endPtr--;
-			} else {
+			} else { //exchange only when good cases not satisfied
 				int temp = arr[startPtr]; //ptrs dont change when swapping
 				arr[startPtr] = arr[endPtr];
 				arr[endPtr] = temp;

@@ -17,7 +17,10 @@ public class InsertionSort {
 	// [7, 5, 9, 6, 2, 1, 0, 10, 3, 4, 8]
 
 	/*
-	 * best case - n comparisons, worst case - n comparisons and n^2 moves 
+	Worst-case performance	О(n2) comparisons and swaps
+	Best-case performance	O(n) comparisons, O(1) swaps
+	Average performance	О(n2) comparisons and swaps
+	 *
 	 * all elements left of i will be sorted at any given time, but may be moved
 	 * after insertion.
 	 */

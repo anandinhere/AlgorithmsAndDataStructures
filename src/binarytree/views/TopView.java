@@ -26,7 +26,7 @@ public class TopView {
 
 	}
 
-	private static void printVerticalOrderWithQueue(TreeNode root, TreeMap<Integer, Integer> h) {
+	private static void printVerticalOrderWithQueue(TreeNode root, TreeMap<Integer, Integer> tmap) {
 
 		Queue<TreeVert> q = new LinkedList<TreeVert>();
 
@@ -38,10 +38,10 @@ public class TopView {
 
 			
 			//do nothing if it is already there. Basically preserving higher level elements.
-			if (h.containsKey(t.dist)) {
+			if (tmap.containsKey(t.dist)) {
 				// h.get(t.dist).add(t.value);
 			} else {
-				h.put(t.dist, t.value);
+				tmap.put(t.dist, t.value);
 			}
 
 			if (t.node.left != null) {
@@ -54,7 +54,7 @@ public class TopView {
 
 		}
 
-		for (Map.Entry<Integer, Integer> entry : h.entrySet()) {
+		for (Map.Entry<Integer, Integer> entry : tmap.entrySet()) {
 			System.out.print(entry.getKey() + "  -   ");
 
 			System.out.print(entry.getValue());

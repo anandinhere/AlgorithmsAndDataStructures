@@ -10,7 +10,9 @@ public class LevelOrderTraversal {
 	public static void main(String[] args) {
 
 		TreeNode root = new TreeNode().getBasicTree();
-		printLevelOrder(root);
+		root.printLevelOrder();
+		//printLevelOrder(root);
+		printLevelOrderSingleQueue(root);
 		
 
 	}
@@ -66,6 +68,36 @@ public class LevelOrderTraversal {
 
 			}
 			System.out.println();
+
+		}
+
+	}
+
+
+
+	public static void printLevelOrderSingleQueue(TreeNode root) {
+
+		int height = root.getHeight(root);
+
+		Queue<TreeNode> q1 = new LinkedList<TreeNode>();
+		q1.add(root);
+
+		while (!q1.isEmpty()) {
+				int size = q1.size();
+				for(int i = 0 ; i <size; i++){
+					TreeNode node = q1.poll();
+					System.out.print(node.value);
+					if (node.left != null) {
+						q1.add(node.left);
+					}
+
+					if (node.right != null) {
+						q1.add(node.right);
+					}
+			}
+			System.out.println();
+
+
 
 		}
 
