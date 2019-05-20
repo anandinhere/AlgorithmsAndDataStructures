@@ -3,7 +3,47 @@ package string.palindrome;
 public class LongestPalindromicSubstring {
 	public static void main(String[] args) {
 
-		printLPS(new String("orgeeksskeegfor"));
+
+		String str = "aaabaa";
+		printLPS(str);
+		int length = findLPS(str.toCharArray(),0,str.length()-1);
+		System.out.println(length);
+
+	}
+
+
+	private static int findLPS(char[] str, int i, int j){
+
+		if(i==j && str[i]==str[j]){
+			return 1;
+		}
+
+//		if(i==j && str[i]!=str[j]){
+//			return 0;
+//		}
+
+		if( j == i+1 && str[i]==str[j]){
+			return 2;
+		}
+
+		if( j == i+1 && str[i]!=str[j]){
+			return 0;
+		}
+
+		int length = 0;
+
+		int nextLen = findLPS(str,i+1,j-1);
+		if(nextLen == j-i-1 && str[i]==str[j] ){
+			length  = 2 + nextLen;
+		}
+		else{
+			length = Math.max(findLPS(str,i+1,j),findLPS(str,i,j-1));
+		}
+
+
+		return  length;
+
+
 
 	}
 
@@ -47,8 +87,10 @@ public class LongestPalindromicSubstring {
 			}
 
 		}
-
-		System.out.println(ip.substring(start, start + length ));
+		if(start==-1){
+			System.out.println("no palindrome");
+		}else
+			System.out.println(ip.substring(start, start + length ));
 
 	}
 }

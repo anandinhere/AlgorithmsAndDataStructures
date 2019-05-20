@@ -1,4 +1,4 @@
-package string.subsequence;
+package string.palindrome;
 
 
 class LongestPalindromicSubsequence {

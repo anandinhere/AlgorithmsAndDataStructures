@@ -23,9 +23,10 @@ public class LongestPalindromicSubstringBruteForce {
 						maxLength = j - i + 1;
 						solnStart = i;
 						solnEnd = j;
+						System.out.println(maxLength + " " + solnStart + " "
+								+ solnEnd);
 					}
-					System.out.println(maxLength + " " + solnStart + " "
-							+ solnEnd);
+
 				}
 
 			}
