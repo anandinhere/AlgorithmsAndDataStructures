@@ -25,7 +25,7 @@ public class CountStr2SubseqInStr1 {
 
 	private static int getCountRecursion(int m, int n) {
 
-		if (n == strN.length())
+		if (n == strN.length()) //n is smaller, m is larger
 			return 1;
 		if (m == strM.length() && n != strN.length())
 			return 0;

@@ -14,13 +14,10 @@ public class LongestPalindromicSubstring {
 
 	private static int findLPS(char[] str, int i, int j){
 
-		if(i==j && str[i]==str[j]){
+		if(i==j){
 			return 1;
 		}
 
-//		if(i==j && str[i]!=str[j]){
-//			return 0;
-//		}
 
 		if( j == i+1 && str[i]==str[j]){
 			return 2;

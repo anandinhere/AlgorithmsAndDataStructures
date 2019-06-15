@@ -15,7 +15,7 @@ public class KMPAlgorithm {
 
 	/*
 	 * Time Complexity - O(m+n) 
-	 * n length of text m - length of pattern
+	 * n - length of text, m - length of pattern
 	 */
 	private static void searchPattern(String txt, String pat) {
 

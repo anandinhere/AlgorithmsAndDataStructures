@@ -15,8 +15,8 @@ public class HeightOfTree {
 
 		if (root == null)
 			return 0;
-		if (root.isLeaf())
-			return 1;
+//		if (root.isLeaf())
+//			return 1;
 
 		return Math.max(getHeight(root.left), getHeight(root.right)) + 1;
 

@@ -11,7 +11,8 @@ public class RabinKarpAlgorithm {
 	}
 
 	/*
-	 * Time Complexity O(n) n - length of text m - length of pattern
+	 * Time Complexity O(n)
+	 *  n - length of text,  m - length of pattern
 	 */
 	private static void searchPattern(String txt, String pat) {
 		int hash = getHash(txt, 0, pat.length() - 1);

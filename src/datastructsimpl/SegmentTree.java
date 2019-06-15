@@ -10,7 +10,7 @@ public class SegmentTree {
 
 		// size of segment tree = 2 * (closest power to 2 to given array)
 		int segmentTreeSize = 2 * getClosestPowerOf2(arr.length);
-		System.out.println(segmentTreeSize);
+		System.out.println("segmentTreeSize : " +segmentTreeSize);
 
 		int[] tree = new int[segmentTreeSize];
 
@@ -18,13 +18,13 @@ public class SegmentTree {
 
 		ArrayUtil.printArray(tree);
 
-		System.out.println(totalSum);
+		System.out.println("totalSum : "+ totalSum);
 
 		int rangeStart = 2;
 		int rangeEnd = 8;
 
 		int sum = findSumWithInRange(tree, arr, 0, rangeStart, rangeEnd, 0, arr.length - 1);
-		System.out.println("Range Sum - " + sum);
+		System.out.println("Range Sum : " + sum);
 
 		int sumAfterUpdate = updateIndex(tree, arr, 0, 0, arr.length - 1, 3, 40);
 		ArrayUtil.printArray(tree);
@@ -84,16 +84,15 @@ public class SegmentTree {
 
 		int mid = (arrStart + arrEnd) / 2;
 
-		// make sure of inequality test is correct
+			// if range in either side of mid
 		if (rangeStart <= mid && mid < rangeEnd) {
 			return findSumWithInRange(tree, arr, treeIndex * 2 + 1, rangeStart, mid, arrStart, mid)
 					+ findSumWithInRange(tree, arr, treeIndex * 2 + 2, mid + 1, rangeEnd, mid + 1, arrEnd);
-
-			// make sure of inequality test is correct
+			// if range is in first half
 		} else if (rangeStart <= mid && mid >= rangeEnd) {
 			return findSumWithInRange(tree, arr, treeIndex * 2 + 1, rangeStart, rangeEnd, arrStart, mid);
+			// if range is in second half
 		} else
-
 			return findSumWithInRange(tree, arr, treeIndex * 2 + 2, rangeStart, rangeEnd, mid + 1, arrEnd);
 	}
 

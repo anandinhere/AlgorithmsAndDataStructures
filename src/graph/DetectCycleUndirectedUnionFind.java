@@ -23,13 +23,14 @@ public class DetectCycleUndirectedUnionFind {
 			int x = find(parent, e.from);
 			int y = find(parent, e.to);
 			if (x != -1 && x == y) {
-				System.out.println("True Cycle Exists");
+				System.out.println("Cycle Exists");
 				return;
 			}
 			union(parent, e.from, e.to);
 			print(parent);
 
 		}
+		System.out.println("No Cycle Exists");
 
 	}
 
@@ -93,11 +94,11 @@ class Graph {
 	}
 
 	public Graph() {
-		edges = new Edge[4];
-		edges[3] = new Edge(0, 1);
-		edges[0] = new Edge(1, 2);
-		edges[1] = new Edge(2, 3);
-		edges[2] = new Edge(3, 0);
+		edges = new Edge[3];
+		edges[0] = new Edge(0, 1);
+		edges[1] = new Edge(1, 2);
+		edges[2] = new Edge(2, 3);
+		//edges[2] = new Edge(3, 1);
 	}
 
 }
