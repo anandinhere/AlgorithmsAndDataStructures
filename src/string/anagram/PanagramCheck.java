@@ -1,5 +1,6 @@
 package string.anagram;
 
+//a sentence or verse that contains all the letters of the alphabet.
 public class PanagramCheck {
 	public static void main(String[] args) {
 		String str = "he quick brown fox jumps over the lay dog";

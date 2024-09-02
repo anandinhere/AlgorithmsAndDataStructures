@@ -17,6 +17,8 @@ public class AnagramsTogether {
 	}
 	
 	//Complexity - O(NMLogM) n - no of string. m max length of string
+	// hashMap of keys and list of input strings. hash the input to a key and append to value list.
+	// Appending indexes here. May append actual inputs too?
 
 	public static void anagramsTogetherSet1(String[] inputStrings) {
 		String[] temp = new String[inputStrings.length];

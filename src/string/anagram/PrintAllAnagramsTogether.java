@@ -15,7 +15,7 @@ public class PrintAllAnagramsTogether {
 			char[] temp = ip[i].toCharArray();
 			Arrays.sort(temp);
 
-			dupe[i] = new Dupe(temp.toString(), i);
+			dupe[i] = new Dupe(new String(temp), i);
 
 		}
 

@@ -2,6 +2,8 @@ package datastructsimpl;
 
 import util.ArrayUtil;
 
+//https://www.geeksforgeeks.org/segment-tree-data-structure/
+
 public class SegmentTree {
 	public static void main(String[] args) {
 
@@ -14,7 +16,7 @@ public class SegmentTree {
 
 		int[] tree = new int[segmentTreeSize];
 
-		int totalSum = segmentTree(tree, arr, 0, segmentTreeSize - 1, 0, arr.length - 1);
+		int totalSum = segmentTree(tree, arr, 0,  0, arr.length - 1);
 
 		ArrayUtil.printArray(tree);
 
@@ -28,8 +30,26 @@ public class SegmentTree {
 
 		int sumAfterUpdate = updateIndex(tree, arr, 0, 0, arr.length - 1, 3, 40);
 		ArrayUtil.printArray(tree);
+		System.out.println("sumAfterUpdate: " + sumAfterUpdate);
 
 	}
+
+	/***
+	 *
+	 * @param tree
+	 * @param arr
+	 * @param treeIndex
+	 * @param arrStart
+	 * @param arrEnd
+	 * @param targetIndex
+	 * @param value
+	 * @return
+	 *
+	 *
+	 * check for targetIndex equal to arrEnd when arrStart is arrEnd
+	 * only go left or right based on
+	 *
+	 */
 
 	private static int updateIndex(int[] tree, int[] arr, int treeIndex, int arrStart, int arrEnd, int targetIndex,
 			int value) {
@@ -67,6 +87,16 @@ public class SegmentTree {
 	 * @param arrStart
 	 * @param arrEnd
 	 * @return
+	 *
+	 *
+	 * range start and end should be same as arr start and end
+	 *
+	 * if rangestart less thanarrStart and great than arrEnd return 0
+	 *
+	 *
+	 * if reange
+	 *
+	 *
 	 */
 	private static int findSumWithInRange(int[] tree, int[] arr, int treeIndex, int rangeStart, int rangeEnd,
 			int arrStart, int arrEnd) {
@@ -104,16 +134,18 @@ public class SegmentTree {
 	 *            - Input Array
 	 * @param treeStart
 	 *            - SegmentTree Start
-	 * @param treeEnd
-	 *            - Apparently not required
 	 * @param arrStart
 	 *            - Start index of input array
 	 * @param arrEnd
 	 *            - end index of input array
 	 * @return
+	 *
+	 * go deeper on the segment tree. keep cutting the input tree. keep doing this until segment and input indexes collide.
+	 * bruteforce. sink arr elements into segment tree using a heap approach.
+	 * compute sum of nodes - basically find nodes which share parent and update parents value. do this bottom up.
 	 */
 
-	private static int segmentTree(int[] tree, int[] arr, int treeStart, int treeEnd, int arrStart, int arrEnd) {
+	private static int segmentTree(int[] tree, int[] arr, int treeStart,  int arrStart, int arrEnd) {
 
 		// This implies leaf node is reached
 		if (arrStart == arrEnd) {
@@ -125,22 +157,22 @@ public class SegmentTree {
 		int mid = (arrStart + arrEnd) / 2;
 
 		
-		tree[treeStart] = segmentTree(tree, arr, 2 * treeStart + 1, treeEnd, arrStart, mid)
-				+ segmentTree(tree, arr, 2 * treeStart + 2, treeEnd, mid + 1, arrEnd);
+		tree[treeStart] = segmentTree(tree, arr, 2 * treeStart + 1,  arrStart, mid)
+				+ segmentTree(tree, arr, 2 * treeStart + 2,  mid + 1, arrEnd);
 
 		return tree[treeStart];
 	}
 
-	private static int getClosestPowerOf2(int length) {
+	private static int getClosestPowerOf2(int input) {
 
-		if ((length & (length - 1)) == 0) {
-			return length;
+		if ((input & (input - 1)) == 0) {
+			return input;
 		}
 
 		int count = 0;
 
-		while (length != 0) {
-			length = length >> 1;
+		while (input != 0) {
+			input = input >> 1;
 			count++;
 		}
 

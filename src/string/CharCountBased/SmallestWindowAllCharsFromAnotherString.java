@@ -84,6 +84,7 @@ public class SmallestWindowAllCharsFromAnotherString {
 	static String findSubString(String str, String pat) {
 
 		int[] patMap = new int[no_of_chars];
+		//make char count array for pat
 		for (int p = 0; p < pat.length(); p++) {
 			char c = pat.charAt(p);
 			patMap[c]++;
@@ -108,15 +109,15 @@ public class SmallestWindowAllCharsFromAnotherString {
 
 			if (count == pat.length()) {
 
-				int chatAtStart = str.charAt(start);
-				while (patMap[chatAtStart] == 0 || (strMap[chatAtStart] > patMap[chatAtStart])) {
-					if (strMap[chatAtStart] > patMap[chatAtStart]) {
-						strMap[chatAtStart]--;
+				int charAtStart = str.charAt(start);
+				while (patMap[charAtStart] == 0 || (strMap[charAtStart] > patMap[charAtStart])) {
+					if (strMap[charAtStart] > patMap[charAtStart]) {
+						strMap[charAtStart]--;
 						// count--;
 					}
 					start++;
 					// since incrementing start, change start char
-					chatAtStart = str.charAt(start);
+					charAtStart = str.charAt(start);
 				}
 
 				int currLength = i - start + 1;
@@ -144,6 +145,50 @@ public class SmallestWindowAllCharsFromAnotherString {
 		String str = "this is a test string";
 		String pat = "tist";
 
+//		int[] patArr = new int[no_of_chars];
+//
+//		for (int p = 0; p < no_of_chars; p++) {
+//			System.out.println((char)p);
+//		}
+
 		System.out.print("Smallest window is :  " + findSubString(str, pat));
 	}
+
+	/*
+	char array for pattern
+
+	start at 0
+
+	"this is a test string"
+	"tist"
+
+	if char found in pattern , increment new char count.
+	if new char count ==
+
+	t start = 0, t++,
+	h  h++
+	i i++
+	s s++
+
+	i i++ dont increment total count, as i is more than i's in input str
+	s dont increment total
+
+	a
+
+	p
+	a
+	t at this stage count matches input pattern count
+	  this is the end.
+	  now trim the beginning.
+	  increment start if there are more chars than required
+		increment start while charAtStart is not in pattern or
+		countOfCharAtStart > input
+		upadtecharAtStart as you incremebt start
+
+	t
+	e
+	r
+	n
+
+	 */
 }
