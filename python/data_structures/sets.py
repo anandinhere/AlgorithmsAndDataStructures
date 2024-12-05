@@ -114,6 +114,12 @@ Example 1: diff_set = my_set.difference({{5, 10}}) → diff_set is {{1, 4}}
 Example 2: diff_set = my_set — {{5, 10}} → same result
 
 
+Union (s | t) | O(len(s) + len(t)) | Iterates through all elements in both sets.
+Intersection (s & t) | O(min(len(s), len(t))) | Iterates through the smaller set, checking for membership in the larger set.
+Difference (s - t) | O(len(s)) | Iterates through elements in s, checking if they're not in t.
+Symmetric Difference (s ^ t) | O(len(s) + len(t)) | Equivalent to (s - t) | (t - s). 
+
+
 ''')
 
 set1 = {1,2,3}
@@ -138,7 +144,7 @@ print(sets_diff2)
 
 
 print(f'''
-16. Symmetric Difference: Find elements in either set but not both using symmetric_difference() or the ^ operator
+16. Symmetric Difference: Find elements in either set but not both using symmetric_difference() or the ^ operator full outer - common
 Example 1: sym_diff_set = my_set.symmetric_difference({1, 10}) → sym_diff_set is {4, 5, 10}
 Example 2: sym_diff_set = my_set ^ {1, 10} → same result
 
@@ -184,9 +190,37 @@ Example: is_superset = my_set.issuperset({{1, 4}}) → is_superset is True
 Example: are_disjoint = my_set.isdisjoint({{7, 8}}) → are_disjoint is True
 ''')
 
+set1 = {2,3}
+set2 = {2,3,4}
+print(set1.issubset(set2))
 
+
+set1 = {1,2,3,4}
+set2 = {2,3,4}
+print(set1.issuperset(set2))
+
+set1 = {1,2}
+set2 = {3,4}
+print(set1.isdisjoint(set2))
+
+
+
+
+
+print(f'''
 24. Converting to a Set: Convert a list or other iterable to a set
-Example: my_set = set([1, 2, 2, 3]) → my_set becomes {1, 2, 3}
+Example: my_set = set([1, 2, 2, 3]) → my_set becomes {{1, 2, 3}}
 
 25. Set Comprehensions: Create a set using a comprehension
-Example: squared_set = {x**2 for x in range(5)} → squared_set is {0, 1, 4, 9, 16}
+Example: squared_set = {{x**2 for x in range(5)}} → squared_set is {{0, 1, 4, 9, 16}}
+
+''')
+
+
+l = [1,2,3,4]
+set1 = set(l)
+print(set1)
+
+set2 = {x*x for x in range(10)}
+print(set2)
+

@@ -23,8 +23,8 @@ public class Subsequences {
 		
 		//current char either gets added or not
 		
-		printSubseq(s, len - 1, i + 1, c + s.charAt(i));
+		printSubseq(s, len - 1, i + 1, c + s.charAt(i)); //inner subsequences with c
 
-		printSubseq(s, len - 1, i + 1, c);
+		printSubseq(s, len - 1, i + 1, c); //inner subsequences without c
 	}
 }

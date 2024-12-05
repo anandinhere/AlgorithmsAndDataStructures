@@ -1,0 +1,65 @@
+
+
+print(5/2) #float
+
+print(5//2) #int
+
+print(5%2) #reminder
+
+
+mysql:
+
+do a self join if comparing records of same id
+for decimal computation - count(post_id)::decimal/4
+
+select cast(dev_cost as decimal) / sell_cost from software ;
+or just:
+
+select dev_cost::decimal / sell_cost from software ;
+
+remember rank skips numbers
+
+dont forget about left outer join
+
+extract(year from purchase_date)
+extract(day from purchase_date)
+extract(month from purchase_date)
+
+TO_CHAR(trans_date_ch,'yyyy-mm'),country
+
+SELECT TO_CHAR(NOW(), 'YYYY-MM-DD HH24:MI:SS');
+
+SELECT 123::TEXT; --int to string
+SELECT '5678'::INT; --string to int
+
+
+3) Converting a timestamp literal to a string example
+The following statement converts a timestamp literal to a string:
+
+SELECT
+    TO_CHAR(
+        TIMESTAMP '2017-08-18 22:30:59',
+        'HH24:MI:SS'
+    );
+
+https://neon.tech/postgresql/postgresql-string-functions/postgresql-to_char
+
+   'John' || ' ' || 'Doe' AS full_name;
+   full_name
+   -----------
+    John Doe
+
+
+SELECT
+  CONCAT ('John', ' ', 'Doe') full_name;
+
+SELECT CONCAT_WS(' ', 'PostgreSQL', 'Tutorial') title;
+
+
+
+
+
+
+
+
+
