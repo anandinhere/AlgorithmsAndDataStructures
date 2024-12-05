@@ -5,7 +5,6 @@
 #         self.left = left
 #         self.right = right
 
-#from ..util.binarytree import TreeNode,makeCompleteTreeFromPreOrder
 
 from util.binarytree import TreeNode,makeCompleteTreeFromPreOrder
 
