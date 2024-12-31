@@ -49,7 +49,7 @@ class Account:
             if t.type == 'IN_PROGRESS' and timestamp >= self.waiting_period+t.timeStamp:
                 cashback = math.floor(0.02 * t.amount)
                 self.balance += cashback
-                self.transactions.append(Transaction(timestamp,'CASHBACK_RECEIVED',cashback,balance=self.balance))
+                self.transactions.append(Transaction(self.waiting_period+t.timeStamp,'CASHBACK_RECEIVED',cashback,balance=self.balance))
 
                 t.type = 'CASHBACK_RECEIVED'
 
@@ -166,6 +166,7 @@ class Bank:
 
         account = self.accounts[account_id]
         account.checkCashBack(time_at)
+        account.checkCashBack(timestamp)
 
         sorted_trans = sorted(account.transactions, key = lambda x : x.timeStamp)
         balance = -1
@@ -235,36 +236,36 @@ MILLIS_IN_ONE_DAY = 86400000
 
 
 #Level 4
-print(bank.create_account(1,'account1'))
-print(bank.create_account(2,'account2'))
-
-print(bank.deposit(3,'account1',2000))
-print(bank.deposit(4,'account2',2000))
-
-print(bank.pay(5,'account2',300))
-print(bank.transfer(6,'account1','account2',500))
-print(bank.merge_accounts(7,'account1','non-existing'))
-print(bank.merge_accounts(8,'account1','account1'))
-print(bank.merge_accounts(9,'account1','account2'))
-
-print(bank.deposit(10,'account1',100))
-print(bank.deposit(11,'account2',100))
-
-print(bank.get_payment_status(12,'account2','payment1'))
-print(bank.get_payment_status(13,'account1','payment1'))
-
-
-print(bank.get_balance(14,'account2',1))
-print(bank.get_balance(15,'account2',9))
-print(bank.get_balance(16,'account1',11))
-
-print(bank.deposit(5+MILLIS_IN_ONE_DAY,'account1',100))
+# print(bank.create_account(1,'account1'))
+# print(bank.create_account(2,'account2'))
+#
+# print(bank.deposit(3,'account1',2000))
+# print(bank.deposit(4,'account2',2000))
+#
+# print(bank.pay(5,'account2',300))
+# print(bank.transfer(6,'account1','account2',500))
+# print(bank.merge_accounts(7,'account1','non-existing'))
+# print(bank.merge_accounts(8,'account1','account1'))
+# print(bank.merge_accounts(9,'account1','account2'))
+#
+# print(bank.deposit(10,'account1',100))
+# print(bank.deposit(11,'account2',100))
+#
+# print(bank.get_payment_status(12,'account2','payment1'))
+# print(bank.get_payment_status(13,'account1','payment1'))
+#
+#
+# print(bank.get_balance(14,'account2',1))
+# print(bank.get_balance(15,'account2',9))
+# print(bank.get_balance(16,'account1',11))
+#
+# print(bank.deposit(5+MILLIS_IN_ONE_DAY,'account1',100))
 
 #Level 4 - Another Example
 
-# print(bank.create_account(1,'account1'))
-# print(bank.deposit(2,'account1',1000))
-# print(bank.pay(3,'account1',300))
-# print(bank.get_balance(4,'account1',3))
-# print(bank.get_balance(5+MILLIS_IN_ONE_DAY,'account1',2+MILLIS_IN_ONE_DAY))
-# print(bank.get_balance(6+MILLIS_IN_ONE_DAY,'account1',3+MILLIS_IN_ONE_DAY))
+print(bank.create_account(1,'account1'))
+print(bank.deposit(2,'account1',1000))
+print(bank.pay(3,'account1',300))
+print(bank.get_balance(4,'account1',3))
+print(bank.get_balance(5+MILLIS_IN_ONE_DAY,'account1',2+MILLIS_IN_ONE_DAY))
+print(bank.get_balance(6+MILLIS_IN_ONE_DAY,'account1',3+MILLIS_IN_ONE_DAY))
