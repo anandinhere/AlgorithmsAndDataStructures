@@ -42,8 +42,6 @@ class TreeNode():
         rootNode.left = TreeNode.makePrettyTree(treeNode.left)
         return rootNode
 
-    def getPre
-
 
 if __name__ == "__main__":
     root = TreeNode.makeCompleteTreeFromPreOrder([1,2,3,4,5,6,7])

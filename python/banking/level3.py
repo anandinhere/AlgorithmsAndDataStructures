@@ -19,7 +19,7 @@ class Account:
             return self.balance
         self.balance += amount
         self.transactions.append(Transaction(self.account_id,timestamp,'deposit',amount,balance=self.balance))
-        #print( [ [x.timeStamp,x.balance,x.account_id] for x in sorted(self.transactions,key=lambda x:x.timeStamp)])
+        print( [ [x.timeStamp,x.balance,x.account_id] for x in sorted(self.transactions,key=lambda x:x.timeStamp)])
 
         return self.balance
 
@@ -29,11 +29,11 @@ class Account:
             return None
         self.balance -= amount
         self.transactions.append(Transaction(self.account_id,timestamp,'withdraw',amount,payment_id,balance=self.balance))
-        self.cash_back_pending.append(Transaction(self.account_id,timestamp,'IN_PROGRESS',amount,payment_id))
+        self.cash_back_pending.append(Transaction(timestamp,'IN_PROGRESS',amount,payment_id))
         self.totalOutgoingMoney += amount
         return self.balance
 
-    def transfer(self, timestamp,amount,account_type)-> Optional[int]:
+    def transfer(self, timestamp,amount,account_type):
         self.checkCashBack(timestamp)
         if account_type == 'source':
             self.balance -= amount
@@ -46,7 +46,7 @@ class Account:
             return self.balance
 
 
-    def checkCashBack(self,timestamp)-> None:
+    def checkCashBack(self,timestamp):
         for t in self.cash_back_pending:
             if t.type == 'IN_PROGRESS' and timestamp >= self.waiting_period+t.timeStamp:
                 cashback = math.floor(0.02 * t.amount)
@@ -56,11 +56,9 @@ class Account:
                 t.type = 'CASHBACK_RECEIVED'
 
 
-    def get_payment_status(self,timestamp,payment_id) -> Optional[str]:
+    def get_payment_status(self,timestamp,payment_id):
         self.checkCashBack(timestamp)
-        print(self.cash_back_pending)
         for t in self.cash_back_pending:
-            #print(t)
             if t.payment_id == payment_id:
                 return t.type
 
@@ -220,8 +218,8 @@ bank = Bank("Python Bank")
 # print(bank.transfer(10,'account1','account2',2500))
 # print(bank.top_spenders(11,3))
 
-# MILLIS_IN_ONE_DAY = 86400000
-#
+MILLIS_IN_ONE_DAY = 86400000
+
 # print(bank.create_account(1,'account1'))
 # print(bank.create_account(2,'account2'))
 #
@@ -289,29 +287,3 @@ add the balance from account1 to all immediate account2 transactions
  
 
 '''
-
-
-
-
-# print(bank.create_account(1, 'account1'))
-# print(bank.create_account(2, 'account2'))
-# print(bank.deposit(3, 'account1', 2000), 2000)
-# print(bank.deposit(4, 'account2', 1000), 1000)
-# print(bank.pay(5, 'account1', 100), 'payment1')
-# print(bank.pay(6, 'account2', 200), 'payment2')
-# print(bank.pay(7, 'account2', 300), 'payment3')
-# print(bank.pay(8, 'account1', 400), 'payment4')
-# print(bank.deposit(9, 'account1', 100), 1600)
-# print(bank.deposit(10, 'account2', 100), 600)
-# print(bank.deposit(86400010, 'account1', 100), 1710)
-# print(bank.deposit(86400011, 'account2', 100), 710)
-
-
-
-
-
-
-
-
-
-

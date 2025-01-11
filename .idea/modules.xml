@@ -2,7 +2,10 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/AlgosAndDS.iml" filepath="$PROJECT_DIR$/.idea/AlgosAndDS.iml" />
+      <module fileurl="file://$PROJECT_DIR$/AlgorithmsAndDataStructures.iml" filepath="$PROJECT_DIR$/AlgorithmsAndDataStructures.iml" />
+      <module fileurl="file://$USER_HOME$/Documents/CrossFit Snohomish/CrossFit Snohomish.iml" filepath="$USER_HOME$/Documents/CrossFit Snohomish/CrossFit Snohomish.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../PythonPrograms/PythonPrograms.iml" filepath="$PROJECT_DIR$/../PythonPrograms/PythonPrograms.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../python/python.iml" filepath="$PROJECT_DIR$/../python/python.iml" />
     </modules>
   </component>
 </project>
