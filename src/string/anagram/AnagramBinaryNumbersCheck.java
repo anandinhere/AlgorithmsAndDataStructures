@@ -1,11 +1,15 @@
 package string.anagram;
 
+import bitmagic.BitUtil;
+
 public class AnagramBinaryNumbersCheck {
 
 	public static void main(String[] args) {
 
 		int num1 = 4;
 		int num2 = 9;
+		BitUtil.print(num1);
+		BitUtil.print(num2);
 
 		System.out.println(checkIfAnagrams(num1, num2));
 
