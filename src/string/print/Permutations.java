@@ -35,7 +35,7 @@ public class Permutations {
 				printPermutationsGeeks(inputArr, start + 1);
 				
 				permCount++;
-				//System.out.println(permCount);
+				System.out.println(permCount);
 				
 				swap(inputArr, start, i);
 

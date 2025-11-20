@@ -14,6 +14,8 @@ public class TopView {
 
 		TreeNode root = new TreeNode().getBasicTree();
 
+		root.printLevelOrder();
+
 		printTopView(root);
 
 	}
@@ -21,6 +23,7 @@ public class TopView {
 	private static void printTopView(TreeNode root) {
 		TreeMap<Integer, Integer> map = new TreeMap<Integer, Integer>();
 		map = new TreeMap<Integer, Integer>();
+
 
 		printVerticalOrderWithQueue(root, map);
 

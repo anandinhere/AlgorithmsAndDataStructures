@@ -14,7 +14,7 @@ public class NumberOfIslandsInMatrix {
 				if ((graph[i][j]) == 1) {
 
 					dfs(i, j, graph);
-					noOfIslands++;
+						noOfIslands++;
 				}
 
 			}

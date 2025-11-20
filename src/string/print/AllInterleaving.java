@@ -2,9 +2,9 @@ package string.print;
 
 public class AllInterleaving {
 
-	static String str1 = "ab";
-	static String str2 = "cd";
-	static char[] op = new char[4];
+	static String str1 = "abc";
+	static String str2 = "def";
+	static char[] op = new char[6];
 
 	public static void main(String[] args) {
 		printInterleavings(str1, str2, str1.length(), str2.length(), 0);
@@ -26,12 +26,14 @@ public class AllInterleaving {
 
 		if (m != 0) {
 			op[i] = str1.charAt(0);
+			//System.out.println(str1.substring(1));
 			printInterleavings(str1.substring(1), str2, m - 1, n, i + 1);
 
 		}
 
 		if (n != 0) {
 			op[i] = str2.charAt(0);
+			//System.out.println(str2.substring(1));
 			printInterleavings(str1, str2.substring(1), m, n - 1, i + 1);
 
 		}

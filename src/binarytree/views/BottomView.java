@@ -13,6 +13,7 @@ public class BottomView {
 	public static void main(String[] args) {
 
 		TreeNode root = new TreeNode().getBasicTree();
+		root.printLevelOrder();
 
 		printTopView(root);
 
