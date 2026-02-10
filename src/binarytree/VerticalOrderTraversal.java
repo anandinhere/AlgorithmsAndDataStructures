@@ -15,6 +15,7 @@ public class VerticalOrderTraversal {
 		TreeNode root = new TreeNode().getBasicTree();
 
 		TreeMap<Integer, List<Integer>> map = new TreeMap<Integer, List<Integer>>();
+		root.printLevelOrder();
 
 //		printVerticalOrder(root, 0, map);
 //

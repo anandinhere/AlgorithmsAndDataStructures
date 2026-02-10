@@ -19,6 +19,7 @@ public class FullTreeFromPreorderPostorder {
 		TreeNode r = makeTree(postorder, preorder, 0, postorder.length - 1);
 
 		r.printInorder(r);
+		r.printLevelOrder();
 	}
 
 	private static TreeNode makeTree(int[] postorder, int[] preorder,

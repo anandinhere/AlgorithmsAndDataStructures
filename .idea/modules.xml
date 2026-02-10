@@ -4,6 +4,8 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/AlgorithmsAndDataStructures.iml" filepath="$PROJECT_DIR$/AlgorithmsAndDataStructures.iml" />
       <module fileurl="file://$USER_HOME$/Documents/CrossFit Snohomish/CrossFit Snohomish.iml" filepath="$USER_HOME$/Documents/CrossFit Snohomish/CrossFit Snohomish.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../Databricks-Certified-Data-Engineer-Professional/Databricks-Certified-Data-Engineer-Professional.iml" filepath="$PROJECT_DIR$/../Databricks-Certified-Data-Engineer-Professional/Databricks-Certified-Data-Engineer-Professional.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../Fetch/Fetch.iml" filepath="$PROJECT_DIR$/../Fetch/Fetch.iml" />
       <module fileurl="file://$PROJECT_DIR$/../PythonPrograms/PythonPrograms.iml" filepath="$PROJECT_DIR$/../PythonPrograms/PythonPrograms.iml" />
       <module fileurl="file://$PROJECT_DIR$/../python/python.iml" filepath="$PROJECT_DIR$/../python/python.iml" />
     </modules>

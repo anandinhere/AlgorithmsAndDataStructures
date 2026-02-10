@@ -7,7 +7,7 @@ import java.util.LinkedList;
 
 public class CountDistinctSubseq {
 
-	static String str = "aaaaa";
+	static String str = "abcde";
 	static int[] lastIndexArr = new int[256];
 	// Golden Rule - DP Matrix size always 1 greater than input
 	static int[] dpMatrix = new int[str.length() + 1];

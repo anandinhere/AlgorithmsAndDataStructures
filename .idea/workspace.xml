@@ -1,132 +1,150 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="431f392c-3185-45d0-a3b8-f291987499c5" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/python/banking/level1.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/python/banking/level2.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/python/banking/level3.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/python/banking/level4.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/python/banking/test.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/python/binaryTree/flattenBinaryTreeToLinkedList.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/python/data_structures/string.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/python/dsimpl/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/python/dsimpl/trie.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/python/graph/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/python/graph/noOfIslands.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/python/graph/sorround_regions.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/python/practice/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/python/practice/inner_methods.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/python/string/Anagrams.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/python/string/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/python/util/graph_util.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../PythonPrograms/cricket/points_table.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/AlgosAndDS.iml" beforeDir="false" />
+    <list default="true" id="431f392c-3185-45d0-a3b8-f291987499c5" name="Default Changelist" comment="fetch + prometheus + graphana">
+      <change afterPath="$PROJECT_DIR$/../Databricks-Certified-Data-Engineer-Professional/Databricks-Certified-Data-Engineer-Professional.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../PythonPrograms/threads/thread_queue.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../PythonPrograms/ttd/CacheItem.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../PythonPrograms/ttd/CacheSet.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../PythonPrograms/ttd/IReplacementAlgorithm.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../PythonPrograms/ttd/SetAssociativeCache.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../PythonPrograms/ttd/tests.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../python/python/bit/sumOfTwoIntegers.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../python/python/data_structures/sorting/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../python/python/data_structures/sorting/heaps.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../python/python/data_structures/sorting/lists.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../python/python/graph/notes.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../python/python/meta_practice/1.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../python/python/meta_practice/2.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../python/python/meta_practice/balanceIntegerFrequence.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../python/python/meta_practice/countWords.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../python/python/meta_practice/maxValue.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../python/python/practice/scratch2.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../python/python/practice/stt/multimap.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../python/python/practice/stt/weightedSearch.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../python/python/pyspark/json_proc.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../python/python/pyspark/load_data.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../python/python/pyspark/local_app.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../python/python/pyspark/window_fn.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../python/python/pyspark/window_lag_fn.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/python/banking/banking.py" beforeDir="false" afterPath="$PROJECT_DIR$/python/banking/banking.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/python/practive.py" beforeDir="false" afterPath="$PROJECT_DIR$/python/practice/practice.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/python/util/binarytreeutil.py" beforeDir="false" afterPath="$PROJECT_DIR$/python/util/binarytreeutil.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/util/linkedlist/linkedlist_impl.py" beforeDir="false" afterPath="$PROJECT_DIR$/python/util/linkedlist_impl.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AlgorithmsAndDataStructures.iml" beforeDir="false" afterPath="$PROJECT_DIR$/AlgorithmsAndDataStructures.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/binarytree/FullTreeFromPreorderPostorder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/binarytree/FullTreeFromPreorderPostorder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/binarytree/LeastCommonAncestor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/binarytree/LeastCommonAncestor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/binarytree/VerticalOrderTraversal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/binarytree/VerticalOrderTraversal.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/string/subsequence/CountDistinctSubseq.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/string/subsequence/CountDistinctSubseq.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/string/subsequence/LongestIncreasingSubsequence.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/string/subsequence/LongestIncreasingSubsequence.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Fetch/consumer/app/consumer.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Fetch/consumer/app/consumer.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../PythonPrograms/.idea/PythonPrograms.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../PythonPrograms/.idea/PythonPrograms.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../PythonPrograms/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../PythonPrograms/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../PythonPrograms/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../PythonPrograms/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../PythonPrograms/concepts/assert.py" beforeDir="false" afterPath="$PROJECT_DIR$/../PythonPrograms/concepts/assert.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../PythonPrograms/concepts/lambda.py" beforeDir="false" afterPath="$PROJECT_DIR$/../PythonPrograms/concepts/lambda.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../PythonPrograms/threads/thread_lock.py" beforeDir="false" afterPath="$PROJECT_DIR$/../PythonPrograms/threads/thread_lock.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PythonPrograms/threads/thread_condition.py" beforeDir="false" afterPath="$PROJECT_DIR$/../PythonPrograms/threads/thread_condition.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../python/python.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../python/python.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../python/python/bit/basics.py" beforeDir="false" afterPath="$PROJECT_DIR$/../python/python/bit/basics.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../python/python/data_structures/dict.py" beforeDir="false" afterPath="$PROJECT_DIR$/../python/python/data_structures/dict.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../python/python/data_structures/string.py" beforeDir="false" afterPath="$PROJECT_DIR$/../python/python/data_structures/string.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../python/python/dsimpl/trie.py" beforeDir="false" afterPath="$PROJECT_DIR$/../python/python/dsimpl/trie.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../python/python/meta_practice/practice.py" beforeDir="false" afterPath="$PROJECT_DIR$/../python/python/meta_practice/practice.py" afterDir="false" />
     </list>
-    <ignored path="$PROJECT_DIR$/out/" />
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="CopilotPersistence">
+    <persistenceIdMap>
+      <entry key="_/Users/anand/code/Fetch" value="396O7b6Sw1plHJyC7EFvEOD6NXF" />
+    </persistenceIdMap>
+  </component>
   <component name="DefaultGradleProjectSettings">
     <option name="isMigrated" value="true" />
-  </component>
-  <component name="FavoritesManager">
-    <favorites_list name="AlgorithmsAndDataStructures" />
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/python/util/binarytreeutil.py">
+        <entry file="file://$PROJECT_DIR$/../python/python/data_structures/string.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="200">
-              <caret line="39" column="16" selection-start-line="39" selection-start-column="8" selection-end-line="39" selection-end-column="16" />
-              <folding>
-                <element signature="e#1#24#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="3366">
+              <caret line="198" column="11" selection-start-line="198" selection-start-column="11" selection-end-line="198" selection-end-column="11" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../python/python/binaryTree/countCompleteTreeNodes.py">
+        <entry file="file://$PROJECT_DIR$/../python/python/data_structures/stackandqueue.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="8" column="18" selection-start-line="8" selection-start-column="18" selection-end-line="8" selection-end-column="18" />
+            <state relative-caret-position="289">
+              <caret line="17" column="24" selection-start-line="17" selection-start-column="24" selection-end-line="17" selection-end-column="24" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/python/binaryTree/countCompleteTreeNodes.py">
+        <entry file="file://$PROJECT_DIR$/src/linkedlist/singular/LoopDetect.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="8" column="21" selection-start-line="8" selection-start-column="21" selection-end-line="8" selection-end-column="21" />
+            <state relative-caret-position="1088">
+              <caret line="68" column="31" selection-start-line="68" selection-start-column="31" selection-end-line="68" selection-end-column="31" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../python/python/data_structures/heap.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="272">
+              <caret line="16" column="28" selection-start-line="16" selection-start-column="28" selection-end-line="16" selection-end-column="28" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../python/python/matrix/spiralMatrix.py">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../python/python/matrix/rotateMatrix.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="901">
+              <caret line="53" column="22" selection-start-line="53" selection-start-column="16" selection-end-line="53" selection-end-column="22" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../python/python/matrix/basicOps.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="238">
+              <caret line="14" selection-start-line="14" selection-end-line="14" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../python/python/data_structures/sorting/lists.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="408">
+              <caret line="24" column="40" selection-start-line="24" selection-start-column="40" selection-end-line="24" selection-end-column="40" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../python/python/data_structures/sorting/heaps.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="204">
+              <caret line="12" selection-start-line="12" selection-end-line="12" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/../python/python/binaryTree/flattenBinaryTreeToLinkedList.py">
+        <entry file="file://$PROJECT_DIR$/../python/python/data_structures/list.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <folding>
-                <element signature="e#192#232#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../python/python/graph/noOfIslands.py">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../python/python/graph/sorround_regions.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="11" column="7" lean-forward="true" selection-start-line="11" selection-start-column="7" selection-end-line="11" selection-end-column="7" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../python/python/binaryTree/__init__.py">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../python/python/string/Anagrams.py">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../python/python/practice/__init__.py">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../python/python/practice/inner_methods.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="15" column="14" selection-start-line="15" selection-start-column="14" selection-end-line="15" selection-end-column="14" />
+            <state relative-caret-position="714">
+              <caret line="42" column="22" selection-start-line="62" selection-start-column="19" selection-end-line="62" selection-end-column="22" />
             </state>
           </provider>
         </entry>
@@ -143,272 +161,198 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>5</find>
-      <find>lruCache</find>
-      <find>rotation</find>
-      <find>getClosestPowerOf2</find>
-      <find>#</find>
-      <find>print('</find>
-      <find>print('\n#</find>
-      <find>backtra</find>
-      <find>crossfitsno</find>
-      <find>crossfitsnohomish.com</find>
-      <find>https://crossfitsnohomish.com</find>
-      <find>clientds</find>
-      <find>instag</find>
-      <find>Hero</find>
-      <find>nth</find>
-      <find>List</find>
-      <find>balanced</find>
-      <find>print</find>
-      <find>optional</find>
-      <find>bst</find>
-      <find>remove</find>
-      <find>for</find>
-      <find>sort</find>
-      <find>checkCashBack</find>
-      <find>sorted</find>
-      <find>self.transactions.append(</find>
-      <find>Binomial</find>
-      <find>check</find>
-      <find>get_payment_status</find>
-      <find>cash_back_pending</find>
+      <find>video</find>
+      <find>prior to</find>
+      <find>calenda</find>
+      <find>missio</find>
+      <find>header.jp</find>
+      <find>cfskids-header</find>
+      <find>calen</find>
+      <find>CFS</find>
+      <find>calendar</find>
+      <find>cfs</find>
+      <find>type</find>
+      <find>cfskids</find>
+      <find>ssckids</find>
+      <find>ssckids-</find>
+      <find>Team</find>
+      <find>sort(</find>
+      <find>compre</find>
+      <find>setdefault</find>
+      <find>__load_json_file</find>
+      <find>__load_data</find>
+      <find>load_books_updates</find>
+      <find>load_new</find>
+      <find>process</find>
+      <find>bookstore</find>
+      <find>current_book</find>
+      <find>batch_upsert</find>
+      <find>window(</find>
+      <find>deletes</find>
+      <find>books_silver</find>
+      <find>pop</find>
     </findStrings>
     <replaceStrings>
-      <replace />
       <replace>https://snohomishstrengthandconditioning.com</replace>
       <replace>snohomishstrengthandconditioning.com</replace>
       <replace>bank</replace>
       <replace>bank.</replace>
+      <replace>Snohomish Strength and Conditioning Blog</replace>
+      <replace>https://www.instagram.com/snohomishstrength_conditioning/</replace>
+      <replace>Snohomish Strength and Conditioning</replace>
+      <replace>snohomishstrengthconditioning@gmail.com</replace>
+      <replace />
     </replaceStrings>
     <dirStrings>
       <dir>$PROJECT_DIR$/src</dir>
-      <dir>$PROJECT_DIR$</dir>
-      <dir>$USER_HOME$/Documents/CrossFit Snohomish/crossfit-snohomish</dir>
       <dir>$PROJECT_DIR$/src/python</dir>
+      <dir>$PROJECT_DIR$/../Fetch</dir>
+      <dir>$PROJECT_DIR$/../PythonPrograms/env1/lib/python3.7/site-packages/kafka</dir>
+      <dir>$PROJECT_DIR$/../PythonPrograms/env1/lib/python3.7/site-packages</dir>
+      <dir>$USER_HOME$/Documents/CrossFit Snohomish</dir>
+      <dir>$PROJECT_DIR$/../PythonPrograms/threads</dir>
+      <dir>$PROJECT_DIR$</dir>
+      <dir>$PROJECT_DIR$/../python</dir>
+      <dir>$PROJECT_DIR$/../python/python/graph</dir>
+      <dir>$PROJECT_DIR$/../PythonPrograms</dir>
+      <dir>$USER_HOME$/Documents/CrossFit Snohomish/backup/11-30/crossfit-snohomish</dir>
+      <dir>$PROJECT_DIR$/../python/python</dir>
+      <dir>$USER_HOME$/Documents/CrossFit Snohomish/crossfit-snohomish</dir>
+      <dir>$PROJECT_DIR$/../Databricks-Certified-Data-Engineer-Professional/2 - Data Modeling</dir>
+      <dir>$PROJECT_DIR$/../Databricks-Certified-Data-Engineer-Professional</dir>
     </dirStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../python" />
-    <option name="SET_USER_NAME_GLOBALLY" value="false" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/python/data_structures/list.py" />
-        <option value="$PROJECT_DIR$/src/python/data_structures/tuple.py" />
-        <option value="$PROJECT_DIR$/src/python/data_structures/dict.py" />
-        <option value="$PROJECT_DIR$/src/python/data_structures/sets.py" />
-        <option value="$PROJECT_DIR$/src/python/data_structures/all-ds.py" />
-        <option value="$PROJECT_DIR$/src/python/leetcode_easy/minMeeringRooms.py" />
-        <option value="$PROJECT_DIR$/src/python/leetcode_easy/powerSet.py" />
-        <option value="$PROJECT_DIR$/src/string/print/Subsequences.java" />
+        <option value="$PROJECT_DIR$/../python/python/leetcode/longest_substring.py" />
+        <option value="$PROJECT_DIR$/../python/python/data_structures/tuple.py" />
+        <option value="$PROJECT_DIR$/../python/python/matrix/basicOps.py" />
+        <option value="$PROJECT_DIR$/../python/python/leetcode/validate_ip.py" />
+        <option value="$PROJECT_DIR$/../python/python/data_structures/matrix.py" />
+        <option value="$PROJECT_DIR$/../python/python/matrix/spiralMatrix.py" />
+        <option value="$PROJECT_DIR$/../python/python/matrix/rotateMatrix.py" />
+        <option value="$PROJECT_DIR$/../python/python/bit/sumOfTwoIntegers.py" />
+        <option value="$PROJECT_DIR$/../python/python/bit/basics.py" />
+        <option value="$PROJECT_DIR$/src/binarytree/views/BottomView.java" />
+        <option value="$PROJECT_DIR$/src/binarytree/views/TopView.java" />
+        <option value="$PROJECT_DIR$/src/binarytree/FullTreeFromPreorderPostorder.java" />
+        <option value="$PROJECT_DIR$/src/binarytree/LeastCommonAncestor.java" />
+        <option value="$PROJECT_DIR$/src/binarytree/VerticalOrderTraversal.java" />
+        <option value="$PROJECT_DIR$/src/string/subsequence/LongestIncreasingSubsequence.java" />
+        <option value="$PROJECT_DIR$/src/string/subsequence/CountDistinctSubseq.java" />
+        <option value="$PROJECT_DIR$/src/string/palindrome/LongestPalindromicSubstring.java" />
+        <option value="$PROJECT_DIR$/../python/python/dsimpl/trie.py" />
+        <option value="$PROJECT_DIR$/../python/python/meta_practice/1.py" />
+        <option value="$PROJECT_DIR$/../python/python/meta_practice/2.py" />
+        <option value="$PROJECT_DIR$/../python/python/data_structures/dict.py" />
+        <option value="$PROJECT_DIR$/../python/python/practice/stt/multimap.py" />
+        <option value="$PROJECT_DIR$/../python/python/practice/stt/weightedSearch.py" />
+        <option value="$PROJECT_DIR$/../python/python/practice/stt/fifo.py" />
+        <option value="$PROJECT_DIR$/../python/python/data_structures/sorting.py" />
+        <option value="$PROJECT_DIR$/../python/python/data_structures/sorting/heaps.py" />
+        <option value="$USER_HOME$/Documents/CrossFit Snohomish/crossfit-snohomish/coaches/daria/index.html" />
+        <option value="$USER_HOME$/Documents/CrossFit Snohomish/crossfit-snohomish/coaches/duke/index.html" />
         <option value="$USER_HOME$/Documents/CrossFit Snohomish/crossfit-snohomish/calendar/index.html" />
-        <option value="$USER_HOME$/Documents/CrossFit Snohomish/crossfit-snohomish/rates/index.html" />
+        <option value="$PROJECT_DIR$/../python/python/meta_practice/countWords.py" />
+        <option value="$USER_HOME$/Documents/CrossFit Snohomish/backup/11-30/crossfit-snohomish/index.html" />
+        <option value="$USER_HOME$/Documents/CrossFit Snohomish/backup/11-30/crossfit-snohomish/rates/index.html" />
+        <option value="$USER_HOME$/Documents/CrossFit Snohomish/backup/11-30/crossfit-snohomish/cfskids/index.html" />
+        <option value="$USER_HOME$/Documents/CrossFit Snohomish/crossfit-snohomish/assets/css/style.css" />
+        <option value="$USER_HOME$/Documents/CrossFit Snohomish/crossfit-snohomish/cfskids/index.html" />
         <option value="$USER_HOME$/Documents/CrossFit Snohomish/crossfit-snohomish/index.html" />
-        <option value="$PROJECT_DIR$/src/python/meta_practice/mismatchedWords.py" />
-        <option value="$PROJECT_DIR$/src/python/meta_practice/nthSmallest.py" />
-        <option value="$PROJECT_DIR$/src/python/meta_practice/missingBalancedNumbers.py" />
-        <option value="$PROJECT_DIR$/src/python/meta_practice/charCount.py" />
-        <option value="$PROJECT_DIR$/src/python/meta_practice/fillBlanks.py" />
-        <option value="$PROJECT_DIR$/src/python/meta_practice/practice.py" />
-        <option value="$PROJECT_DIR$/src/python/meta_practice/notes.txt" />
-        <option value="$PROJECT_DIR$/src/python/practive.py" />
-        <option value="$PROJECT_DIR$/src/python/meta.py" />
-        <option value="$PROJECT_DIR$/src/python/util/binaryTree.py" />
-        <option value="$PROJECT_DIR$/src/python/__init__.py" />
-        <option value="$PROJECT_DIR$/src/python/util/binarytree.py" />
-        <option value="$PROJECT_DIR$/src/python/util/__init__.py" />
-        <option value="$PROJECT_DIR$/src/python/binaryTree/countCompleteTreeNodes.py" />
-        <option value="$PROJECT_DIR$/python/util/binarytree.py" />
-        <option value="$PROJECT_DIR$/python/binaryTree/countCompleteTreeNodes.py" />
-        <option value="$PROJECT_DIR$/python/binaryTree/notes.txt" />
-        <option value="$PROJECT_DIR$/python/binaryTree/notes.md" />
-        <option value="$PROJECT_DIR$/python/data_structures/matrix.py" />
-        <option value="$PROJECT_DIR$/python/leetcode_easy/KOperationsHeapq.py" />
-        <option value="$PROJECT_DIR$/python/banking/level.py" />
-        <option value="$PROJECT_DIR$/python/banking/level2.py" />
-        <option value="$PROJECT_DIR$/python/banking/level3.py" />
-        <option value="$PROJECT_DIR$/python/banking/level4.py" />
-        <option value="$PROJECT_DIR$/python/banking/level1.py" />
-        <option value="$PROJECT_DIR$/python/util/binarytreeutil.py" />
-        <option value="$PROJECT_DIR$/python/util/graphUtil.py" />
-        <option value="$PROJECT_DIR$/src/util/linkedlist/linkedlist_impl.py" />
-        <option value="$PROJECT_DIR$/python/util/Node.java" />
-        <option value="$PROJECT_DIR$/src/util/graph/Graph.java" />
-        <option value="$PROJECT_DIR$/python/banking/test.py" />
-        <option value="$PROJECT_DIR$/python/banking/banking.py" />
-        <option value="$PROJECT_DIR$/python/leetcode_easy/noOfIslands.py" />
-        <option value="$PROJECT_DIR$/python/practice/inner_methods.py" />
-        <option value="$PROJECT_DIR$/python/graph/sorround_regions.py" />
-        <option value="$PROJECT_DIR$/python/dsimpl/trie.py" />
-        <option value="$PROJECT_DIR$/python/data_structures/string.py" />
-        <option value="$PROJECT_DIR$/python/binaryTree/flattenBinaryTreeToLinkedList.py" />
-        <option value="$PROJECT_DIR$/python/string/Anagrams.py" />
-        <option value="$PROJECT_DIR$/src/string/anagram/AnagramBinaryNumbersCheck.java" />
+        <option value="$USER_HOME$/Documents/CrossFit Snohomish/crossfit-snohomish/rates/index.html" />
+        <option value="$USER_HOME$/Documents/CrossFit Snohomish/crossfit-snohomish/team/index.html" />
+        <option value="$PROJECT_DIR$/../python/python/meta_practice/maxValue.py" />
+        <option value="$PROJECT_DIR$/../python/python/meta_practice/balanceIntegerFrequence.py" />
+        <option value="$PROJECT_DIR$/../python/python/meta_practice/practice.py" />
+        <option value="$PROJECT_DIR$/../python/python/data_structures/string.py" />
+        <option value="$PROJECT_DIR$/../python/python/pyspark/local_app.py" />
+        <option value="$PROJECT_DIR$/../python/python/pyspark/window_fn.py" />
+        <option value="$PROJECT_DIR$/../python/python/pyspark/json_proc.py" />
+        <option value="$PROJECT_DIR$/../python/python/pyspark/window_lag_fn.py" />
+        <option value="$PROJECT_DIR$/../python/python/data_structures/filter_map_reduce.py" />
+        <option value="$PROJECT_DIR$/../python/python/data_structures/practice.py" />
+        <option value="$PROJECT_DIR$/../Databricks-Certified-Data-Engineer-Professional/Includes/Copy-Datasets.py" />
+        <option value="$PROJECT_DIR$/../Databricks-Certified-Data-Engineer-Professional/6 - Data Governance/6.1 - Propagating Deletes.py" />
+        <option value="$PROJECT_DIR$/../python/python/data_structures/stackandqueue.py" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="2349" />
-    <option name="y" value="-662" />
-    <option name="width" value="953" />
-    <option name="height" value="955" />
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 3
+}</component>
+  <component name="ProjectFrameBounds" fullScreen="true">
+    <option name="y" value="33" />
+    <option name="width" value="1512" />
+    <option name="height" value="949" />
   </component>
+  <component name="ProjectId" id="396O7b6Sw1plHJyC7EFvEOD6NXF" />
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
       <pane id="PackagesPane" />
+      <pane id="ProjectPane" />
       <pane id="Scope" />
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="AlgorithmsAndDataStructures" type="b2602c69:ProjectViewProjectNode" />
-              <item name="AlgorithmsAndDataStructures" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="AlgorithmsAndDataStructures" type="b2602c69:ProjectViewProjectNode" />
-              <item name="AlgorithmsAndDataStructures" type="462c0819:PsiDirectoryNode" />
-              <item name="python" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="AlgorithmsAndDataStructures" type="b2602c69:ProjectViewProjectNode" />
-              <item name="AlgorithmsAndDataStructures" type="462c0819:PsiDirectoryNode" />
-              <item name="python" type="462c0819:PsiDirectoryNode" />
-              <item name="binaryTree" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="AlgorithmsAndDataStructures" type="b2602c69:ProjectViewProjectNode" />
-              <item name="AlgorithmsAndDataStructures" type="462c0819:PsiDirectoryNode" />
-              <item name="python" type="462c0819:PsiDirectoryNode" />
-              <item name="util" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="AlgorithmsAndDataStructures" type="b2602c69:ProjectViewProjectNode" />
-              <item name="python" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="AlgorithmsAndDataStructures" type="b2602c69:ProjectViewProjectNode" />
-              <item name="python" type="462c0819:PsiDirectoryNode" />
-              <item name="python" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="AlgorithmsAndDataStructures" type="b2602c69:ProjectViewProjectNode" />
-              <item name="python" type="462c0819:PsiDirectoryNode" />
-              <item name="python" type="462c0819:PsiDirectoryNode" />
-              <item name="string" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="AlgorithmsAndDataStructures" type="b2602c69:ProjectViewProjectNode" />
-              <item name="python" type="462c0819:PsiDirectoryNode" />
-              <item name="python" type="462c0819:PsiDirectoryNode" />
-              <item name="util" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
     </panes>
   </component>
-  <component name="PropertiesComponent">
-    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../python" />
-    <property name="project.structure.last.edited" value="Modules" />
-    <property name="project.structure.proportion" value="0.15" />
-    <property name="project.structure.side.proportion" value="0.2" />
-    <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
   </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Python.load_data.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
+    "git-widget-placeholder": "main",
+    "kotlin-language-version-configured": "true",
+    "project.structure.last.edited": "SDKs",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "configurable.group.appearance"
+  }
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="string.palindrome" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/../python" />
-      <recent name="$PROJECT_DIR$/src/python/binaryTree" />
-      <recent name="$PROJECT_DIR$/src/python/util" />
-      <recent name="$PROJECT_DIR$/src/python" />
-      <recent name="$USER_HOME$/Documents/CrossFit Snohomish/backup" />
+      <recent name="$USER_HOME$/Documents/CrossFit Snohomish/backup/11-30" />
+      <recent name="$PROJECT_DIR$/../python/python/practice/stt" />
+      <recent name="$PROJECT_DIR$/../python/python/dsimpl" />
+      <recent name="$PROJECT_DIR$/../python/python/binaryTree" />
+      <recent name="$PROJECT_DIR$/../Fetch" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/python/graph" />
-      <recent name="$PROJECT_DIR$/python/practice" />
-      <recent name="$PROJECT_DIR$/python/util" />
-      <recent name="$PROJECT_DIR$" />
-      <recent name="$USER_HOME$/Documents/CrossFit Snohomish/crossfit-snohomish/assets/video" />
+      <recent name="$USER_HOME$/Documents/CrossFit Snohomish/backup" />
+      <recent name="$PROJECT_DIR$/../python/python/data_structures/sorting" />
+      <recent name="$PROJECT_DIR$/../PythonPrograms" />
+      <recent name="$USER_HOME$/Documents/CrossFit Snohomish/crossfit-snohomish/assets/img/logos" />
+      <recent name="$PROJECT_DIR$/../Fetch/grafana/dashboards" />
     </key>
   </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
-    </option>
-  </component>
-  <component name="RunManager" selected="Python.sorround_regions">
-    <configuration name="dict" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="AlgorithmsAndDataStructures" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/python/data_structures" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/python/data_structures/dict.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="flattenBinaryTreeToLinkedList" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="AlgorithmsAndDataStructures" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/python/binaryTree" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/python/binaryTree/flattenBinaryTreeToLinkedList.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="inner_methods" type="PythonConfigurationType" factoryName="Python" temporary="true">
+  <component name="RunManager" selected="Python.load_data">
+    <configuration name="filter_map_reduce" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="python" />
+      <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../python/python/practice" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../python/python/data_structures" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/../python/python/practice/inner_methods.py" />
+      <option name="RUN_TOOL" value="" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/../python/python/data_structures/filter_map_reduce.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -417,19 +361,90 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="sorround_regions" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="list" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="python" />
+      <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../python/python/graph" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../python/python/data_structures" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/../python/python/graph/sorround_regions.py" />
+      <option name="RUN_TOOL" value="" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/../python/python/data_structures/list.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="true" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="load_data" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="python" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../python/python/pyspark" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="RUN_TOOL" value="" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/../python/python/pyspark/load_data.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="sets" type="PythonConfigurationType" factoryName="Python">
+      <module name="python" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../python/python/data_structures" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="RUN_TOOL" value="" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/../python/python/data_structures/sets.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="stackandqueue" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="python" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../python/python/data_structures" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="RUN_TOOL" value="" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/../python/python/data_structures/stackandqueue.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -439,18 +454,20 @@
       <method v="2" />
     </configuration>
     <configuration name="string" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="AlgorithmsAndDataStructures" />
+      <module name="python" />
+      <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/python/data_structures" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../python/python/data_structures" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/python/data_structures/string.py" />
+      <option name="RUN_TOOL" value="" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/../python/python/data_structures/string.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -459,22 +476,18 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <list>
-      <item itemvalue="Python.dict" />
-      <item itemvalue="Python.flattenBinaryTreeToLinkedList" />
-      <item itemvalue="Python.string" />
-      <item itemvalue="Python.inner_methods" />
-      <item itemvalue="Python.sorround_regions" />
-    </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.sorround_regions" />
-        <item itemvalue="Python.inner_methods" />
-        <item itemvalue="Python.flattenBinaryTreeToLinkedList" />
-        <item itemvalue="Python.string" />
-        <item itemvalue="Python.dict" />
+        <item itemvalue="Python.load_data" />
       </list>
     </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-30f59d01ecdd-2fc7cc6b9a17-intellij.indexing.shared.core-IU-253.30387.90" />
+      </set>
+    </attachedChunks>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -486,76 +499,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1557519108084</updated>
-    </task>
-    <task id="LOCAL-00001" summary="test">
-      <created>1557589624932</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1557589624932</updated>
-    </task>
-    <task id="LOCAL-00002" summary="Fixes and Additions. Mainly for subsequence.">
-      <created>1558375494466</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1558375494467</updated>
-    </task>
-    <task id="LOCAL-00003" summary="Palindrome related problems.">
-      <created>1558380979216</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1558380979216</updated>
-    </task>
-    <task id="LOCAL-00004" summary="Fixes">
-      <created>1560639331822</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1560639331822</updated>
-    </task>
-    <task id="LOCAL-00005" summary="new edits">
-      <created>1725239010735</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1725239010735</updated>
-    </task>
-    <task id="LOCAL-00006" summary="python for linkedlist">
-      <created>1725239826172</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1725239826172</updated>
-    </task>
-    <task id="LOCAL-00007" summary="new files">
-      <created>1732604025045</created>
-      <option name="number" value="00007" />
-      <option name="presentableId" value="LOCAL-00007" />
-      <option name="project" value="LOCAL" />
-      <updated>1732604025045</updated>
-    </task>
-    <task id="LOCAL-00008" summary="new files">
-      <created>1733431371958</created>
-      <option name="number" value="00008" />
-      <option name="presentableId" value="LOCAL-00008" />
-      <option name="project" value="LOCAL" />
-      <updated>1733431371958</updated>
-    </task>
-    <task id="LOCAL-00009" summary="new files">
-      <created>1733431754557</created>
-      <option name="number" value="00009" />
-      <option name="presentableId" value="LOCAL-00009" />
-      <option name="project" value="LOCAL" />
-      <updated>1733431754557</updated>
-    </task>
-    <task id="LOCAL-00010" summary="new files">
-      <created>1735664220091</created>
-      <option name="number" value="00010" />
-      <option name="presentableId" value="LOCAL-00010" />
-      <option name="project" value="LOCAL" />
-      <updated>1735664220091</updated>
     </task>
     <task id="LOCAL-00011" summary="new files">
       <created>1735682573022</created>
@@ -578,7 +521,329 @@
       <option name="project" value="LOCAL" />
       <updated>1736587978352</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="new files">
+      <created>1736589199421</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1736589199421</updated>
+    </task>
+    <task id="LOCAL-00015" summary="new files">
+      <created>1736589218549</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1736589218549</updated>
+    </task>
+    <task id="LOCAL-00016" summary="changes">
+      <created>1736590576326</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1736590576326</updated>
+    </task>
+    <task id="LOCAL-00017" summary="changes">
+      <created>1736624859367</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1736624859367</updated>
+    </task>
+    <task id="LOCAL-00018" summary="fetch + prometheus + graphana">
+      <created>1737062745506</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1737062745506</updated>
+    </task>
+    <task id="LOCAL-00019" summary="test">
+      <created>1737063355827</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1737063355827</updated>
+    </task>
+    <task id="LOCAL-00020" summary="test">
+      <created>1737065176205</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1737065176205</updated>
+    </task>
+    <task id="LOCAL-00021" summary="consumer app, graphana dashboard update and prometheus changes">
+      <created>1737159951235</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1737159951236</updated>
+    </task>
+    <task id="LOCAL-00022" summary="update grafana dashboard, add details to README. Cleanup.">
+      <created>1737266408930</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1737266408931</updated>
+    </task>
+    <task id="LOCAL-00023" summary="Dockerfile for consumer app">
+      <created>1737266650722</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1737266650726</updated>
+    </task>
+    <task id="LOCAL-00024" summary="add gitignore">
+      <created>1737266970484</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1737266970484</updated>
+    </task>
+    <task id="LOCAL-00025" summary="fix readme">
+      <created>1737272950225</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1737272950225</updated>
+    </task>
+    <task id="LOCAL-00026" summary="update gitignore">
+      <created>1737274684601</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1737274684601</updated>
+    </task>
+    <task id="LOCAL-00027" summary="fetch + prometheus + graphana">
+      <created>1737274739108</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1737274739108</updated>
+    </task>
+    <task id="LOCAL-00028" summary="fix readme">
+      <created>1737277269358</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1737277269359</updated>
+    </task>
+    <task id="LOCAL-00029" summary="fix readme">
+      <created>1737277390134</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1737277390134</updated>
+    </task>
+    <task id="LOCAL-00030" summary="Fix readme">
+      <created>1737277605391</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1737277605392</updated>
+    </task>
+    <task id="LOCAL-00031" summary="add sample and fix readme">
+      <created>1737277911887</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1737277911887</updated>
+    </task>
+    <task id="LOCAL-00032" summary="publish consumer image to dockerhub and update readme">
+      <created>1737399848738</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1737399848741</updated>
+    </task>
+    <task id="LOCAL-00033" summary="update readme">
+      <created>1737400607327</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1737400607330</updated>
+    </task>
+    <task id="LOCAL-00034" summary="update readme">
+      <created>1737402477110</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1737402477111</updated>
+    </task>
+    <task id="LOCAL-00035" summary="update readme">
+      <created>1737428656788</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1737428656788</updated>
+    </task>
+    <task id="LOCAL-00036" summary="update readme">
+      <created>1737428984906</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1737428984906</updated>
+    </task>
+    <task id="LOCAL-00037" summary="edits">
+      <created>1737634673004</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1737634673004</updated>
+    </task>
+    <task id="LOCAL-00038" summary="filter, map and reduce">
+      <created>1737766851382</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1737766851383</updated>
+    </task>
+    <task id="LOCAL-00039" summary="palindrome">
+      <created>1737905018401</created>
+      <option name="number" value="00039" />
+      <option name="presentableId" value="LOCAL-00039" />
+      <option name="project" value="LOCAL" />
+      <updated>1737905018402</updated>
+    </task>
+    <task id="LOCAL-00040" summary="new problems">
+      <created>1738166283359</created>
+      <option name="number" value="00040" />
+      <option name="presentableId" value="LOCAL-00040" />
+      <option name="project" value="LOCAL" />
+      <updated>1738166283359</updated>
+    </task>
+    <task id="LOCAL-00041" summary="segment Tree">
+      <created>1738171542334</created>
+      <option name="number" value="00041" />
+      <option name="presentableId" value="LOCAL-00041" />
+      <option name="project" value="LOCAL" />
+      <updated>1738171542335</updated>
+    </task>
+    <task id="LOCAL-00042" summary="segment tree">
+      <created>1738178484714</created>
+      <option name="number" value="00042" />
+      <option name="presentableId" value="LOCAL-00042" />
+      <option name="project" value="LOCAL" />
+      <updated>1738178484714</updated>
+    </task>
+    <task id="LOCAL-00043" summary="work">
+      <created>1759601877565</created>
+      <option name="number" value="00043" />
+      <option name="presentableId" value="LOCAL-00043" />
+      <option name="project" value="LOCAL" />
+      <updated>1759601877565</updated>
+    </task>
+    <task id="LOCAL-00044" summary="work">
+      <created>1759614637662</created>
+      <option name="number" value="00044" />
+      <option name="presentableId" value="LOCAL-00044" />
+      <option name="project" value="LOCAL" />
+      <updated>1759614637662</updated>
+    </task>
+    <task id="LOCAL-00045" summary="work">
+      <created>1759621264392</created>
+      <option name="number" value="00045" />
+      <option name="presentableId" value="LOCAL-00045" />
+      <option name="project" value="LOCAL" />
+      <updated>1759621264392</updated>
+    </task>
+    <task id="LOCAL-00046" summary="work">
+      <created>1759641025745</created>
+      <option name="number" value="00046" />
+      <option name="presentableId" value="LOCAL-00046" />
+      <option name="project" value="LOCAL" />
+      <updated>1759641025745</updated>
+    </task>
+    <task id="LOCAL-00047" summary="work">
+      <created>1759645248152</created>
+      <option name="number" value="00047" />
+      <option name="presentableId" value="LOCAL-00047" />
+      <option name="project" value="LOCAL" />
+      <updated>1759645248152</updated>
+    </task>
+    <task id="LOCAL-00048" summary="work">
+      <created>1759729365243</created>
+      <option name="number" value="00048" />
+      <option name="presentableId" value="LOCAL-00048" />
+      <option name="project" value="LOCAL" />
+      <updated>1759729365243</updated>
+    </task>
+    <task id="LOCAL-00049" summary="work">
+      <created>1760090520477</created>
+      <option name="number" value="00049" />
+      <option name="presentableId" value="LOCAL-00049" />
+      <option name="project" value="LOCAL" />
+      <updated>1760090520477</updated>
+    </task>
+    <task id="LOCAL-00050" summary="fetch + prometheus + graphana">
+      <created>1760090971753</created>
+      <option name="number" value="00050" />
+      <option name="presentableId" value="LOCAL-00050" />
+      <option name="project" value="LOCAL" />
+      <updated>1760090971754</updated>
+    </task>
+    <task id="LOCAL-00051" summary="fetch + prometheus + graphana">
+      <created>1760091273105</created>
+      <option name="number" value="00051" />
+      <option name="presentableId" value="LOCAL-00051" />
+      <option name="project" value="LOCAL" />
+      <updated>1760091273106</updated>
+    </task>
+    <task id="LOCAL-00052" summary="lrucache">
+      <created>1760233792389</created>
+      <option name="number" value="00052" />
+      <option name="presentableId" value="LOCAL-00052" />
+      <option name="project" value="LOCAL" />
+      <updated>1760233792389</updated>
+    </task>
+    <task id="LOCAL-00053" summary="work">
+      <created>1760357989570</created>
+      <option name="number" value="00053" />
+      <option name="presentableId" value="LOCAL-00053" />
+      <option name="project" value="LOCAL" />
+      <updated>1760357989570</updated>
+    </task>
+    <task id="LOCAL-00054" summary="work">
+      <created>1760383297523</created>
+      <option name="number" value="00054" />
+      <option name="presentableId" value="LOCAL-00054" />
+      <option name="project" value="LOCAL" />
+      <updated>1760383297524</updated>
+    </task>
+    <task id="LOCAL-00055" summary="work">
+      <created>1762113595287</created>
+      <option name="number" value="00055" />
+      <option name="presentableId" value="LOCAL-00055" />
+      <option name="project" value="LOCAL" />
+      <updated>1762113595287</updated>
+    </task>
+    <task id="LOCAL-00056" summary="work">
+      <created>1762129269113</created>
+      <option name="number" value="00056" />
+      <option name="presentableId" value="LOCAL-00056" />
+      <option name="project" value="LOCAL" />
+      <updated>1762129269114</updated>
+    </task>
+    <task id="LOCAL-00057" summary="new">
+      <created>1763172137093</created>
+      <option name="number" value="00057" />
+      <option name="presentableId" value="LOCAL-00057" />
+      <option name="project" value="LOCAL" />
+      <updated>1763172137094</updated>
+    </task>
+    <task id="LOCAL-00058" summary="new">
+      <created>1763185025866</created>
+      <option name="number" value="00058" />
+      <option name="presentableId" value="LOCAL-00058" />
+      <option name="project" value="LOCAL" />
+      <updated>1763185025867</updated>
+    </task>
+    <task id="LOCAL-00059" summary="new">
+      <created>1763607900611</created>
+      <option name="number" value="00059" />
+      <option name="presentableId" value="LOCAL-00059" />
+      <option name="project" value="LOCAL" />
+      <updated>1763607900612</updated>
+    </task>
+    <option name="localTasksCounter" value="60" />
     <servers />
   </component>
   <component name="TodoView">
@@ -591,9 +856,9 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="2349" y="-662" width="953" height="955" extended-state="0" />
+    <frame x="0" y="33" width="1512" height="949" extended-state="0" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49879518" visible="true" weight="0.4720088" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49879518" visible="true" weight="0.2904762" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -601,15 +866,15 @@
       <window_info id="Capture Tool" order="5" />
       <window_info id="Favorites" order="6" sideWeight="0.50120485" side_tool="true" weight="0.3197425" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.09677419" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.19486581" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.3923611" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.41569284" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49927327" weight="0.2536974" />
+      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49927327" weight="0.3452055" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32876712" />
-      <window_info anchor="bottom" id="Terminal" order="7" weight="0.26955074" />
-      <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
-      <window_info anchor="bottom" id="Version Control" order="9" weight="0.2579035" />
+      <window_info anchor="bottom" id="Terminal" order="7" weight="0.24246575" />
+      <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.50072676" side_tool="true" weight="0.24874792" />
+      <window_info anchor="bottom" id="Version Control" order="9" visible="true" weight="0.13651878" />
       <window_info anchor="bottom" id="Messages" order="10" weight="0.18767123" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -621,7 +886,7 @@
       <window_info anchor="right" id="Palette&#9;" order="7" />
     </layout>
     <layout-to-restore>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49879518" visible="true" weight="0.3085622" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49879518" visible="true" weight="0.2358643" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -629,15 +894,15 @@
       <window_info id="Capture Tool" order="5" />
       <window_info id="Favorites" order="6" sideWeight="0.50120485" side_tool="true" weight="0.3197425" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.09677419" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.23627287" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.26123127" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.41569284" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49927327" weight="0.13" />
+      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49927327" weight="0.3452055" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32876712" />
-      <window_info anchor="bottom" id="Terminal" order="7" weight="0.26955074" />
-      <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
-      <window_info anchor="bottom" id="Version Control" order="9" weight="0.2579035" />
+      <window_info anchor="bottom" id="Terminal" order="7" weight="0.24246575" />
+      <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.50072676" side_tool="true" weight="0.24874792" />
+      <window_info anchor="bottom" id="Version Control" order="9" weight="0.32876712" />
       <window_info anchor="bottom" id="Messages" order="10" weight="0.18767123" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -649,15 +914,43 @@
       <window_info anchor="right" id="Palette&#9;" order="7" />
     </layout-to-restore>
   </component>
+  <component name="Vcs.Log.History.Properties">
+    <option name="COLUMN_ORDER">
+      <list>
+        <option value="0" />
+        <option value="2" />
+        <option value="3" />
+        <option value="1" />
+      </list>
+    </option>
+  </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="test" />
-    <MESSAGE value="Fixes and Additions. Mainly for subsequence." />
-    <MESSAGE value="Palindrome related problems." />
-    <MESSAGE value="Fixes" />
     <MESSAGE value="new edits" />
     <MESSAGE value="python for linkedlist" />
     <MESSAGE value="new files" />
-    <option name="LAST_COMMIT_MESSAGE" value="new files" />
+    <MESSAGE value="changes" />
+    <MESSAGE value="test" />
+    <MESSAGE value="consumer app, graphana dashboard update and prometheus changes" />
+    <MESSAGE value="update grafana dashboard, add details to README. Cleanup." />
+    <MESSAGE value="Dockerfile for consumer app" />
+    <MESSAGE value="add gitignore" />
+    <MESSAGE value="update gitignore" />
+    <MESSAGE value="fix readme" />
+    <MESSAGE value="Fix readme" />
+    <MESSAGE value="add sample and fix readme" />
+    <MESSAGE value="publish consumer image to dockerhub and update readme" />
+    <MESSAGE value="update readme" />
+    <MESSAGE value="edits" />
+    <MESSAGE value="filter, map and reduce" />
+    <MESSAGE value="palindrome" />
+    <MESSAGE value="new problems" />
+    <MESSAGE value="segment Tree" />
+    <MESSAGE value="segment tree" />
+    <MESSAGE value="fetch + prometheus + graphana" />
+    <MESSAGE value="lrucache" />
+    <MESSAGE value="work" />
+    <MESSAGE value="new" />
+    <option name="LAST_COMMIT_MESSAGE" value="new" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -665,226 +958,57 @@
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/array/streams/ReservoirSamplingKfromN.java</url>
           <line>123</line>
-          <properties />
           <option name="timeStamp" value="9" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/array/streams/ReservoirSamplingKfromN.java</url>
           <line>135</line>
-          <properties />
           <option name="timeStamp" value="10" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/datastructsimpl/BinaryHeap.java</url>
           <line>89</line>
-          <properties />
           <option name="timeStamp" value="11" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/string/anagram/PrintAllAnagramsTogether.java</url>
           <line>23</line>
-          <properties />
           <option name="timeStamp" value="13" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/string/anagram/PrintAllAnagramsTogether.java</url>
           <line>17</line>
-          <properties />
           <option name="timeStamp" value="15" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/string/CharCountBased/SmallestWindowAllCharsFromAnotherString.java</url>
           <line>89</line>
-          <properties />
           <option name="timeStamp" value="17" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/python/removeduplicates.py</url>
-          <line>19</line>
-          <option name="timeStamp" value="18" />
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/string/LexicographicRank.java</url>
+          <line>15</line>
+          <option name="timeStamp" value="171" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/python/removeduplicates.py</url>
-          <line>48</line>
-          <option name="timeStamp" value="20" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/python/removeduplicates.py</url>
-          <line>79</line>
-          <option name="timeStamp" value="21" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/python/leetcode_easy/abbr.py</url>
-          <line>7</line>
-          <option name="timeStamp" value="22" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/python/leetcode_easy/palindromewith1charexception.py</url>
-          <line>7</line>
-          <option name="timeStamp" value="28" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/python/leetcode_easy/palindromewith1charexception.py</url>
-          <line>17</line>
-          <option name="timeStamp" value="29" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/python/leetcode_easy/missingRanges.py</url>
-          <line>10</line>
-          <option name="timeStamp" value="30" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/python/leetcode_easy/ispalindromeaftercleanup.py</url>
-          <line>8</line>
-          <option name="timeStamp" value="32" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/python/leetcode_easy/ispalindromeaftercleanup.py</url>
-          <line>24</line>
-          <option name="timeStamp" value="33" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/python/leetcode_easy/ispalindromeaftercleanup.py</url>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/binarytree/FullTreeFromPreorderPostorder.java</url>
           <line>27</line>
-          <option name="timeStamp" value="36" />
+          <option name="timeStamp" value="192" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/python/leetcode_easy/toeplitz.py</url>
-          <line>27</line>
-          <option name="timeStamp" value="37" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/python/leetcode_easy/toeplitz.py</url>
-          <line>56</line>
-          <option name="timeStamp" value="39" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/python/leetcode_easy/toeplitz.py</url>
-          <line>38</line>
-          <option name="timeStamp" value="40" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/python/leetcode_easy/makebricks.py</url>
-          <line>5</line>
-          <option name="timeStamp" value="42" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/python/leetcode_easy/makebricks.py</url>
-          <line>11</line>
-          <option name="timeStamp" value="43" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/python/leetcode_easy/minMeeringRooms.py</url>
-          <line>25</line>
-          <option name="timeStamp" value="46" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/python/meta.py</url>
-          <line>629</line>
-          <option name="timeStamp" value="64" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/python/meta_practice/mismatchedWords.py</url>
-          <line>16</line>
-          <option name="timeStamp" value="65" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/python/meta_practice/mismatchedWords.py</url>
-          <line>9</line>
-          <option name="timeStamp" value="66" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/python/meta.py</url>
-          <line>119</line>
-          <option name="timeStamp" value="69" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/python/practice/practice.py</url>
-          <line>92</line>
-          <option name="timeStamp" value="71" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/python/practice/practice.py</url>
-          <line>88</line>
-          <option name="timeStamp" value="72" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/python/practice/practice.py</url>
-          <line>96</line>
-          <option name="timeStamp" value="73" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/python/util/binarytreeutil.py</url>
-          <line>19</line>
-          <option name="timeStamp" value="74" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/python/util/binarytreeutil.py</url>
-          <line>47</line>
-          <option name="timeStamp" value="78" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/python/binaryTree/countCompleteTreeNodes.py</url>
-          <line>100</line>
-          <option name="timeStamp" value="99" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/python/binaryTree/countCompleteTreeNodes.py</url>
-          <line>159</line>
-          <option name="timeStamp" value="100" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/python/binaryTree/countCompleteTreeNodes.py</url>
-          <line>80</line>
-          <option name="timeStamp" value="101" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/python/leetcode_easy/KOperationsHeapq.py</url>
-          <line>11</line>
-          <option name="timeStamp" value="103" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/python/banking/banking.py</url>
-          <line>305</line>
-          <option name="timeStamp" value="125" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/python/banking/banking.py</url>
-          <line>239</line>
-          <option name="timeStamp" value="129" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/python/banking/banking.py</url>
-          <line>61</line>
-          <option name="timeStamp" value="131" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/python/graph/noOfIslands.py</url>
-          <line>40</line>
-          <option name="timeStamp" value="137" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/python/graph/noOfIslands.py</url>
-          <line>30</line>
-          <option name="timeStamp" value="139" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/python/graph/sorround_regions.py</url>
-          <line>35</line>
-          <option name="timeStamp" value="151" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/python/dsimpl/trie.py</url>
-          <line>92</line>
-          <option name="timeStamp" value="153" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/../python/python/binaryTree/flattenBinaryTreeToLinkedList.py</url>
-          <line>6</line>
-          <option name="timeStamp" value="154" />
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/string/subsequence/LongestIncreasingSubsequence.java</url>
+          <line>15</line>
+          <properties class="string.subsequence.LongestIncreasingSubsequence" method="getLIS">
+            <option name="EMULATED" value="true" />
+          </properties>
+          <option name="timeStamp" value="193" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/AlgorithmsAndDataStructures$ReservoirSamplingKfromN.ic" NAME="ReservoirSamplingKfromN Coverage Results" MODIFIED="1659146196279" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
@@ -892,331 +1016,325 @@
     </SUITE>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/python/banking/test.py">
+    <entry file="file://$PROJECT_DIR$/../python/python/data_structures/pythonheap.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="782">
-          <caret line="46" column="31" selection-start-line="46" selection-start-column="27" selection-end-line="46" selection-end-column="31" />
+        <state relative-caret-position="340">
+          <caret line="20" column="13" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/python/banking/level1.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="26" column="36" selection-start-line="26" selection-start-column="36" selection-end-line="26" selection-end-column="36" />
-          <folding>
-            <element signature="e#0#27#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/python/data_structures/matrix.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/python/data_structures/pythonheap.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="10" selection-start-line="3" selection-start-column="10" selection-end-line="3" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/python/data_structures/pythonstackandqueue.py">
+    <entry file="file://$PROJECT_DIR$/../python/python/data_structures/pythonstackandqueue.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/python/data_structures/tuple.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/python/graph/noOfIslands.py">
+    <entry file="file://$PROJECT_DIR$/../python/python/data_structures/sets.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="19" selection-start-line="15" selection-start-column="15" selection-end-line="15" selection-end-column="19" />
+        <state relative-caret-position="-3784">
+          <caret line="17" column="17" selection-start-line="17" selection-start-column="17" selection-end-line="17" selection-end-column="17" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/python/graph/sorround_regions.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="13" selection-start-line="13" selection-end-line="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/python/data_structures/sets.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1071">
-          <caret line="63" column="19" selection-start-line="63" selection-start-column="19" selection-end-line="63" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/python/practice/inner_methods.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="19" column="21" selection-start-line="19" selection-start-column="21" selection-end-line="19" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/python/data_structures/all-ds.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/python/data_structures/list.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1462">
-          <caret line="86" column="32" selection-start-line="86" selection-start-column="29" selection-end-line="86" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/python/csvgrep.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="9" column="10" selection-start-line="9" selection-start-column="10" selection-end-line="9" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/graph/DepthFirstSearch.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="498">
-          <caret line="74" column="25" selection-start-line="74" selection-start-column="25" selection-end-line="74" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/datastructsimpl/trie/TrieTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/datastructsimpl/trie/TrieNode.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="25" lean-forward="true" selection-start-line="8" selection-start-column="25" selection-end-line="8" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/datastructsimpl/trie/Trie.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="341">
-          <caret line="55" column="19" lean-forward="true" selection-start-line="55" selection-start-column="19" selection-end-line="55" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../PythonPrograms/env/lib/python3.7/site-packages/pip-19.0.3-py3.7.egg/pip/_internal/commands/search.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="680">
-          <caret line="59" column="8" selection-start-line="59" selection-start-column="8" selection-end-line="59" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/python/dsimpl/trie.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="379">
-          <caret line="43" column="54" lean-forward="true" selection-start-line="43" selection-start-column="54" selection-end-line="43" selection-end-column="54" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/python/practice/practice.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/python/data_structures/dict.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="151">
-          <caret line="171" lean-forward="true" selection-start-line="171" selection-end-line="171" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/python/data_structures/string.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="12" lean-forward="true" selection-start-line="4" selection-start-column="12" selection-end-line="4" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/datastructsimpl/compressedTrie/SuffixTreeNode.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/datastructsimpl/compressedTrie/SuffixTreeOrCompressedTrie.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1110">
-          <caret line="19" column="5" lean-forward="true" selection-start-line="19" selection-start-column="5" selection-end-line="19" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/datastructsimpl/HashMapImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/datastructsimpl/QueueUsingArray.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/datastructsimpl/SegmentTree.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/string/subsequence/LongestCommonSubsequence.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/string/subsequence/CountSubseqOfFormAiBjCk.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="18" selection-start-line="18" selection-end-line="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../PythonPrograms/cricket/points_table.py">
+    <entry file="file://$PROJECT_DIR$/../python/python/leetcode/validate_ip.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="391">
-          <caret line="23" selection-start-line="23" selection-end-line="23" />
+          <caret line="23" column="31" selection-start-line="23" selection-start-column="31" selection-end-line="23" selection-end-column="31" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/python/binaryTree/flattenBinaryTreeToLinkedList.py">
+    <entry file="file://$PROJECT_DIR$/../python/python/leetcode/minMeetingRooms.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="25" selection-start-line="8" selection-start-column="25" selection-end-line="8" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../PythonPrograms/env1/lib/python3.7/site-packages/binarytree/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="43129">
-          <caret line="2544" column="31" selection-start-line="2544" selection-start-column="31" selection-end-line="2544" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/popularProblems/ExcelColumnNameToNumber.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="476">
-          <caret line="28" column="34" selection-start-line="28" selection-start-column="23" selection-end-line="28" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/popularProblems/ExcelNumberToColumnName.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="986">
-          <caret line="58" column="16" selection-start-line="58" selection-start-column="16" selection-end-line="58" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/string/palindrome/StringPalindromeRotationCheck.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/string/pattern/KMPAlgorithm.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="13" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/python/string/Anagrams.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/string/subsequence/CountNoOfSubseqDivByN.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/string/subsequence/CountStr2SubseqInStr1.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/string/anagram/AnagramBinaryNumbersCheck.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="9" column="56" selection-start-line="9" selection-start-column="56" selection-end-line="9" selection-end-column="56" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../python/python/util/__init__.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../python/python/string/Anagrams.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../python/python/practice/__init__.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../python/python/practice/inner_methods.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="14" selection-start-line="15" selection-start-column="14" selection-end-line="15" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../python/python/graph/noOfIslands.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../python/python/graph/sorround_regions.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="7" lean-forward="true" selection-start-line="11" selection-start-column="7" selection-end-line="11" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../python/python/binaryTree/__init__.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/python/binaryTree/countCompleteTreeNodes.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="21" selection-start-line="8" selection-start-column="21" selection-end-line="8" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/python/util/binarytreeutil.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
-          <caret line="39" column="16" selection-start-line="39" selection-start-column="8" selection-end-line="39" selection-end-column="16" />
+        <state relative-caret-position="323">
+          <caret line="20" column="20" selection-start-line="20" selection-start-column="20" selection-end-line="20" selection-end-column="20" />
           <folding>
-            <element signature="e#1#24#0" expanded="true" />
+            <element signature="e#0#12#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../python/python/binaryTree/countCompleteTreeNodes.py">
+    <entry file="file://$PROJECT_DIR$/../python/python/leetcode/missingRanges.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../python/python/leetcode/longest_substring.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../python/python/leetcode/ispalindromeaftercleanup.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../python/python/leetcode/trap_rain_water.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../python/python/data_structures/dict.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="18" selection-start-line="8" selection-start-column="18" selection-end-line="8" selection-end-column="18" />
+        <state relative-caret-position="519">
+          <caret line="331" column="9" selection-start-line="331" selection-start-column="9" selection-end-line="331" selection-end-column="9" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../python/python/binaryTree/flattenBinaryTreeToLinkedList.py">
+    <entry file="file://$PROJECT_DIR$/../Databricks-Certified-Data-Engineer-Professional/Includes/Copy-Datasets.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="218">
+          <caret line="110" column="8" selection-start-line="110" selection-start-column="8" selection-end-line="110" selection-end-column="8" />
+          <folding>
+            <element signature="e#29#67#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../Databricks-Certified-Data-Engineer-Professional/2 - Data Modeling/2.1 - Multiplex Bronze.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="383">
+          <caret line="67" column="25" selection-start-line="67" selection-start-column="25" selection-end-line="67" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../Databricks-Certified-Data-Engineer-Professional/2 - Data Modeling/2.2 - Streaming from Multiplex Bronze.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1394">
+          <caret line="82" column="24" selection-start-line="82" selection-start-column="24" selection-end-line="82" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../Databricks-Certified-Data-Engineer-Professional/2 - Data Modeling/2.3 - Quality Enforcement.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../Databricks-Certified-Data-Engineer-Professional/2 - Data Modeling/2.4 - Streaming Deduplication.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="986">
+          <caret line="58" column="29" selection-start-line="58" selection-start-column="17" selection-end-line="58" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../Databricks-Certified-Data-Engineer-Professional/2 - Data Modeling/2.5 - Type 2 SCD.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2108">
+          <caret line="124" selection-start-line="124" selection-end-line="124" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../Databricks-Certified-Data-Engineer-Professional/3 - Data Processing/3.1 - Change Data Capture.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1904">
+          <caret line="112" column="20" selection-start-line="112" selection-start-column="20" selection-end-line="112" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../Databricks-Certified-Data-Engineer-Professional/3 - Data Processing/3.2- CDF.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../Databricks-Certified-Data-Engineer-Professional/3 - Data Processing/3.3 - Stream-Stream Joins.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="19" column="44" selection-start-line="19" selection-start-column="32" selection-end-line="19" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../Databricks-Certified-Data-Engineer-Professional/3 - Data Processing/3.4 - Stream-Static Join.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1054">
+          <caret line="62" column="33" selection-start-line="62" selection-start-column="33" selection-end-line="62" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../Databricks-Certified-Data-Engineer-Professional/3 - Data Processing/3.5 - Gold Tables.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="24" column="8" selection-start-line="24" selection-start-column="8" selection-end-line="24" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../Databricks-Certified-Data-Engineer-Professional/5 - Data Orchestration/5.2 - Multi-Task Jobs/Task 1 -  Land New Data.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" selection-start-line="10" selection-end-line="10" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../Databricks-Certified-Data-Engineer-Professional/5 - Data Orchestration/5.2 - Multi-Task Jobs/Task 2 - Bronze.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="19" column="47" selection-start-line="19" selection-start-column="37" selection-end-line="19" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../Databricks-Certified-Data-Engineer-Professional/5 - Data Orchestration/5.2 - Multi-Task Jobs/Task 3 - Silver: Customers.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-151">
+          <caret line="14" column="16" selection-start-line="14" selection-start-column="4" selection-end-line="14" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../Databricks-Certified-Data-Engineer-Professional/5 - Data Orchestration/5.2 - Multi-Task Jobs/Task 4 - Silver: Orders.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-127" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../Databricks-Certified-Data-Engineer-Professional/5 - Data Orchestration/5.2 - Multi-Task Jobs/Task 5 - Silver: Books.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-108" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../Databricks-Certified-Data-Engineer-Professional/5 - Data Orchestration/5.2 - Multi-Task Jobs/Task 7 - Silver: Books Sales.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="476">
+          <caret line="28" column="21" lean-forward="true" selection-end-line="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../Databricks-Certified-Data-Engineer-Professional/5 - Data Orchestration/5.2 - Multi-Task Jobs/Task 8 - Gold: Countries Statistics.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../Databricks-Certified-Data-Engineer-Professional/5 - Data Orchestration/5.2 - Multi-Task Jobs/Task 9 - Gold: Authors Statistics.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="21" column="38" selection-start-line="21" selection-start-column="25" selection-end-line="21" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../Databricks-Certified-Data-Engineer-Professional/Includes/images/books.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../Databricks-Certified-Data-Engineer-Professional/5 - Data Orchestration/5.2 - Multi-Task Jobs/Task 6 - Silver: Customers Orders.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="848">
+          <caret line="52" column="33" selection-start-line="52" selection-start-column="33" selection-end-line="52" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../Databricks-Certified-Data-Engineer-Professional/6 - Data Governance/6.1 - Propagating Deletes.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1105">
+          <caret line="65" column="33" selection-start-line="65" selection-start-column="33" selection-end-line="65" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../Databricks-Certified-Data-Engineer-Professional/7 - ETL Pipelines/Bookstore Pro Pipeline/transformations/1_data_ingestion.py">
       <provider selected="true" editor-type-id="text-editor">
         <state>
           <folding>
-            <element signature="e#192#232#0" expanded="true" />
+            <element signature="e#0#35#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/../Databricks-Certified-Data-Engineer-Professional/7 - ETL Pipelines/Bookstore Pro Pipeline/transformations/2_expectations.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="493">
+          <caret line="30" column="13" selection-start-line="30" selection-start-column="5" selection-end-line="30" selection-end-column="13" />
+          <folding>
+            <element signature="e#0#35#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../Databricks-Certified-Data-Engineer-Professional/7 - ETL Pipelines/Bookstore Pro Pipeline/transformations/3_auto_cdc.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="459">
+          <caret line="28" column="50" selection-start-line="28" selection-start-column="50" selection-end-line="28" selection-end-column="50" />
+          <folding>
+            <element signature="e#0#35#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../Databricks-Certified-Data-Engineer-Professional/7 - ETL Pipelines/Job V2 Tasks/Task 1 - Land New Data.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../Databricks-Certified-Data-Engineer-Professional/7 - ETL Pipelines/Job V2 Tasks/Task 2 - Logging.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="15" selection-start-line="1" selection-start-column="8" selection-end-line="1" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../Databricks-Certified-Data-Engineer-Professional/7 - ETL Pipelines/Job V2 Tasks/Task 3 - List Tables.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../Databricks-Certified-Data-Engineer-Professional/7 - ETL Pipelines/Job V2 Tasks/Task 4 - Analyze Table.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../Databricks-Certified-Data-Engineer-Professional/7 - ETL Pipelines/Bookstore Pro Pipeline/transformations/4_auto_cdc.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-line="13" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../Databricks-Certified-Data-Engineer-Professional/Databricks-Certified-Data-Engineer-Professional.iml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../python/python/data_structures/string.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3366">
+          <caret line="198" column="11" selection-start-line="198" selection-start-column="11" selection-end-line="198" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../python/python/data_structures/stackandqueue.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="17" column="24" selection-start-line="17" selection-start-column="24" selection-end-line="17" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/linkedlist/singular/LoopDetect.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1088">
+          <caret line="68" column="31" selection-start-line="68" selection-start-column="31" selection-end-line="68" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../python/python/matrix/spiralMatrix.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../python/python/matrix/rotateMatrix.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="901">
+          <caret line="53" column="22" selection-start-line="53" selection-start-column="16" selection-end-line="53" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../python/python/matrix/basicOps.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" selection-start-line="14" selection-end-line="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../python/python/data_structures/sorting/lists.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="24" column="40" selection-start-line="24" selection-start-column="40" selection-end-line="24" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../python/python/data_structures/sorting/heaps.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" selection-start-line="12" selection-end-line="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../python/python/data_structures/heap.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="16" column="28" selection-start-line="16" selection-start-column="28" selection-end-line="16" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../python/python/data_structures/list.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="714">
+          <caret line="42" column="22" selection-start-line="62" selection-start-column="19" selection-end-line="62" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="github-copilot-workspace">
+    <instructionFileLocations>
+      <option value=".github/instructions" />
+    </instructionFileLocations>
+    <promptFileLocations>
+      <option value=".github/prompts" />
+    </promptFileLocations>
   </component>
   <component name="masterDetails">
     <states>
@@ -1270,12 +1388,11 @@
       </state>
       <state key="ModuleStructureConfigurable.UI">
         <settings>
-          <last-edited>python</last-edited>
+          <last-edited>AlgorithmsAndDataStructures</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
                 <option value="0.2" />
-                <option value="0.6" />
               </list>
             </option>
           </splitter-proportions>

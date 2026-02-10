@@ -6,7 +6,7 @@ public class LeastCommonAncestor {
 	public static void main(String[] args) {
 		TreeNode root = new TreeNode().getBST();
 
-		//root.printLevelOrder();
+		root.printLevelOrder();
 
 		System.out.println(root.getHeight(root));
 

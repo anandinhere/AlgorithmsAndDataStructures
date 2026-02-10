@@ -19,14 +19,13 @@ public class LongestIncreasingSubsequence {
             return count;
         }
 
-        int count1 = 0, count2 = 0, count3 = 0;
+        int count1 = 0;
         if(arr[start]>prev){
             count1 = getLIS(arr,start + 1,count + 1, arr[start]);
         }
-        //count2 = getLIS(arr,start + 1,count + 1, arr[start]);
-        count3 = getLIS(arr,start + 1,count, prev);
+        int count3 = getLIS(arr,start + 1,count, prev);
 
-        return Math.max(Math.max(count1,count2),count3);
+        return Math.max(count1,count3);
 
     }
 }
